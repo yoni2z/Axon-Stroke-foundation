@@ -79,7 +79,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to="/whatwedo" onClick={closeMenu}>
-              What We Do
+              WHAT WE DO
             </Link>
           </li>
           <li className="navbar-dropdown">
