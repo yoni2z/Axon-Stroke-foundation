@@ -19,7 +19,7 @@ const Cards = ({ photo, title, description, id }) => {
 
         {/* Continue Reading Link */}
         <NavLink
-          path={`/whatwedo/projects/${id}`}
+          to={`/whatwedo/projects/${id}`}
           className="text-button hover:text-black text-left mt-5 mb-3"
         >
           Continue Reading

@@ -36,7 +36,7 @@ function App() {
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/whatwedo" element={<WhatWeDo />} />
-          <Route path="/whatwedo/projects" element={<WhatWeDoProjects />} />
+          <Route path="/whatwedo/projects/:id" element={<WhatWeDoProjects />} />
         </Routes>
         <Footer />
         <Trademark />
