@@ -31,7 +31,7 @@ const VolenteerCard = () => {
         }}
       >
         <button
-          className="relative z-10 text-black text-center text-[1.1rem] font-black tracking-tight leading-snug bg-white hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
+          className="relative z-10 text-black text-center text-[1.1rem] font-black tracking-tight leading-snug bg-white hover:bg-customRed hover:text-white transition-all duration-300 ease-in-out"
           style={{
             padding: "15px 38px",
             fontWeight: "700",

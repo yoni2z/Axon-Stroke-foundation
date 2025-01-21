@@ -53,16 +53,16 @@ export const Footer = () => {
         <h3>FOLLOW US</h3>
         <div className="follow-social">
           <a href="">
-            <FontAwesomeIcon icon={faFacebook} color="#949494" />
+            <FontAwesomeIcon className=".icons" icon={faFacebook} color="#949494" />
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faTwitter} color="#949494" />
+            <FontAwesomeIcon className=".icons" icon={faTwitter} color="#949494" />
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faGooglePlus} color="#949494" />
+            <FontAwesomeIcon className=".icons" icon={faGooglePlus} color="#949494" />
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faInstagram} color="#949494" />
+            <FontAwesomeIcon className=".icons" icon={faInstagram} color="#949494" />
           </a>
         </div>
       </div>

@@ -61,6 +61,13 @@
     height: 25%;
   }
 }
+.footer a:hover{
+  color: #cc1631 ;
+}
+.footer p:hover{
+  color:#26358a ;
+}
+
 /* Tablets */
 @media only screen and (max-width: 767px) {
 }
