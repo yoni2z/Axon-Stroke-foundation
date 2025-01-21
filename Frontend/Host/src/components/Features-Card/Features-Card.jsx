@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLongArrowAltRight } from "react-icons/fa"
+import { FaLongArrowAltRight } from "react-icons/fa";
 import "./styles.css"
 export const FeaturesCard = ({image,title,description}) => {
   return (
