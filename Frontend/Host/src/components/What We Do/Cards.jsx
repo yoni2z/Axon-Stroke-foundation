@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Cards = ({ photo, title, description, id }) => {
   return (
@@ -17,12 +18,12 @@ const Cards = ({ photo, title, description, id }) => {
         <h4 className="text-secondary mb-3">{description}</h4>
 
         {/* Continue Reading Link */}
-        <a
-          href="#"
-          className="text-primary hover:text-black text-left mt-5 mb-3"
+        <NavLink
+          path={`/whatwedo/projects/${id}`}
+          className="text-button hover:text-black text-left mt-5 mb-3"
         >
           Continue Reading
-        </a>
+        </NavLink>
       </div>
     </div>
   );
