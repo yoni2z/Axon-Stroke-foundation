@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
-import Logo from "../../assets/Navbar/logo.png";
+import Logo from "../../assets/Navbar/axon_logo.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
