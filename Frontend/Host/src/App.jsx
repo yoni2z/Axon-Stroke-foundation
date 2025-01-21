@@ -10,11 +10,12 @@ import Gallery from "./pages/GalleryPage/Gallery";
 import About from "./pages/AboutPage/About";
 import VolunteerPage from "./pages/VolunteerPage";
 import FAQ from "./pages/FAQ";
-import Causes from "./pages/Causes";
-import CausesDetail from "./pages/CausesDetail";
+import Causes from "./Pages/Causes";
+import CausesDetail from "./Pages/CausesDetail";
 import DonationPage from "./pages/DonationPage/DonationPage";
 import Contacts from "./pages/Contacts";
 import WhatWeDo from "./Pages/WhatWeDo";
+import WhatWeDoProjects from "./Pages/WhatWeDoProjects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/whatwedo" element={<WhatWeDo />} />
+          <Route path="/whatwedo/projects" element={<WhatWeDoProjects />} />
         </Routes>
         <Footer />
         <Trademark />
