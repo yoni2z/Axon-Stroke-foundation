@@ -29,16 +29,19 @@ const WhatWeDo = () => {
             photo={VolunteerBg}
             title="A. Stroke Awareness Program"
             description="Our Stroke Awareness Program aims to increase public knowledge about stroke prevention, symptoms, and the importance of early intervention."
+            id="1"
           />
           <Cards
             photo={VolunteerBg}
             title="Free Stroke Therapy Programs"
             description="Our Free Stroke Therapy Programs provide essential rehabilitation services for stroke survivors, focusing on improving physical and cognitive recovery through therapy and support."
+            id="2"
           />
           <Cards
             photo={VolunteerBg}
             title="Stroke Education & Research Programs"
             description="Our Stroke Education & Research Programs focus on advancing the knowledge of stroke, its prevention, and innovative treatments. We are committed to supporting research and spreading vital information to both the public and healthcare professionals."
+            id="3"
           />
         </div>
       </div>
