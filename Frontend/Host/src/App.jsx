@@ -1,19 +1,20 @@
-import React from 'react';
+import React from "react";
 import "./app.css";
-import { Home } from './pages/Home/Home';
-import Navbar from './components/Navbar/Navbar';
-import { Trademark } from './components/Trademark/Trademark';
-import { Footer } from './components/Footer/Footer';
-import Blogs from './pages/Blogs';
-import BlogsDetail from './pages/BlogsDetail';
-import Gallery from './pages/GalleryPage/Gallery';
-import About from './pages/AboutPage/About';
+import { Home } from "./pages/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
+import { Trademark } from "./components/Trademark/Trademark";
+import { Footer } from "./components/Footer/Footer";
+import Blogs from "./pages/Blogs";
+import BlogsDetail from "./pages/BlogsDetail";
+import Gallery from "./pages/GalleryPage/Gallery";
+import About from "./pages/AboutPage/About";
 import VolunteerPage from "./pages/VolunteerPage";
 import FAQ from "./pages/FAQ";
 import Causes from "./pages/Causes";
 import CausesDetail from "./pages/CausesDetail";
-import DonationPage from './pages/DonationPage/DonationPage';
-import Contacts from './pages/Contacts';
+import DonationPage from "./pages/DonationPage/DonationPage";
+import Contacts from "./pages/Contacts";
+import WhatWeDo from "./Pages/WhatWeDo";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="/whatwedo" element={<WhatWeDo />} />
         </Routes>
         <Footer />
         <Trademark />
@@ -42,4 +44,3 @@ function App() {
 }
 
 export default App;
-
