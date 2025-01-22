@@ -16,6 +16,12 @@
   box-sizing: border-box;
 }
 
+.navbar-container:hover {
+  background-color: black;
+}
+
+
+
 /* When scrolled, change the background */
 .navbar-container.scrolled {
   background-color: rgba(0, 0, 0, 0.8);
@@ -29,6 +35,26 @@
 }
 
 .navbar-logo>a {
+  font: 14px "Poppins" sans-serif;
+}
+
+.navbar-logo>a>img {
+  width: auto;
+  height: 70px;
+  /* Adjust height to fit the navbar */
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: -999;
+  display: block;
+  max-width: 100%;
+  /* Ensures the logo is responsive */
+  margin: 0 auto;
+  /* Centers the logo horizontally */
+}
+
+
+
+.navbar-logo>a {
   font: 15px "Poppins" sans-serif;
 }
 
@@ -38,7 +64,7 @@
   height: 200px;
 }
 
-.navbar-links {
+ .navbar-links {
   margin-left: auto;
   margin-right: 5rem;
   display: flex;
@@ -59,11 +85,25 @@
   transform: translateZ(0);
   padding: 0px 12px;
   text-align: center;
+  font-weight: bold;
+  z-index: 0;
 }
 
 .navbar-links>ul>li:hover {
-  color: #00bbff;
+  color: #990000;
+  z-index: 0;
   cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: none;
+
+  
+}
+
+.navbar-links>ul>li:hover {
+  color: #26358a;
+  cursor: pointer;
+  
 }
 
 a {
@@ -73,30 +113,34 @@ a {
   border: none;
   /* color: white; */
   text-decoration: none;
-  background-color: transparent;
+  font-weight: 450;
+   background-color: transparent;
 }
 
 .navbar-container a:hover {
-  color: #00bbff;
+  color: #990000;
+  font-weight: bold;
 }
 
-.donate-btn {
+ .donate-btn {
   margin: 13px 0px 10px 0px;
   padding: 8px 27px;
   font: 14px "Poppins", serif;
   font-weight: 400;
   text-align: justify;
   border-radius: 4px;
+  color: white;
+  background-color: #000080;
   color: black;
-  background-color: #00bbff;
-  transition: color 0.3s ease;
+  background-color: #26358a;
+   transition: color 0.3s ease;
   margin-right: 5rem;
 }
 
 .donate-btn:hover {
-  color: black !important;
-  background-color: white;
-  cursor: pointer;
+  color: white !important;
+  background-color: #990000;
+   cursor: pointer;
 }
 
 .arrowdown-icon {
@@ -104,7 +148,7 @@ a {
 }
 
 .arrowdown-icon:hover {
-  color: #00bbff;
+  color: #990000;
 }
 
 .menu-icon {
@@ -125,12 +169,14 @@ a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   cursor: pointer;
+  font-weight: 400;
   transition: color 0.3s ease;
 }
 
 .navbar-dropdown-toggle:hover {
-  color: #00bbff;
+  color: #990000;
 }
+
 
 /* Dropdown menu container */
 .dropdown-menu {
@@ -168,9 +214,13 @@ a {
 
 /* Dropdown item hover effect */
 .dropdown-item:hover {
-  background-color: #00bbff;
+  background-color: #000080;
+  /* Yellow background on hover */
+  color: white;
+  background-color: #26358a;
   /* Yellow background on hover */
   color: black;
+  
   /* Black text on hover */
   cursor: pointer;
 }
@@ -203,9 +253,13 @@ a {
 }
 
 .dropdown-item:hover {
-  background-color: #00bbff !important;
+  background-color: #000080 !important;
+  /* Background color on hover */
+  color: white !important;
+  background-color: #26358a !important;
   /* Background color on hover */
   color: black !important;
+  
   /* Text color on hover */
   cursor: pointer;
 }
@@ -328,7 +382,7 @@ a {
     padding: 20px 0;
     margin: 0;
   }
-
+  
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -405,7 +459,8 @@ a {
   }
 
   .navbar-logo>img {
-    width: 150px; /* Adjust logo size for tablets */
+    width: 150px;
+    /* Adjust logo size for tablets */
     height: auto;
   }
 
@@ -418,40 +473,47 @@ a {
 
   .navbar-links>ul {
     flex-direction: row;
-    gap: 1.2rem; /* Adjust gap between menu items */
+    gap: 1.2rem;
+    /* Adjust gap between menu items */
     align-items: center;
   }
 
   .navbar-links>ul>li {
-    font-size: 13px; /* Adjust font size for readability */
+    font-size: 13px;
+    /* Adjust font size for readability */
     padding: 0 8px;
   }
 
   .donate-btn {
-    padding: 8px 20px; /* Slightly smaller padding for tablets */
+    padding: 8px 20px;
+    /* Slightly smaller padding for tablets */
     font-size: 14px;
     margin-left: 1rem;
     margin-right: 3rem;
   }
 
   .menu-icon {
-    display: none; /* Hide menu icon for tablets unless using a collapsible menu */
+    display: none;
+    /* Hide menu icon for tablets unless using a collapsible menu */
   }
 
   .navbar-dropdown-toggle {
-    font-size: 13px; /* Adjust font size for dropdown toggle */
+    font-size: 13px;
+    /* Adjust font size for dropdown toggle */
   }
 
   .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 200px; /* Adjust dropdown width for tablets */
+    width: 200px;
+    /* Adjust dropdown width for tablets */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
 
   .dropdown-item {
-    font-size: 12px; /* Slightly smaller font for dropdown items */
+    font-size: 12px;
+    /* Slightly smaller font for dropdown items */
     padding: 10px 15px;
   }
 
@@ -462,7 +524,8 @@ a {
 
   /* Additional styles for tablet-specific designs */
   .arrowdown-icon {
-    font-size: 1.2rem; /* Adjust arrow icon size */
+    font-size: 1.2rem;
+    /* Adjust arrow icon size */
   }
 }
 
