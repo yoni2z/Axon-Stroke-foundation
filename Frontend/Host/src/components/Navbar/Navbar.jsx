@@ -74,7 +74,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to="/about-us" onClick={closeMenu}>
-              ABOUT HOPE
+              ABOUT
             </Link>
           </li>
           <li>
@@ -82,7 +82,7 @@ export const Navbar = () => {
               WHAT WE DO
             </Link>
           </li>
-          <li className="navbar-dropdown">
+          {/* <li className="navbar-dropdown">
             <div
               className="navbar-dropdown-toggle"
               onClick={toggleDropdown}
@@ -142,7 +142,7 @@ export const Navbar = () => {
                 </li>
               </ul>
             )}
-          </li>
+          </li> */}
           <li>
             <Link to="/blogs" onClick={closeMenu}>
               BLOGS
