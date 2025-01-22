@@ -75,11 +75,28 @@ const WhatWeDoProjects = () => {
             </div>
           )}
           {id === "3" && (
-            <Cards
-              photo={VolunteerBg}
-              title="Stroke Education & Research Programs"
-              description="Our Stroke Education & Research Programs focus on advancing the knowledge of stroke, its prevention, and innovative treatments. We are committed to supporting research and spreading vital information to both the public and healthcare professionals."
-            />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-8 mx-auto">
+              <Cards
+                photo={VolunteerBg}
+                title="Stroke Prevention Research Grants"
+                description="A funding initiative to support local researchers conducting studies on stroke prevention methods and strategies specific to African populations. The aim is to develop region-specific guidelines and interventions."
+              />
+              <Cards
+                photo={VolunteerBg}
+                title="Healthcare Provider Training Workshops"
+                description="A program designed to train healthcare providers on the latest stroke care protocols, rehabilitation techniques, and the importance of early diagnosis. Workshops are offered in partnership with hospitals and medical institutions."
+              />
+              <Cards
+                photo={VolunteerBg}
+                title="Stroke Research Symposium"
+                description="An annual conference that brings together global and local experts to present the latest stroke research findings. The symposium aims to share knowledge, encourage collaboration, and highlight emerging treatment options."
+              />
+              <Cards
+                photo={VolunteerBg}
+                title="Public Stroke Education Platform"
+                description="An online platform that offers free resources such as webinars, articles, and courses on stroke prevention, treatment, and rehabilitation. The platform is designed for both the public and healthcare professionals to access vital stroke-related information."
+              />
+            </div>
           )}
         </div>
       </div>
