@@ -7,7 +7,7 @@ import VolunteerBg from "../assets/volunteer-title-bg.jpg";
 const WhatWeDo = () => {
   return (
     <div className="font-poppins">
-      <TitleBanner title="What We Do" backgroundImage={VolunteerBg} />
+      <TitleBanner title="WHAT WE DO" backgroundImage={VolunteerBg} />
 
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">

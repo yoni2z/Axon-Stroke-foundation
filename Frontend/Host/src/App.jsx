@@ -6,10 +6,8 @@ import { Trademark } from "./components/Trademark/Trademark";
 import { Footer } from "./components/Footer/Footer";
 import Blogs from "./pages/Blogs";
 import BlogsDetail from "./pages/BlogsDetail";
-import Gallery from "./pages/GalleryPage/Gallery";
-import About from "./pages/AboutPage/About";
-import VolunteerPage from "./pages/VolunteerPage";
-import FAQ from "./pages/FAQ";
+import Gallery from "./Pages/GalleryPage/Gallery";
+import About from "./Pages/AboutPage/About";
 import Causes from "./Pages/Causes";
 import CausesDetail from "./Pages/CausesDetail";
 import DonationPage from "./pages/DonationPage/DonationPage";
@@ -25,8 +23,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/volunteers" element={<VolunteerPage />} />
-          <Route path="faq" element={<FAQ />} />
           <Route path="causes" element={<Causes />} />
           <Route path="causes/:id" element={<CausesDetail />} />
           <Route path="blogs" element={<Blogs />} />
