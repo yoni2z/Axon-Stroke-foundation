@@ -4,7 +4,10 @@ const VolunteerForm = () => {
     console.log(e);
   };
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4 font-poppins">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-4 font-poppins w-3/4"
+    >
       <input type="text" placeholder="Name" />
       <input type="email" placeholder="Email" />
       <input type="text" placeholder="Subject" />
