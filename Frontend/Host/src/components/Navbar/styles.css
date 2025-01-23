@@ -85,6 +85,7 @@
   z-index: 0;
 }
 
+
 .navbar-links > ul > li:hover {
   color: #990000;
   z-index: 0;
@@ -93,6 +94,7 @@
   text-decoration: none;
   text-shadow: none;
 }
+
 
 .navbar-links > ul > li:hover {
   color: #26358a;
@@ -111,7 +113,7 @@ a {
 }
 
 .navbar-container a:hover {
-  color: #990000;
+  color: #cc1631;
   font-weight: bold;
 }
 
@@ -140,7 +142,7 @@ a {
 }
 
 .arrowdown-icon:hover {
-  color: #990000;
+  color: #cc1631;
 }
 
 .menu-icon {
@@ -166,7 +168,7 @@ a {
 }
 
 .navbar-dropdown-toggle:hover {
-  color: #990000;
+  color: #cc1631;
 }
 
 /* Dropdown menu container */
@@ -208,7 +210,7 @@ a {
   background-color: #000080;
   /* Yellow background on hover */
   color: white;
-  background-color: #26358a;
+  background-color: #cc1631;
   /* Yellow background on hover */
   color: black;
 
@@ -247,7 +249,7 @@ a {
   background-color: #000080 !important;
   /* Background color on hover */
   color: white !important;
-  background-color: #26358a !important;
+  background-color: #cc1631 !important;
   /* Background color on hover */
   color: black !important;
 
