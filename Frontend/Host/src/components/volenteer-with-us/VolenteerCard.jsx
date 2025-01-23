@@ -6,7 +6,7 @@ import BecomeVolunteerBg from "../../assets/become-a-volunteer-bg.png";
 const VolenteerCard = () => {
   return (
     <div
-      className="w-full h-[64vh]  flex items-center justify-center bg-cover bg-center relative bg-[#ffd012] "
+      className="w-full h-[64vh]  flex items-center justify-center bg-cover bg-center relative bg-customBlue "
       style={{
         backgroundImage: `url(${BecomeVolunteerBg})`,
         flexDirection: "column",
@@ -31,7 +31,7 @@ const VolenteerCard = () => {
         }}
       >
         <button
-          className="relative z-10 text-black text-center text-[1.1rem] font-black tracking-tight leading-snug bg-white hover:bg-black hover:text-white transition-all duration-300 ease-in-out"
+          className="relative z-10 text-black text-center text-[1.1rem] font-black tracking-tight leading-snug bg-white hover:bg-customRed hover:text-white transition-all duration-300 ease-in-out"
           style={{
             padding: "15px 38px",
             fontWeight: "700",
