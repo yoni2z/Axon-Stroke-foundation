@@ -150,12 +150,17 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to="/causes" onClick={closeMenu}>
-              CAUSES
+              RESOURCES
             </Link>
           </li>
           <li>
             <Link to="/contacts" onClick={closeMenu}>
               CONTACT
+            </Link>
+          </li>
+          <li>
+            <Link to="/getinvolved" onClick={closeMenu}>
+              GET INVOLVED
             </Link>
           </li>
         </ul>
