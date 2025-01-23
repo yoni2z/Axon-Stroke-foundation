@@ -90,7 +90,7 @@
 }
 
 .navbar-links>ul>li:hover {
-  color: #990000;
+  color: #cc1631;
   z-index: 0;
   cursor: pointer;
   font-weight: bold;
@@ -101,7 +101,7 @@
 }
 
 .navbar-links>ul>li:hover {
-  color: #26358a;
+  color: #cc1631;
   cursor: pointer;
   
 }
@@ -118,7 +118,7 @@ a {
 }
 
 .navbar-container a:hover {
-  color: #990000;
+  color: #cc1631;
   font-weight: bold;
 }
 
@@ -132,14 +132,14 @@ a {
   color: white;
   background-color: #000080;
   color: black;
-  background-color: #26358a;
+  background-color: #cc1631;
    transition: color 0.3s ease;
   margin-right: 5rem;
 }
 
 .donate-btn:hover {
   color: white !important;
-  background-color: #990000;
+  background-color: #cc1631;
    cursor: pointer;
 }
 
@@ -148,7 +148,7 @@ a {
 }
 
 .arrowdown-icon:hover {
-  color: #990000;
+  color: #cc1631;
 }
 
 .menu-icon {
@@ -174,7 +174,7 @@ a {
 }
 
 .navbar-dropdown-toggle:hover {
-  color: #990000;
+  color: #cc1631;
 }
 
 
@@ -217,7 +217,7 @@ a {
   background-color: #000080;
   /* Yellow background on hover */
   color: white;
-  background-color: #26358a;
+  background-color: #cc1631;
   /* Yellow background on hover */
   color: black;
   
@@ -256,7 +256,7 @@ a {
   background-color: #000080 !important;
   /* Background color on hover */
   color: white !important;
-  background-color: #26358a !important;
+  background-color: #cc1631 !important;
   /* Background color on hover */
   color: black !important;
   

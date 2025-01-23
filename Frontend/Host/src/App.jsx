@@ -8,6 +8,8 @@ import Blogs from "./pages/Blogs";
 import BlogsDetail from "./pages/BlogsDetail";
 import Gallery from "./Pages/GalleryPage/Gallery";
 import About from "./Pages/AboutPage/About";
+// import VolunteerPage from "./Pages/VolunteerPage";
+// import FAQ from "./pages/FAQ";
 import Causes from "./Pages/Causes";
 import CausesDetail from "./Pages/CausesDetail";
 import DonationPage from "./pages/DonationPage/DonationPage";
@@ -23,6 +25,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/volunteers" element={<VolunteerPage />} /> */}
+          {/* <Route path="faq" element={<FAQ />} /> */}
           <Route path="causes" element={<Causes />} />
           <Route path="causes/:id" element={<CausesDetail />} />
           <Route path="blogs" element={<Blogs />} />
