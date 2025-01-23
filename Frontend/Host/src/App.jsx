@@ -15,6 +15,7 @@ import Contacts from "./pages/Contacts";
 import WhatWeDo from "./Pages/WhatWeDo";
 import WhatWeDoProjects from "./Pages/WhatWeDoProjects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import GetInvolved from "./Pages/GetInvolved";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/whatwedo" element={<WhatWeDo />} />
+          <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/whatwedo/projects/:id" element={<WhatWeDoProjects />} />
         </Routes>
         <Footer />
