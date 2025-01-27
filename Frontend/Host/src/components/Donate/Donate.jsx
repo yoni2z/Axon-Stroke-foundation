@@ -16,9 +16,8 @@ export const Donate = () => {
           </span>
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Voluptatem adipisci ut provident laboriosam recusandae, <br />
-          rerum doloremque unde at officiis ea qui suscipit est
+          Your generosity can transform lives and bring hope to those in need. <br />
+          Every donation, big or small, makes a meaningful impact.
         </p>
         <div className="donations">
           <a href="">$10</a>

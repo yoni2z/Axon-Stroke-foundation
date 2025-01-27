@@ -10,7 +10,7 @@ import VolenteerCard from '../../components/volenteer-with-us/VolenteerCard';
 const About = () => {
   return (
     <>
-      <TitleBanner title={"ABOUT AXON STROKE FOUNDATION"} backgroundImage={AboutBg} />
+      <TitleBanner title={"ABOUT AXON"} backgroundImage={AboutBg} />
       <div className={style.about_container}>
         <div className={style.abt_topdiv}>
           <div className={style.abt_desc}>

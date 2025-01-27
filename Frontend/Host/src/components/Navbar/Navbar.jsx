@@ -99,7 +99,7 @@ export const Navbar = () => {
                     className="dropdown-item"
                     onClick={closeMenu}
                   >
-                    CAUSES
+                    RESOURCES
                   </Link>
                 </li>
                 {/* <li>
