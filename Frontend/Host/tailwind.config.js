@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        Lora: ["Lora"],
       },
       colors: {
         primary: "#cc1631",
