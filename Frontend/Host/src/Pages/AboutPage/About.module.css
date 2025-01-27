@@ -43,7 +43,7 @@
     line-height: 1;
 }
 .abt_desc h1 span{
-    color:#cc1631;
+    color:#cc1631 ;
 }
 .abt_bottomdiv{
     display: flex ;
@@ -62,7 +62,7 @@
     left: 50%;
     width:120px;
     height:120px;
-    background-color: #cc1631;
+    background-color: #26358a;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@
 .playIcon:hover {
     transform: scale(1.1);
     border: 8px solid white;
-    .playIcon i{
+    i {
         color: white;
     }
 }
@@ -97,9 +97,12 @@
 }
 
 .readMoreButton:hover {
-    color: #cc1631;
+    color: #26358a;
 }
 
 .readMoreButton .fas {
     margin-left: 8px;
+}
+.about_container span {
+    color:#26358a;
 }
