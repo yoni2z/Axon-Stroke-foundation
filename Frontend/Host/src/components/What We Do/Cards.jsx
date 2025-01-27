@@ -21,6 +21,9 @@ const Cards = ({ photo, title, description, id }) => {
         <NavLink
           to={`/whatwedo/projects/${id}`}
           className="text-button hover:text-black text-left mt-5 mb-3"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         >
           Continue Reading
         </NavLink>
