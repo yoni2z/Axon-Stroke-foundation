@@ -13,7 +13,7 @@ import About from "./Pages/AboutPage/About";
 import Causes from "./Pages/Causes";
 import CausesDetail from "./Pages/CausesDetail";
 import DonationPage from "./pages/DonationPage/DonationPage";
-import Contacts from "./pages/Contacts";
+import Contacts from "./Pages/Contacts";
 import WhatWeDo from "./Pages/WhatWeDo";
 import WhatWeDoProjects from "./Pages/WhatWeDoProjects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
