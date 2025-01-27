@@ -4,7 +4,8 @@ from .models import (
     Blog, Cause,
     Client,
     Volunteer,
-    BankAccount
+    BankAccount,
+    # Program, Project
 )
 
 class GallerySerializer(serializers.ModelSerializer):
@@ -36,3 +37,15 @@ class BankAccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = BankAccount
         fields = ['id', 'bank_name', 'account_number', 'created_at']
+
+# class ProjectSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = Project
+#         fields = ['id', 'title', 'description', 'color', 'image', 'video', 'latitude', 'longitude', 'total_budget']
+
+# class ProgramSerializer(serializers.ModelSerializer):
+#     projects = ProjectSerializer(many=True)
+
+#     class Meta:
+#         model = Program
+#         fields = ['id', 'name', 'color', 'description', 'projects']
