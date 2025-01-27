@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
 
 .hero-content {
   display: flex;
@@ -18,7 +18,7 @@
 .hero-title {
   font-size: 2.5rem;
   font-weight: bold;
-  font-family: 'Lora', sans-serif;
+  font-family: "Lora", sans-serif;
   margin-bottom: 10px;
   line-height: 1.2;
 }
@@ -27,7 +27,7 @@
   font-size: 1rem;
   /* font-weight: bold; */
   margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .hero-button {
@@ -40,7 +40,7 @@
   /* Add spacing between subtitle and buttons */
 }
 
-.hero-button>a {
+.hero-button > a {
   font-size: 1rem;
   font-weight: bold;
   padding: 12px 20px;
@@ -51,15 +51,16 @@
   transition: background-color 0.3s ease-in-out;
 }
 
-.hero-button>a:hover {
-  background-color: #cc1631 ;
+.hero-button > a:hover {
+  background-color: #cc1631;
 }
 
-.hero-button>a:nth-child(2) {
-  background-color: #cc1631 ;
+.hero-button > a:nth-child(2) {
+  background-color: #cc1631;
+  color: white;
 }
 
-.hero-button>a:nth-child(2):hover {
+.hero-button > a:nth-child(2):hover {
   background-color: black;
   color: white;
 }
@@ -91,7 +92,7 @@
     /* Center buttons horizontally within hero-content */
   }
 
-  .hero-button>a {
+  .hero-button > a {
     width: auto;
   }
 }
@@ -118,7 +119,7 @@
     font-size: 1.5rem;
   }
 
-  .hero-button>a {
+  .hero-button > a {
     padding: 15px 25px;
   }
 }
@@ -141,7 +142,7 @@
 
   .hero-title {
     font-size: 4rem;
-    font-family: 'Lora', sans-serif;
+    font-family: "Lora", sans-serif;
   }
 
   .hero-subtitle {
@@ -155,7 +156,7 @@
     align-self: start;
   }
 
-  .hero-button>a {
+  .hero-button > a {
     padding: 12px 38px;
   }
 }

@@ -45,7 +45,7 @@ const Hero = () => {
     >
       <div className="hero-content">
         <h1 className="hero-title fade-in-text">
-          AXON STROKE <br/> FOUNDATION
+          AXON STROKE <br /> FOUNDATION
         </h1>
         <p className="hero-subtitle fade-in-text">
           GIVE A HELPING HAND TO THOSE WHO NEED IT!
