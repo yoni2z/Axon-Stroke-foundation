@@ -12,30 +12,30 @@ export const Features = () => {
             Featured <span className="feature-span">Causes</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia
-            hitecto. <br /> Quas quia hitecto.
+            Join our featured cause to create lasting change and empower
+            communities in need.
           </p>
         </div>
         <div className="features-news">
           <FeaturesCard
             image={i1}
-            title={"Many different ways today to find"}
+            title={"Explore New Opportunities Today"}
             description={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident aut ipsum suscipit"
+              "Discover innovative ways to make a difference and create positive change in the world"
             }
           />
           <FeaturesCard
             image={i1}
-            title={"Many different ways today to find"}
+            title={"Find Your Path to Giving"}
             description={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident aut ipsum suscipit"
+              "Choose from various ways to contribute and support causes close to your heart."
             }
           />
           <FeaturesCard
             image={i1}
-            title={"Many different ways today to find"}
+            title={"Make a Difference, Your Way"}
             description={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga provident aut ipsum suscipit"
+              "From volunteering to donations, find personalized ways to impact lives meaningfully."
             }
           />
         </div>
