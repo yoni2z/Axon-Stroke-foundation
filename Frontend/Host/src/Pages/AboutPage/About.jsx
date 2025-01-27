@@ -10,7 +10,7 @@ import VolenteerCard from '../../components/volenteer-with-us/VolenteerCard';
 const About = () => {
   return (
     <>
-      <TitleBanner title={"About Hope"} backgroundImage={AboutBg} />
+      <TitleBanner title={"About Us"} backgroundImage={AboutBg} />
       <div className={style.about_container}>
         <div className={style.abt_topdiv}>
           <div className={style.abt_desc}>
