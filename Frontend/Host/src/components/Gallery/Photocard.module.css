@@ -3,6 +3,8 @@
     display: inline-block;
     overflow: hidden;
     border-radius: 4px;
+    width:370px;
+    height:361px;
 }
 
 .Curr_photo {
@@ -19,10 +21,16 @@
     width: 0;
     height: 0;
     background-color: #26358a;
+<<<<<<< HEAD
     opacity: 0;
     transition: top 0.4s ease, left 0.4s ease, width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
     /* Smooth animation for all properties */
     z-index: 1;
+=======
+    opacity: 0; 
+    transition: top 0.4s ease, left 0.4s ease, width 0.4s ease, height 0.4s ease, opacity 0.4s ease; /* Smooth animation for all properties */
+    z-index: 1; 
+>>>>>>> a293f7e83992d39e0b708d96155c57df4e94e589
     transform-origin: center;
 }
 
