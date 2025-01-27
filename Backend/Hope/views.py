@@ -6,7 +6,8 @@ from .models import (
     Blog, Cause,
     Client,
     Volunteer,
-    BankAccount
+    BankAccount,
+    Program, Project
 )
 
 from .serializer import (
@@ -15,7 +16,8 @@ from .serializer import (
     CauseSerializer,
     ClientSerializer,
     VolunteerSerializer,
-    BankAccountSerializer
+    BankAccountSerializer,
+    ProgramSerializer, ProjectSerializer
 )
 
 # Create your views here.
@@ -43,3 +45,11 @@ class VolunteerViewSet(viewsets.ModelViewSet):
 class BankAccountViewSet(viewsets.ModelViewSet):
     queryset = BankAccount.objects.all()
     serializer_class = BankAccountSerializer
+
+class ProjectViewSet(viewsets.ModelViewSet):
+    queryset = Project.objects.all()
+    serializer_class = ProjectSerializer
+
+class ProgramViewSet(viewsets.ModelViewSet):
+    queryset = Program.objects.all()
+    serializer_class = ProgramSerializer
