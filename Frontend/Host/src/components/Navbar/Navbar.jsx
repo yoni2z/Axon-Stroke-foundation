@@ -52,25 +52,10 @@ export const Navbar = () => {
       {/* Navbar Links */}
       <div className={`navbar-links ${menuOpen ? "show" : ""}`}>
         <ul className="links-only">
-          <li className="navbar-dropdown">
-            <div
-              className="navbar-dropdown-toggle"
-              onClick={toggleDropdown}
-              role="button"
-              tabIndex={0}
-              onKeyPress={(e) => e.key === "Enter" && toggleDropdown()}
-            >
-              HOME <IoIosArrowDown />
-            </div>
-            {dropdownOpen && (
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to="/" className="dropdown-item" onClick={closeMenu}>
-                    HOMELESS
-                  </Link>
-                </li>
-              </ul>
-            )}
+          <li>
+            <Link to="/" onClick={closeMenu}>
+              HOME
+            </Link>
           </li>
           <li>
             <Link to="/about-us" onClick={closeMenu}>
@@ -82,7 +67,7 @@ export const Navbar = () => {
               WHAT WE DO
             </Link>
           </li>
-          {/* <li className="navbar-dropdown">
+          <li className="navbar-dropdown">
             <div
               className="navbar-dropdown-toggle"
               onClick={toggleDropdown}
@@ -96,28 +81,28 @@ export const Navbar = () => {
               <ul className="dropdown-menu">
                 <li>
                   <Link
-                    to="/volunteers"
+                    to="/blogs"
                     className="dropdown-item"
                     onClick={closeMenu}
                   >
-                    VOLUNTEER
+                    BLOGS
                   </Link>
                 </li>
                 <li>
-                  <Link to="/faq" className="dropdown-item" onClick={closeMenu}>
-                    FAQ
+                  <Link to="/gallery" className="dropdown-item" onClick={closeMenu}>
+                    GALLERY
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/login"
+                    to="/causes"
                     className="dropdown-item"
                     onClick={closeMenu}
                   >
-                    LOGIN FORM
+                    CAUSES
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link
                     to="/registration"
                     className="dropdown-item"
@@ -139,23 +124,28 @@ export const Navbar = () => {
                   <Link to="/404" className="dropdown-item" onClick={closeMenu}>
                     404 PAGE
                   </Link>
-                </li>
+                </li> */}
               </ul>
             )}
-          </li> */}
-          <li>
+          </li>
+          {/* <li>
             <Link to="/blogs" onClick={closeMenu}>
               BLOGS
             </Link>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <Link to="/causes" onClick={closeMenu}>
-              CAUSES
+              RESOURCES
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/contacts" onClick={closeMenu}>
               CONTACT
+            </Link>
+          </li>
+          <li>
+            <Link to="/getinvolved" onClick={closeMenu}>
+              GET INVOLVED
             </Link>
           </li>
         </ul>
