@@ -125,15 +125,14 @@ a {
   text-align: justify;
   border-radius: 4px;
   color: white;
-  background-color: #000080;
-  background-color: #26358a;
+  background-color: #cc1631;
   transition: color 0.3s ease;
   margin-right: 5rem;
 }
 
 .donate-btn:hover {
   color: white !important;
-  background-color: #990000;
+  background-color: #26358a;
   cursor: pointer;
 }
 
