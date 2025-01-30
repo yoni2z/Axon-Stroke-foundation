@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;700&display=swap");
 
 .navbar-container {
-  background-color: transparent;
   transition: background-color 0.3s ease;
   width: 100%;
   height: 100px;
@@ -17,12 +16,22 @@
 }
 
 .navbar-container:hover {
-  background-color: black;
+  background-color: white;
+  color: #26358a !important;
 }
 
 /* When scrolled, change the background */
 .navbar-container.scrolled {
   background-color: white;
+  color: #26358a !important;
+}
+
+/* Ensure list items turn black when the navbar is hovered or scrolled */
+.navbar-container:hover .navbar-links>ul>li,
+.navbar-container:hover .navbar-dropdown-toggle,
+.navbar-container.scrolled .navbar-links>ul>li,
+.navbar-container.scrolled .navbar-dropdown-toggle {
+  color: #26358a !important;
 }
 
 .navbar-logo {
@@ -75,7 +84,7 @@
 
 .navbar-links > ul > li {
   font: 14px "Poppins", sans-serif;
-  color: #26358a;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
   transform: translateZ(0);
@@ -87,7 +96,7 @@
 
 
 .navbar-links > ul > li:hover {
-  color: #990000;
+  color: black;
   z-index: 0;
   cursor: pointer;
   font-weight: bold;
@@ -113,7 +122,7 @@ a {
 }
 
 .navbar-container a:hover {
-  color: #cc1631;
+  color: black;
   font-weight: bold;
 }
 
@@ -141,7 +150,7 @@ a {
 }
 
 .arrowdown-icon:hover {
-  color: #cc1631;
+  color: black;
 }
 
 .menu-icon {
@@ -157,7 +166,7 @@ a {
 .navbar-dropdown-toggle {
   display: flex;
   align-items: center;
-  color: #26358a;
+  color: white;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
@@ -167,7 +176,7 @@ a {
 }
 
 .navbar-dropdown-toggle:hover {
-  color: #cc1631;
+  color: black;
 }
 
 /* Dropdown menu container */
@@ -209,11 +218,11 @@ a {
   background-color: #000080;
   /* Yellow background on hover */
   color: white;
-  background-color: #cc1631;
+  background-color: black;
   /* Yellow background on hover */
-  color: black;
+  color: white;
 
-  /* Black text on hover */
+  /* white text on hover */
   cursor: pointer;
 }
 
@@ -221,7 +230,7 @@ a {
 .dropdown-menu .dropdown-item:not(:hover) {
   background-color: white;
   /* Reset background for non-hovered items */
-  color: #949494;
+  color: #26358a;
   /* Default text color */
 }
 
@@ -248,9 +257,9 @@ a {
   background-color: #000080 !important;
   /* Background color on hover */
   color: white !important;
-  background-color: #cc1631 !important;
+  background-color: black !important;
   /* Background color on hover */
-  color: black !important;
+  color: white !important;
 
   /* Text color on hover */
   cursor: pointer;
