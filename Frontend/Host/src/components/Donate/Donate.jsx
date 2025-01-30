@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import i1 from "../../assets/Donate/1.jpg";
+import i1 from "../../assets/Donate/donation.jpg";
 
 export const Donate = () => {
   return (

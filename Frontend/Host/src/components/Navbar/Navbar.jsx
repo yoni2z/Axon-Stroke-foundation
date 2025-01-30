@@ -59,7 +59,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to="/about-us" onClick={closeMenu}>
-              ABOUT
+              WHO WE ARE
             </Link>
           </li>
           <li>
@@ -138,11 +138,6 @@ export const Navbar = () => {
               RESOURCES
             </Link>
           </li> */}
-          <li>
-            <Link to="/contacts" onClick={closeMenu}>
-              CONTACT
-            </Link>
-          </li>
           <li>
             <Link to="/getinvolved" onClick={closeMenu}>
               GET INVOLVED
