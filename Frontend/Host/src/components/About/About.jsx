@@ -16,11 +16,9 @@ export const About = () => {
             <span className="span1">What We Do</span>
           </h2>
           <p>
-            Since the very beginning Hope Joomla theme has been about <br />
-            one thing: improving the lives of others by any means. From design,{" "}
-            <br />
-            solutions and support, everything we do aims to help <br />
-            those who have limited resources.
+            From the very beginning, Axon Stroke Foundation has been dedicated<br />
+            to one mission: improving the lives of those affected by stroke <br />
+            through awareness, prevention, and recovery support.
           </p>
           <Link
             to="/about-us"
@@ -70,7 +68,9 @@ export const About = () => {
               <img src={i4} alt="" />
             </span>
             <h5>Become a Volunteer</h5>
-            <p>Lend skills, make <br /> difference, be positive force.</p>
+            <p>
+              Lend skills, make <br /> difference, be positive force.
+            </p>
           </div>
         </div>
       </div>

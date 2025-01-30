@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         Lora: ["Lora"],
+        Lato: ['Lato'],
       },
       colors: {
         primary: "#cc1631",
