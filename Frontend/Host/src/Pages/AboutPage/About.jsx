@@ -6,11 +6,12 @@ import AboutBg from "../../assets/about-title-bg.jpg";
 import About01 from "../../assets/about-01.jpg";
 import About02 from "../../assets/about-02.jpg";
 import VolenteerCard from '../../components/volenteer-with-us/VolenteerCard';
+import Contacts from '../Contacts';
 
 const About = () => {
   return (
     <>
-      <TitleBanner title={"ABOUT AXON"} backgroundImage={AboutBg} />
+      <TitleBanner title={"WHO WE ARE"} backgroundImage={AboutBg} />
       <div className={style.about_container}>
         <div className={style.abt_topdiv}>
           <div className={style.abt_desc}>
@@ -110,6 +111,7 @@ const About = () => {
       <div className={style}>
 
       </div>
+      <Contacts />
       <VolenteerCard />
     </>
   );

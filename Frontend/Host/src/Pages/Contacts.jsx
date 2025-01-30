@@ -6,7 +6,7 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 const Contacts = () => {
   return (
     <div className="font-poppins bg-[#F3F5F7]">
-      <TitleBanner title="CONTACTS" backgroundImage={CauseTitleBg} />
+      {/* <TitleBanner title="CONTACTS" backgroundImage={CauseTitleBg} /> */}
       <div className="bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Side: Contact Info */}
@@ -26,7 +26,7 @@ const Contacts = () => {
                   <span className="text-lg font-semibold text-gray-800">
                     Email
                   </span>
-                  <p className="text-gray-500">email@example.com</p>
+                  <p className="text-gray-500">info@axonstroke.org</p>
                 </div>
               </div>
 
@@ -37,7 +37,8 @@ const Contacts = () => {
                   <span className="text-lg font-semibold text-gray-800">
                     Phone
                   </span>
-                  <p className="text-gray-500">+123 456 789</p>
+                  <p className="text-gray-500">+251 974 78 88 88</p>
+                  <p className="text-gray-500">+251 940 15 56 06</p>
                 </div>
               </div>
 
@@ -49,7 +50,12 @@ const Contacts = () => {
                     Address
                   </span>
                   <p className="text-gray-500">
-                    123 Main Street, City, Country
+                    1st branch: Near to American Medical center inside the
+                    Sunshine Real-Estate Compound (Meri-Luki)
+                  </p>
+                  <p className="text-gray-500">
+                    2nd branch: 500 meters up the road from Wossen Grocery to
+                    Kara.
                   </p>
                 </div>
               </div>
@@ -85,7 +91,7 @@ const Contacts = () => {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-[#cc1631] text-white py-3 rounded-lg hover:bg-[#009ae6] transition duration-200"
+                className="w-full bg-[#cc1631] text-white py-3 rounded-lg hover:bg-[black] transition duration-200"
               >
                 Send Message
               </button>
