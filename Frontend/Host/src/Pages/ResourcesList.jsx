@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { NavLink, resolvePath } from "react-router-dom";
+import { NavLink, resolvePath, useParams, useNavigate } from "react-router-dom";
 import TitleBanner from "../components/TitleBanner";
-import CausesCard from "../components/Causes/CausesCard";
+import ResourcesCard from "../components/Causes/ResourcesCard";
 import CauseTitleBg from "../assets/cause-title-bg.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,22 +9,30 @@ import {
   faLongArrowLeft,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Causes = () => {
-  const [causes, setCauses] = useState([]);
+const ResourcesList = () => {
+  const [resourceList, setResourceList] = useState({
+    id: "",
+    name: "",
+    image: "",
+    color: "",
+    description: "",
+    resourceDetails: [],
+  });
   const [currentPage, setCurrentPage] = useState(1);
+  const { id } = useParams();
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/causes/")
+    fetch(`http://127.0.0.1:8000/api/resources/${id}`)
       .then((response) => response.json())
-      .then((data) => setCauses(data))
-      .catch((error) => console.log("error fetching causes ", error));
+      .then((data) => setResourceList(data))
+      .catch((error) => console.log("error fetching resources ", error));
   }, []);
 
-  const totalPages = Math.ceil(causes.length / itemsPerPage);
+  const totalPages = Math.ceil(resourceList.resourceDetails.length / itemsPerPage);
 
   // Get the items for the current page
-  const currentItems = causes.slice(
+  const currentItems = resourceList.resourceDetails.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -44,12 +52,12 @@ const Causes = () => {
       <TitleBanner title="RESOURCES" backgroundImage={CauseTitleBg} />
       <div className="py-[95px] sm:mx-10 mx-3">
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 mx-auto">
-          {currentItems.map((cause) => (
-            <NavLink to={`/causes/${cause.id}`} key={cause.id}>
-              <CausesCard
-                causesImage={cause.image}
-                Title={cause.title}
-                Description={cause.description}
+          {currentItems.map((list) => (
+            <NavLink to={`/resource-details/${list.id}`} key={list.id}>
+              <ResourcesCard
+                causesImage={list.image}
+                Title={list.title}
+                Description={list.description}
               />
             </NavLink>
           ))}
@@ -101,4 +109,4 @@ const Causes = () => {
   );
 };
 
-export default Causes;
+export default ResourcesList;
