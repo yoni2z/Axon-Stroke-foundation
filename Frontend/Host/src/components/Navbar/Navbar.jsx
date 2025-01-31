@@ -95,7 +95,7 @@ export const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    to="/causes"
+                    to="/resources"
                     className="dropdown-item"
                     onClick={closeMenu}
                   >
