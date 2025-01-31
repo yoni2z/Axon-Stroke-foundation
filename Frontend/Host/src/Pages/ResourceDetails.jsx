@@ -4,56 +4,61 @@ import CausesCard from "../components/Causes/CausesCard";
 import { useParams, useNavigate } from "react-router-dom";
 import CauseTitleBg from "../assets/cause-title-bg.jpg";
 
-const Causes = () => {
-  const [causes, setCauses] = useState([]);
+const ResourceDetails = () => {
+  const [resources, setResources] = useState({
+    id: "",
+    name: "",
+    image: "",
+    color: "",
+    description: "",
+    resourceDetails: [],
+  });
   const { id } = useParams();
   const navigate = useNavigate();
-  const [causeData, setCauseData] = useState(null);
+  const [resourceDetails, setResourceDetails] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/causes/")
+    fetch("http://127.0.0.1:8000/api/resources/")
       .then((response) => response.json())
-      .then((data) => setCauses(data))
-      .catch((error) => console.log("error fetching causes ", error));
+      .then((data) => setResources(data))
+      .catch((error) => console.log("error fetching resources ", error));
   }, []);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/causes/${id}`)
+    fetch(`http://127.0.0.1:8000/api/resource-details/${id}`)
       .then((response) => response.json())
-      .then((data) => setCauseData(data))
-      .catch((error) => console.log("error fetching the cause datas ", error));
+      .then((data) => setResourceDetails(data))
+      .catch((error) => console.log("error fetching the resource details", error));
   }, [id]);
 
-  if (!causeData) {
-    return <div>Cause not found</div>;
+  if (!resourceDetails) {
+    return <div>Resources not found</div>;
   }
 
   const handlePrev = () => {
     const prevId = parseInt(id) - 1;
     if (prevId >= 1) {
-      navigate(`/causes/${prevId}`);
+      navigate(`/resource-details/${prevId}`);
     }
   };
 
   const handleNext = () => {
     const nextId = parseInt(id) + 1;
-    if (nextId <= Object.keys(causes).length) {
-      navigate(`/causes/${nextId}`);
+    if (nextId <= Object.keys(resourceDetails).length) {
+      navigate(`/resource-details/${nextId}`);
     }
   };
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
-      <TitleBanner title="Causes" backgroundImage={CauseTitleBg} />
+      <TitleBanner title="Resources" backgroundImage={CauseTitleBg} />
       <div className="py-[95px] sm:mx-10 mx-3 flex flex-col items-center">
         <CausesCard
-          causesImage={causeData.image}
-          Title={causeData.title}
-          Description={causeData.description}
+          causesImage={resourceDetails.image}
+          Title={resourceDetails.title}
+          Description={resourceDetails.description}
           detailView={true}
           extraFields={{
-            author: causeData.creator,
-            date: causeData.date,
             buttons: [
               {
                 label: "Prev",
@@ -73,4 +78,4 @@ const Causes = () => {
   );
 };
 
-export default Causes;
+export default ResourceDetails;
