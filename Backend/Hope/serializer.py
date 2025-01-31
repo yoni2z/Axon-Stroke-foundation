@@ -5,7 +5,8 @@ from .models import (
     Client,
     Volunteer,
     BankAccount,
-    # Program, Project
+    Program, Project,
+    Resource, ResourceDetail
 )
 
 class GallerySerializer(serializers.ModelSerializer):
@@ -38,14 +39,26 @@ class BankAccountSerializer(serializers.ModelSerializer):
         model = BankAccount
         fields = ['id', 'bank_name', 'account_number', 'created_at']
 
-# class ProjectSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Project
-#         fields = ['id', 'title', 'description', 'color', 'image', 'video', 'latitude', 'longitude', 'total_budget']
+class ProjectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Project
+        fields = ['id', 'title', 'description', 'color', 'image', 'video']
 
-# class ProgramSerializer(serializers.ModelSerializer):
-#     projects = ProjectSerializer(many=True)
+class ProgramSerializer(serializers.ModelSerializer):
+    projects = ProjectSerializer(many=True)
 
-#     class Meta:
-#         model = Program
-#         fields = ['id', 'name', 'color', 'description', 'projects']
+    class Meta:
+        model = Program
+        fields = ['id', 'name', 'color', 'description', 'projects']
+
+class ResourceDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ResourceDetail
+        fields = ['id', 'title', 'description', 'color', 'image', 'video']
+
+class ResourceSerializer(serializers.ModelSerializer):
+    resourceDetails = ResourceDetailSerializer(many=True)
+
+    class Meta:
+        model = Resource
+        fields = ['id', 'name', 'image', 'color', 'description', 'resourceDetails']
