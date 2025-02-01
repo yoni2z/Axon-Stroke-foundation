@@ -27,9 +27,10 @@
 }
 
 /* Ensure list items turn black when the navbar is hovered or scrolled */
-.navbar-container:hover .navbar-links>ul>li,
+.navbar-container:hover .navbar-links > ul > li,
 .navbar-container:hover .navbar-dropdown-toggle,
-.navbar-container.scrolled .navbar-links>ul>li,
+.navbar-container .scrolled .menu-icon,
+.navbar-container.scrolled .navbar-links > ul > li,
 .navbar-container.scrolled .navbar-dropdown-toggle {
   color: #26358a !important;
 }
@@ -94,7 +95,6 @@
   z-index: 0;
 }
 
-
 .navbar-links > ul > li:hover {
   color: black;
   z-index: 0;
@@ -103,7 +103,6 @@
   text-decoration: none;
   text-shadow: none;
 }
-
 
 .navbar-links > ul > li:hover {
   color: #26358a;
@@ -344,7 +343,7 @@ a {
   .menu-icon {
     display: block;
     font-size: 1.8rem;
-    color: white;
+    color: #26358a;
     cursor: pointer;
     margin-right: 1rem;
     position: relative;
@@ -435,7 +434,7 @@ a {
   .menu-icon {
     display: block;
     font-size: 1.8rem;
-    color: white;
+    color: #26358a;
     cursor: pointer;
     margin-right: 1rem;
     position: relative;

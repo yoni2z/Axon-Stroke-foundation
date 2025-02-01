@@ -12,12 +12,14 @@ export const About = () => {
       <div className="about-us">
         <div className="about-us-text">
           <h2>
-            Story About <br className="mobile-hidden" />{" "}
+            About <br className="mobile-hidden" />{" "}
             <span className="span1">What We Do</span>
           </h2>
           <p>
-            From the very beginning, Axon Stroke Foundation has been dedicated<br />
-            to one mission: improving the lives of those affected by stroke <br />
+            From the very beginning, Axon Stroke Foundation has been dedicated
+            <br />
+            to one mission: improving the lives of those affected by stroke{" "}
+            <br />
             through awareness, prevention, and recovery support.
           </p>
           <Link
