@@ -12,7 +12,7 @@ const GetInvolved = () => {
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">
           <h1 className="text-5xl font-bold font-poppins mb-5 pb-5">
-            Ways to get <span className="text-primary">Involved</span>
+            WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
           <p className="text-secondary max-w-[80%] mx-auto">
             At Axon Stroke Foundation, we believe that everyone has a role to
@@ -31,7 +31,7 @@ const GetInvolved = () => {
           <div className="flex flex-col mx-10 justify-center items-center">
             <div className="mb-[77px] text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
-                Volunteer with <span className="text-primary">Us</span>
+                VOLUNTEER WITH <span className="text-primary">US</span>
               </h1>
               <p className="text-secondary max-w-[80%] mx-auto">
                 Your time and skills can make a significant impact on our
@@ -48,8 +48,8 @@ const GetInvolved = () => {
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
           <div className="mb-[77px] text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
-              Fundraise for{" "}
-              <span className="text-primary">Stroke Awareness and Care</span>
+              FUNDRAISE FOR{" "}
+              <span className="text-primary">STROKE AWARENESS AND CARE</span>
             </h1>
             <p className="text-secondary max-w-[80%] mx-auto">
               Organize a fundraising event in your community or online to
@@ -68,8 +68,8 @@ const GetInvolved = () => {
           <div className="flex flex-col mx-10 justify-center items-center">
             <div className="mb-[77px] text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
-                Donate to{" "}
-                <span className="text-primary">Support Stroke Programs</span>
+                DONATE TO{" "}
+                <span className="text-primary">SUPPORT STROKE PROGRAMS</span>
               </h1>
               <p className="text-secondary max-w-[80%] mx-auto">
                 Donations are vital to sustaining our programs. Your generous
@@ -88,7 +88,7 @@ const GetInvolved = () => {
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
           <div className="mb-[77px] text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
-              Become a <span className="text-primary">Corporate Partner</span>
+              BECOME A <span className="text-primary">CORPORATE PARTNER</span>
             </h1>
             <p className="text-secondary max-w-[80%] mx-auto">
               Corporations play a crucial role in making a difference. By
@@ -107,8 +107,8 @@ const GetInvolved = () => {
           <div className="flex flex-col mx-10 justify-center items-center">
             <div className="mb-[77px] text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
-                Advocate for{" "}
-                <span className="text-primary">Stroke Awareness</span>
+                ADVOCATE FOR{" "}
+                <span className="text-primary">STROKE AWARENESS</span>
               </h1>
               <p className="text-secondary max-w-[80%] mx-auto">
                 Help spread the word about stroke prevention and care in your
@@ -128,8 +128,8 @@ const GetInvolved = () => {
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
           <div className="mb-[77px] text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
-              Partner with Us for{" "}
-              <span className="text-primary">Research and Education</span>
+              PARTNER WITH US FOR{" "}
+              <span className="text-primary">RESEARCH AND EDUCATION</span>
             </h1>
             <p className="text-secondary max-w-[80%] mx-auto">
               Research and education are key to improving stroke outcomes. If
