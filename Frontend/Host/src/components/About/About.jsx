@@ -12,15 +12,19 @@ export const About = () => {
       <div className="about-us">
         <div className="about-us-text">
           <h2>
-            Story About <br className="mobile-hidden" />{" "}
+            About <br className="mobile-hidden" />{" "}
             <span className="span1">What We Do</span>
           </h2>
           <p>
-            Since the very beginning Hope Joomla theme has been about <br />
-            one thing: improving the lives of others by any means. From design,{" "}
+            We are a non-profit organization dedicated to <br /> raising
+            awareness about stroke,
             <br />
-            solutions and support, everything we do aims to help <br />
-            those who have limited resources.
+            providing essential therapeutic support, and <br /> improving stroke
+            care across Ethiopia and Africa., <br />
+            Our mission is to educate communities on stroke prevention, <br />
+            provide resources for recovery, and ensure <br /> that stroke
+            survivors have access to <br />
+            the therapies and surgeries they need.
           </p>
           <Link
             to="/about-us"
