@@ -125,7 +125,7 @@ const WhatWeDoProjects = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-8">
+        <div className="flex flex-col sm:grid sm:grid-cols-3 lg:grid-cols-3 gap-8 gap-y-8">
           {selectedProjects.map((project, index) => (
             <Cards
               key={index}

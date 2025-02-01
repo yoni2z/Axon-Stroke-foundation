@@ -49,7 +49,7 @@ const WhatWeDo = () => {
         </div>
 
         {/* Render What We Do Cards */}
-        <div className="grid grid-cols-3 gap-8 mx-auto">
+        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 mx-auto">
           {WhatWeDoData.map((card) => (
             <Cards
               key={card.id}
