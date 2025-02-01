@@ -16,6 +16,7 @@ export const About = () => {
             <span className="span1">What We Do</span>
           </h2>
           <p>
+<<<<<<< HEAD
             We are a non-profit organization dedicated to <br /> raising
             awareness about stroke,
             <br />
@@ -25,6 +26,11 @@ export const About = () => {
             provide resources for recovery, and ensure <br /> that stroke
             survivors have access to <br />
             the therapies and surgeries they need.
+=======
+            From the very beginning, Axon Stroke Foundation has been dedicated<br />
+            to one mission: improving the lives of those affected by stroke <br />
+            through awareness, prevention, and recovery support.
+>>>>>>> ed879111ac874b6b1346e2fae3f7b47c40d4d903
           </p>
           <Link
             to="/about-us"
@@ -44,8 +50,8 @@ export const About = () => {
             </span>
             <h5>Leave a Legacy</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
+              Create lasting impact, transform <br />
+              lives, inspire change.
             </p>
           </div>
           <div className="block2">
@@ -54,9 +60,8 @@ export const About = () => {
             </span>
             <h5>Become a Fundraiser</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
-              Itaque
+              Raise funds, empower communities, <br /> inspire collective
+              support.
             </p>
           </div>
         </div>
@@ -67,9 +72,7 @@ export const About = () => {
             </span>
             <h5>Make a Donation</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
-              Itaque
+              Support projects, create brighter <br /> futures, drive change.
             </p>
           </div>
           <div className="block4">
@@ -78,9 +81,7 @@ export const About = () => {
             </span>
             <h5>Become a Volunteer</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
-              Itaque
+              Lend skills, make <br /> difference, be positive force.
             </p>
           </div>
         </div>
