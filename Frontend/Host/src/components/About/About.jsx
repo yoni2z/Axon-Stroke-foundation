@@ -16,21 +16,11 @@ export const About = () => {
             <span className="span1">What We Do</span>
           </h2>
           <p>
-<<<<<<< HEAD
-            We are a non-profit organization dedicated to <br /> raising
-            awareness about stroke,
+            From the very beginning, Axon Stroke Foundation has been dedicated
             <br />
-            providing essential therapeutic support, and <br /> improving stroke
-            care across Ethiopia and Africa., <br />
-            Our mission is to educate communities on stroke prevention, <br />
-            provide resources for recovery, and ensure <br /> that stroke
-            survivors have access to <br />
-            the therapies and surgeries they need.
-=======
-            From the very beginning, Axon Stroke Foundation has been dedicated<br />
-            to one mission: improving the lives of those affected by stroke <br />
+            to one mission: improving the lives of those affected by stroke{" "}
+            <br />
             through awareness, prevention, and recovery support.
->>>>>>> ed879111ac874b6b1346e2fae3f7b47c40d4d903
           </p>
           <Link
             to="/about-us"
