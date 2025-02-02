@@ -49,7 +49,7 @@ class ProgramSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Program
-        fields = ['id', 'name', 'color', 'description', 'projects']
+        fields = ['id', 'name', 'color', 'photo', 'description', 'projects']
 
 class ResourceDetailSerializer(serializers.ModelSerializer):
     class Meta:

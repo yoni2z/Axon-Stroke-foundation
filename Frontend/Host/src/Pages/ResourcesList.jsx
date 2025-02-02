@@ -50,7 +50,16 @@ const ResourcesList = () => {
   return (
     <div className="font-poppins bg-[#F3F5F7]">
       <TitleBanner title="RESOURCES" backgroundImage={CauseTitleBg} />
+
       <div className="py-[95px] sm:mx-10 mx-3">
+        <div className="mb-[77px] text-center">
+          <h3 className="text-4xl font-bold font-poppins mb-5">
+            <span className="text-customRed">
+              {resourceList.name.toUpperCase()}
+            </span>
+          </h3>
+        </div>
+
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 mx-auto">
           {currentItems.map((list) => (
             <NavLink to={`/resource-details/${list.id}`} key={list.id}>
