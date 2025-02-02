@@ -1,6 +1,6 @@
 import React from "react";
 import TitleBanner from "../components/TitleBanner";
-import Cards from "../components/What We Do/Cards";
+import ProjectCard from "../components/What We Do/ProjectCard";
 import VolunteerBg from "../assets/volunteer-title-bg.jpg";
 import VolunteerBg2 from "../assets/blog2.png";
 import VolunteerBg3 from "../assets/blog1.png";
@@ -127,11 +127,13 @@ const WhatWeDoProjects = () => {
 
         <div className="flex flex-col sm:grid sm:grid-cols-3 lg:grid-cols-3 gap-8 gap-y-8">
           {selectedProjects.map((project, index) => (
-            <Cards
+            <ProjectCard
               key={index}
               photo={project.photo}
               title={project.title}
               description={project.description}
+              id={id}
+              index={index}
             />
           ))}
         </div>
