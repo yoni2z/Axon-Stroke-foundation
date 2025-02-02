@@ -497,11 +497,6 @@ a {
     /* Hide menu icon for tablets unless using a collapsible menu */
   }
 
-  .navbar-dropdown-toggle {
-    font-size: 13px;
-    /* Adjust font size for dropdown toggle */
-  }
-
   .dropdown-menu {
     position: absolute;
     top: 100%;
