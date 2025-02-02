@@ -51,7 +51,7 @@
   font: 14px "Poppins", sans-serif;
   margin: 0 0 10px;
 }
-.card-container-texts>a:last-of-type {
+.card-container-texts > a:last-of-type {
   color: #949494;
   margin: 20px 0 0;
   font: 16px "Poppins", sans-serif;
@@ -59,18 +59,16 @@
 }
 /* Phones */
 @media only screen and (max-width: 479px) {
-     .card-container{
-      width: 80vw;
-      margin-top: 20px;
-      height: 72vh;
-     }
+  .card-container {
+    width: 80vw;
+    margin-right: 0;
+    margin-top: 20px;
+    height: 72vh;
+  }
 }
 /* Tablets */
-@media only screen and 
-(max-width: 767px) {
-     
+@media only screen and (max-width: 767px) {
 }
 /* Large Screen */
 @media only screen and (min-width: 768px) {
-     
 }
