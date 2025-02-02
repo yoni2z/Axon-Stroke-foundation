@@ -14,7 +14,7 @@ const CausesCard = ({
       />
       {/* Title and Description */}
       <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full">
-        {detailView && <h1 className="text-primary text-base">RESOURCES</h1>}
+        {detailView && <h1 className="text-primary text-base">Projects</h1>}
         <h1
           className={`font-bold text-2xl  ${
             detailView ? "hover:text-black" : "hover:text-primary"

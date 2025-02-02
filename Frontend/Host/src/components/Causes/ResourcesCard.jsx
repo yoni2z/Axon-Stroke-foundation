@@ -13,57 +13,38 @@ const ResourcesCard = ({
   extraFields = {},
 }) => {
   return (
-    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-full">
+    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-[550px] min-h-[550px]">
+      {/* Image */}
       <img
         src={causesImage}
         alt="volunteer Image"
-        className="w-full bg-cover min-h-[250px] hover:scale-105 duration-500"
+        className="w-full h-[250px] object-cover hover:scale-105 duration-500"
       />
+
       {/* Title and Description */}
-      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full">
+      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full flex-grow">
         {detailView && <h1 className="text-primary text-base">Resources</h1>}
+
         <h1
-          className={`font-bold text-2xl  ${
+          className={`font-bold text-2xl ${
             detailView ? "hover:text-black" : "hover:text-primary"
-          } mb-6 mt-2`}
+          } mb-4 mt-2`}
         >
           {Title}
         </h1>
-        {detailView && (
-          <div className="mb-5">
-            {extraFields && (
-              <div className="flex flex-row flex-wrap">
-                <p className="text-secondary pr-3">{extraFields.author}</p>
-                <p className="text-secondary pr-3">
-                  <FontAwesomeIcon icon={faClock} className="mr-2" />
-                  {extraFields.date}
-                </p>
-                <p className="text-secondary pr-3">
-                  <FontAwesomeIcon icon={faEye} className="mr-2" />
-                  Hits: 3080
-                </p>
-                <p className="text-secondary pr-3 flex items-center gap-2">
-                  Share: <FaFacebookF className="w-4 h-4 hover:text-primary" />
-                  <FaXTwitter className="w-4 h-4 hover:text-primary" />
-                  <FaInstagram className="w-4 h-4 hover:text-primary" />
-                </p>
-              </div>
-            )}
-          </div>
-        )}
-        <h4 className="text-secondary mb-3">{Description}</h4>
+        
+        <h4 className="text-secondary mb-3 flex-grow">{Description}</h4>
+
         {/* Continue Reading Link */}
         {!detailView && (
-          <a
-            href="#"
-            className="text-primary hover:text-black text-left mt-auto mb-3"
-          >
+          <a href="#" className="text-primary hover:text-black mt-auto">
             Read More
           </a>
         )}
+
         {/* Additional Content for Detailed View */}
         {detailView && (
-          <div className="mt-12 flex justify-between w-full">
+          <div className="mt-auto flex justify-between w-full">
             {extraFields.buttons?.map((button, index) => (
               <button
                 key={index}

@@ -124,6 +124,7 @@ class BankAccount(models.Model):
 
 class Program(models.Model):
     name = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to="program_images/", blank=True, null=True)
     description = models.TextField()
     color = models.CharField(max_length=7, default="#cc1631")
 

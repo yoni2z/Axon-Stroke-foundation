@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import TitleBanner from "../components/TitleBanner";
 import CausesCard from "../components/Causes/CausesCard";
@@ -94,29 +95,41 @@ const ProjectDetails = () => {
     ],
   };
 
-  const { id, projectIndex } = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
+  const [projects, setProjects] = useState([]);
+  const [project, setProject] = useState([]);
 
-  const categoryId = parseInt(id);
-  const index = parseInt(projectIndex);
-  const projects = projectsData[categoryId];
+  useEffect(() => {
+    fetch(`http://127.0.0.1:8000/api/projects/`)
+      .then((response) => response.json())
+      .then((data) => setProjects(data))
+      .catch((error) => console.log("error fetching programs ", error));
+  }, []);
 
-  if (!projects || !projects[index]) {
+  useEffect(() => {
+    fetch(`http://127.0.0.1:8000/api/projects/${id}`)
+      .then((response) => response.json())
+      .then((data) => setProject(data))
+      .catch((error) => console.log("error fetching programs ", error));
+  }, [id]);
+
+  if (!project) {
     return <div className="text-center text-xl mt-20">Project Not Found</div>;
   }
 
-  const project = projects[index];
-
   // Navigation Handlers
   const handlePrev = () => {
-    if (index > 0) {
-      navigate(`/whatwedo/projects/details/${categoryId}/${index - 1}`);
+    const prevId = parseInt(id) - 1;
+    if (prevId >= 1) {
+      navigate(`/whatwedo/projects/details/${prevId}`);
     }
   };
 
   const handleNext = () => {
-    if (index < projects.length - 1) {
-      navigate(`/whatwedo/projects/details/${categoryId}/${index + 1}`);
+    const nextId = parseInt(id) + 1;
+    if (nextId < projects.length - 1) {
+      navigate(`/whatwedo/projects/details/${nextId}`);
     }
   };
 
@@ -125,7 +138,7 @@ const ProjectDetails = () => {
       <TitleBanner title="PROJECT DETAILS" backgroundImage={CauseTitleBg} />
       <div className="py-[95px] sm:mx-10 mx-3 flex flex-col items-center">
         <CausesCard
-          causesImage={project.photo}
+          causesImage={project.image}
           Title={project.title}
           Description={project.description}
           detailView={true}
@@ -135,13 +148,13 @@ const ProjectDetails = () => {
                 label: "Prev",
                 style: "bg-button text-white hover:bg-black",
                 onClick: handlePrev,
-                disabled: index === 0,
+                // disabled: prevId === 0,
               },
               {
                 label: "Next",
                 style: "bg-button text-white hover:bg-black",
                 onClick: handleNext,
-                disabled: index === projects.length - 1,
+                // disabled: nextId === projects.length - 1,
               },
             ],
           }}
