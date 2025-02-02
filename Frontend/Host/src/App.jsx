@@ -19,7 +19,7 @@ import WhatWeDo from "./Pages/WhatWeDo";
 import WhatWeDoProjects from "./Pages/WhatWeDoProjects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GetInvolved from "./Pages/GetInvolved";
-
+import ProjectDetails from "./Pages/ProjectDetails";
 function App() {
   return (
     <>
@@ -41,6 +41,10 @@ function App() {
           <Route path="/whatwedo" element={<WhatWeDo />} />
           <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/whatwedo/projects/:id" element={<WhatWeDoProjects />} />
+          <Route
+            path="/whatwedo/projects/details/:id/:projectIndex"
+            element={<ProjectDetails />}
+          />
         </Routes>
         <Footer />
         <Trademark />
