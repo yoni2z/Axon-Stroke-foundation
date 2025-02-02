@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import TitleBanner from "../components/TitleBanner";
 //Components
 import Cards from "../components/What We Do/Cards";
@@ -7,29 +8,15 @@ import VolunteerBg2 from "../assets/blog2.png";
 import VolunteerBg3 from "../assets/blog1.png";
 
 const WhatWeDo = () => {
-  const WhatWeDoData = [
-    {
-      id: 1,
-      title: "Stroke Awareness Program",
-      description:
-        "Our Stroke Awareness Program aims to increase public knowledge about stroke prevention, symptoms, and the importance of early intervention.",
-      photo: VolunteerBg2,
-    },
-    {
-      id: 2,
-      title: "Stroke Therapy Program",
-      description:
-        "Our Free Stroke Therapy Programs provide essential rehabilitation services for stroke survivors, focusing on improving physical and cognitive recovery through therapy and support.",
-      photo: VolunteerBg2,
-    },
-    {
-      id: 3,
-      title: "Stroke Education & Research Program",
-      description:
-        "Our Stroke Education & Research Programs focus on advancing the knowledge of stroke, its prevention, and innovative treatments. We are committed to supporting research and spreading vital information to both the public and healthcare professionals.",
-      photo: VolunteerBg3,
-    },
-  ];
+  const [WhatWeDoData, setWhatWeDoData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/programs/")
+      .then((response) => response.json())
+      .then((data) => setWhatWeDoData(data))
+      .catch((error) => console.log("error fetching programs ", error));
+  }, []);
+
   return (
     <div className="font-poppins">
       <TitleBanner title="WHAT WE DO" backgroundImage={VolunteerBg1} />
@@ -54,7 +41,7 @@ const WhatWeDo = () => {
             <Cards
               key={card.id}
               photo={card.photo}
-              title={card.title}
+              title={card.name}
               description={card.description}
               id={card.id}
             />

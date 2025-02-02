@@ -12,7 +12,7 @@ import Contacts from "../Contacts";
 const About = () => {
   return (
     <>
-      <TitleBanner title={"WHO WE ARE"} backgroundImage={AboutBg} />
+      <TitleBanner title="WHO WE ARE" backgroundImage={AboutBg} />
 
       <div className={style.about_container}>
         <div className={style.abt_topdiv}>
