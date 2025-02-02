@@ -42,7 +42,7 @@ function App() {
           <Route path="/getinvolved" element={<GetInvolved />} />
           <Route path="/whatwedo/projects/:id" element={<WhatWeDoProjects />} />
           <Route
-            path="/whatwedo/projects/details/:id/:projectIndex"
+            path="/whatwedo/projects/details/:id"
             element={<ProjectDetails />}
           />
         </Routes>

@@ -3,6 +3,7 @@ import TitleBanner from "../components/TitleBanner";
 import CausesCard from "../components/Causes/CausesCard";
 import { useParams, useNavigate } from "react-router-dom";
 import CauseTitleBg from "../assets/cause-title-bg.jpg";
+import ResourcesCard from "../components/Causes/ResourcesCard";
 
 const ResourceDetails = () => {
   const [resources, setResources] = useState({
@@ -53,7 +54,7 @@ const ResourceDetails = () => {
     <div className="font-poppins bg-[#F3F5F7]">
       <TitleBanner title="Resources" backgroundImage={CauseTitleBg} />
       <div className="py-[95px] sm:mx-10 mx-3 flex flex-col items-center">
-        <CausesCard
+        <ResourcesCard
           causesImage={resourceDetails.image}
           Title={resourceDetails.title}
           Description={resourceDetails.description}
