@@ -13,14 +13,14 @@ const ResourcesCard = ({
   extraFields = {},
 }) => {
   return (
-    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl ">
+    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-full">
       <img
         src={causesImage}
         alt="volunteer Image"
-        className="w-full bg-cover h-auto hover:scale-105 duration-500"
+        className="w-full bg-cover min-h-[250px] hover:scale-105 duration-500"
       />
       {/* Title and Description */}
-      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12">
+      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full">
         {detailView && <h1 className="text-primary text-base">Resources</h1>}
         <h1
           className={`font-bold text-2xl  ${
@@ -33,9 +33,7 @@ const ResourcesCard = ({
           <div className="mb-5">
             {extraFields && (
               <div className="flex flex-row flex-wrap">
-                <p className="text-secondary pr-3">
-                  {extraFields.author}
-                </p>
+                <p className="text-secondary pr-3">{extraFields.author}</p>
                 <p className="text-secondary pr-3">
                   <FontAwesomeIcon icon={faClock} className="mr-2" />
                   {extraFields.date}
@@ -58,9 +56,9 @@ const ResourcesCard = ({
         {!detailView && (
           <a
             href="#"
-            className="text-primary hover:text-black text-left mt-5 mb-3"
+            className="text-primary hover:text-black text-left mt-auto mb-3"
           >
-            Continue Reading
+            Read More
           </a>
         )}
         {/* Additional Content for Detailed View */}

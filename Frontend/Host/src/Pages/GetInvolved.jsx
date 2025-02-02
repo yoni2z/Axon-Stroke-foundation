@@ -14,7 +14,7 @@ const GetInvolved = () => {
           <h1 className="text-5xl font-bold font-poppins mb-5 pb-5">
             WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
-          <p className="text-secondary max-w-[80%] mx-auto">
+          <p className="text-secondary max-w-[80%] mx-auto mb-6">
             At Axon Stroke Foundation, we believe that everyone has a role to
             play in improving stroke care and raising awareness. Whether you're
             an individual looking to contribute your time or resources, a
@@ -33,7 +33,7 @@ const GetInvolved = () => {
               <h1 className="text-4xl font-bold font-poppins mb-5">
                 VOLUNTEER WITH <span className="text-primary">US</span>
               </h1>
-              <p className="text-secondary max-w-[80%] mx-auto">
+              <p className="text-secondary max-w-[80%] mx-auto mb-6">
                 Your time and skills can make a significant impact on our
                 efforts. Volunteers help us run community workshops, assist in
                 events, provide administrative support, and contribute to our
@@ -51,7 +51,7 @@ const GetInvolved = () => {
               FUNDRAISE FOR{" "}
               <span className="text-primary">STROKE AWARENESS AND CARE</span>
             </h1>
-            <p className="text-secondary max-w-[80%] mx-auto">
+            <p className="text-secondary max-w-[80%] mx-auto mb-6">
               Organize a fundraising event in your community or online to
               support our programs. You can host charity walks, auctions, and
               more. Every penny raised will go toward supporting stroke
@@ -71,7 +71,7 @@ const GetInvolved = () => {
                 DONATE TO{" "}
                 <span className="text-primary">SUPPORT STROKE PROGRAMS</span>
               </h1>
-              <p className="text-secondary max-w-[80%] mx-auto">
+              <p className="text-secondary max-w-[80%] mx-auto mb-6">
                 Donations are vital to sustaining our programs. Your generous
                 contribution can help provide free stroke therapy, fund stroke
                 education, and support our research initiatives. You can donate
@@ -90,7 +90,7 @@ const GetInvolved = () => {
             <h1 className="text-4xl font-bold font-poppins mb-5">
               BECOME A <span className="text-primary">CORPORATE PARTNER</span>
             </h1>
-            <p className="text-secondary max-w-[80%] mx-auto">
+            <p className="text-secondary max-w-[80%] mx-auto mb-6">
               Corporations play a crucial role in making a difference. By
               partnering with Axon Stroke Foundation, businesses can sponsor
               events, provide in-kind donations, and collaborate on awareness
@@ -110,7 +110,7 @@ const GetInvolved = () => {
                 ADVOCATE FOR{" "}
                 <span className="text-primary">STROKE AWARENESS</span>
               </h1>
-              <p className="text-secondary max-w-[80%] mx-auto">
+              <p className="text-secondary max-w-[80%] mx-auto mb-6">
                 Help spread the word about stroke prevention and care in your
                 community. Whether through social media, word of mouth, or local
                 community groups, advocacy plays a huge role in increasing
@@ -131,7 +131,7 @@ const GetInvolved = () => {
               PARTNER WITH US FOR{" "}
               <span className="text-primary">RESEARCH AND EDUCATION</span>
             </h1>
-            <p className="text-secondary max-w-[80%] mx-auto">
+            <p className="text-secondary max-w-[80%] mx-auto mb-6">
               Research and education are key to improving stroke outcomes. If
               you represent an academic institution, research organization, or
               medical facility, we welcome collaborations that aim to advance
