@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const ProjectCard = ({ photo, title, description, id, index }) => {
+const ProjectCard = ({ photo, title, description, id }) => {
   return (
     <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl ">
       <img
@@ -19,7 +19,7 @@ const ProjectCard = ({ photo, title, description, id, index }) => {
 
         {/* Continue Reading Link */}
         <NavLink
-          to={`/whatwedo/projects/details/${id}/${index}`}
+          to={`/whatwedo/projects/details/${id}`}
           className="text-customRed hover:text-black text-left mt-auto mb-3"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
