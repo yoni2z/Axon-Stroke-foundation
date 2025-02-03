@@ -20,17 +20,22 @@ const VolunteerForm = () => {
       />
       <input
         type="text"
-        placeholder="Subject"
+        placeholder="Role"
+        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+      />
+      <input
+        type="tel"
+        placeholder="Phone Number"
         className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
       />
       <textarea
-        name="message"
+        name="description"
         id="message"
         cols="30"
         rows="10"
         className="text-gray-600 p-3 rounded-md shadow-sm"
       >
-        Message
+        Description
       </textarea>
       <button
         type="submit"
