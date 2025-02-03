@@ -16,8 +16,8 @@ export const About = () => {
             <span className="span1">What We Do</span>
           </h2>
           <p>
-            Since the very beginning Hope Joomla theme has been about <br />
-            one thing: improving the lives of others by any means. From design,{" "}
+          The Axon Stroke Foundation is a non-profit organization focused on stroke awareness, therapeutic support, and advancing education and research in Ethiopia and across Africa.  <br />
+          We are committed to improving access to stroke care and recovery through education, research, and collaboration with local and global partners.{" "}
             <br />
             solutions and support, everything we do aims to help <br />
             those who have limited resources.
