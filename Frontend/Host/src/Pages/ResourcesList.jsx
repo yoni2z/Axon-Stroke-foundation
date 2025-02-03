@@ -62,7 +62,13 @@ const ResourcesList = () => {
 
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 mx-auto">
           {currentItems.map((list) => (
-            <NavLink to={`/resource-details/${list.id}`} key={list.id}>
+            <NavLink
+              to={`/resource-details/${list.id}`}
+              key={list.id}
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               <ResourcesCard
                 causesImage={list.image}
                 Title={list.title}
