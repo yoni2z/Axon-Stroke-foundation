@@ -29,7 +29,7 @@ const GetInvolved = () => {
       <div>
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
-            <div className="mb-[77px] text-center">
+            <div className="text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
                 VOLUNTEER WITH <span className="text-primary">US</span>
               </h1>
@@ -46,7 +46,7 @@ const GetInvolved = () => {
         </div>
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
-          <div className="mb-[77px] text-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
               FUNDRAISE FOR{" "}
               <span className="text-primary">STROKE AWARENESS AND CARE</span>
@@ -66,7 +66,7 @@ const GetInvolved = () => {
 
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
-            <div className="mb-[77px] text-center">
+            <div className="text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
                 DONATE TO{" "}
                 <span className="text-primary">SUPPORT STROKE PROGRAMS</span>
@@ -86,7 +86,7 @@ const GetInvolved = () => {
         </div>
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
-          <div className="mb-[77px] text-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
               BECOME A <span className="text-primary">CORPORATE PARTNER</span>
             </h1>
@@ -105,7 +105,7 @@ const GetInvolved = () => {
 
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
-            <div className="mb-[77px] text-center">
+            <div className="text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
                 ADVOCATE FOR{" "}
                 <span className="text-primary">STROKE AWARENESS</span>
@@ -126,7 +126,7 @@ const GetInvolved = () => {
         </div>
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
-          <div className="mb-[77px] text-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
               PARTNER WITH US FOR{" "}
               <span className="text-primary">RESEARCH AND EDUCATION</span>

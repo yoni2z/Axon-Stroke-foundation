@@ -23,5 +23,5 @@ admin.site.register(Resource)
 admin.site.register(ResourceDetail)
 @admin.register(Volunteer)
 class VolunteerAdmin(admin.ModelAdmin):
-    list_display = ("name", "role", "email", "phone_number", "facebook_url", "twitter_url", "instagram_url")
-    search_fields = ("name", "role", "email", "phone_number", "facebook_username", "twitter_username", "instagram_username")
+    list_display = ("name", "role", "email", "phone_number")
+    search_fields = ("name", "role", "email", "phone_number")

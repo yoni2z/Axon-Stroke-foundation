@@ -1,3 +1,5 @@
+import React from "react";
+
 const VolunteerForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -8,11 +10,34 @@ const VolunteerForm = () => {
       onSubmit={handleSubmit}
       className="flex flex-col gap-4 font-poppins w-3/4"
     >
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <input type="text" placeholder="Subject" />
-      <textarea name="message" id="message" cols="30" rows="10">
-        Message
+      <input
+        type="text"
+        placeholder="Name"
+        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+      />
+      <input
+        type="email"
+        placeholder="Email"
+        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+      />
+      <input
+        type="text"
+        placeholder="Role"
+        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+      />
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+      />
+      <textarea
+        name="description"
+        id="message"
+        cols="30"
+        rows="10"
+        className="text-gray-600 p-3 rounded-md shadow-sm"
+      >
+        Description
       </textarea>
       <button
         type="submit"
