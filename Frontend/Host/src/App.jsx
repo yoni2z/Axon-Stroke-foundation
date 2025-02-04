@@ -20,6 +20,7 @@ import WhatWeDoProjects from "./Pages/WhatWeDoProjects";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GetInvolved from "./Pages/GetInvolved";
 import ProjectDetails from "./Pages/ProjectDetails";
+import ScrollToTopButton from "./components/ScrollToTop/ScrollToTop";
 function App() {
   return (
     <>
@@ -48,6 +49,7 @@ function App() {
         </Routes>
         <Footer />
         <Trademark />
+        <ScrollToTopButton />
       </Router>
     </>
   );

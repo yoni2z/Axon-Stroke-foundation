@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./styles.css";
 import { FeaturesCard } from "../Features-Card/Features-Card";
 import i1 from "../../assets/Features/6.jpeg";
@@ -26,6 +26,7 @@ export const Features = () => {
             description={
               "Discover innovative ways to make a difference and create positive change in the world"
             }
+            link={"/getinvolved"}
           />
           <FeaturesCard
             image={i2}
@@ -33,6 +34,7 @@ export const Features = () => {
             description={
               "Choose from various ways to contribute and support causes close to your heart."
             }
+            link={"/donate"}
           />
           <FeaturesCard
             image={i3}
@@ -40,6 +42,7 @@ export const Features = () => {
             description={
               "From volunteering to donations, find personalized ways to impact lives meaningfully."
             }
+            link={"/getinvolved"}
           />
         </div>
       </div>
