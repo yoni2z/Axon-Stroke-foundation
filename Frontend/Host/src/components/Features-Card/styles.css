@@ -1,6 +1,7 @@
 .card-container {
   width: 50%;
   height: 580px;
+  /* Ensure all cards have the same height */
   margin-right: 35px;
   border: 1px solid white;
   display: flex;
@@ -8,6 +9,8 @@
   background-color: white;
   box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  /* Prevent content from overflowing */
 }
 
 .card-container:hover {
@@ -16,11 +19,14 @@
   transform: translateY(-5px);
 }
 
-.card-container > img {
-  object-fit: contain;
+.card-container>img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  /* Set a fixed height to ensure uniformity */
+  object-fit: cover;
+  /* Ensures images maintain their aspect ratio and fill the space */
 }
+
 .card-container-texts {
   padding: 30px;
   display: flex;
@@ -28,16 +34,20 @@
   justify-content: flex-start;
   gap: 15px;
   flex-grow: 1;
+  /* Makes sure the text section takes up the remaining space */
 }
-.card-container-texts > h3 {
+
+.card-container-texts>h3 {
   margin: 0 0 17px;
 }
-.card-container-texts > a:last-of-type:hover,
-.card-container-texts > h3:hover {
+
+.card-container-texts>a:last-of-type:hover,
+.card-container-texts>h3:hover {
   color: #cc1631;
 }
-.card-container-texts > a,
-.card-container-texts > h3 {
+
+.card-container-texts>a,
+.card-container-texts>h3 {
   font: 20px "Poppins", sans-serif;
   font-weight: bold;
   color: black;
@@ -45,18 +55,21 @@
   display: flex;
   align-items: center;
 }
-.card-container-texts > p {
+
+.card-container-texts>p {
   color: #949494;
   line-height: 1.4;
   font: 14px "Poppins", sans-serif;
   margin: 0 0 10px;
 }
-.card-container-texts > a:last-of-type {
+
+.card-container-texts>a:last-of-type {
   color: #949494;
   margin: 20px 0 0;
   font: 16px "Poppins", sans-serif;
   align-self: flex-start;
 }
+
 /* Phones */
 @media only screen and (max-width: 479px) {
   .card-container {
@@ -65,10 +78,9 @@
     margin-top: 20px;
     height: 72vh;
   }
-}
-/* Tablets */
-@media only screen and (max-width: 767px) {
-}
-/* Large Screen */
-@media only screen and (min-width: 768px) {
+
+  .card-container>img {
+    height: 200px;
+    /* Adjust image height for smaller screens */
+  }
 }

@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles.css";
 import { FeaturesCard } from "../Features-Card/Features-Card";
-import i1 from "../../assets/Features/1.jpg";
+import i1 from "../../assets/Features/6.jpeg";
+import i2 from "../../assets/Features/4.jpg";
+import i3 from "../../assets/Features/5.png";
 
 export const Features = () => {
   return (
@@ -25,14 +28,14 @@ export const Features = () => {
             }
           />
           <FeaturesCard
-            image={i1}
+            image={i2}
             title={"Find Your Path to Giving"}
             description={
               "Choose from various ways to contribute and support causes close to your heart."
             }
           />
           <FeaturesCard
-            image={i1}
+            image={i3}
             title={"Make a Difference, Your Way"}
             description={
               "From volunteering to donations, find personalized ways to impact lives meaningfully."
