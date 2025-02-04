@@ -26,13 +26,18 @@
   color: #26358a !important;
 }
 
-/* Ensure list items turn black when the navbar is hovered or scrolled */
+/* Ensure list items turn #cc1631 when the navbar is hovered or scrolled */
 .navbar-container:hover .navbar-links > ul > li,
 .navbar-container:hover .navbar-dropdown-toggle,
 .navbar-container .scrolled .menu-icon,
 .navbar-container.scrolled .navbar-links > ul > li,
 .navbar-container.scrolled .navbar-dropdown-toggle {
   color: #26358a !important;
+}
+
+.navbar-container.scrolled .navbar-dropdown-toggle:hover,
+.navbar-container:hover .navbar-dropdown-toggle:hover {
+  color: #cc1631 !important;
 }
 
 .navbar-logo {
@@ -95,8 +100,9 @@
   z-index: 0;
 }
 
-.navbar-links > ul > li:hover {
-  color: black;
+.navbar-links > ul > li:hover,
+.navbar-links>ul> li > div:hover {
+  color: #cc1631;
   z-index: 0;
   cursor: pointer;
   font-weight: bold;
@@ -105,7 +111,7 @@
 }
 
 .navbar-links > ul > li:hover {
-  color: #26358a;
+  color: #cc1631;
   cursor: pointer;
 }
 
@@ -121,7 +127,7 @@ a {
 }
 
 .navbar-container a:hover {
-  color: black;
+  color: #cc1631;
   font-weight: bold;
 }
 
@@ -149,7 +155,7 @@ a {
 }
 
 .arrowdown-icon:hover {
-  color: black;
+  color: #cc1631;
 }
 
 .menu-icon {
@@ -175,7 +181,7 @@ a {
 }
 
 .navbar-dropdown-toggle:hover {
-  color: black;
+  color: #cc1631;
 }
 
 /* Dropdown menu container */
@@ -214,10 +220,7 @@ a {
 
 /* Dropdown item hover effect */
 .dropdown-item:hover {
-  background-color: #000080;
-  /* Yellow background on hover */
-  color: white;
-  background-color: black;
+  background-color: #cc1631;
   /* Yellow background on hover */
   color: white;
 
@@ -256,7 +259,7 @@ a {
   background-color: #000080 !important;
   /* Background color on hover */
   color: white !important;
-  background-color: black !important;
+  background-color: #cc1631 !important;
   /* Background color on hover */
   color: white !important;
 
