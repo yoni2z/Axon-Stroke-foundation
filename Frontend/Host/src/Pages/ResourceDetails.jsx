@@ -58,6 +58,7 @@ const ResourceDetails = () => {
           causesImage={resourceDetails.image}
           Title={resourceDetails.title}
           Description={resourceDetails.description}
+          Link={resourceDetails.link}
           detailView={true}
           extraFields={{
             buttons: [

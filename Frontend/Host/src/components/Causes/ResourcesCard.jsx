@@ -9,6 +9,7 @@ const ResourcesCard = ({
   causesImage,
   Title,
   Description,
+  Link,
   detailView = false,
   extraFields = {},
 }) => {
@@ -34,6 +35,14 @@ const ResourcesCard = ({
         </h1>
 
         <h4 className="text-secondary mb-3">{Description}</h4>
+        {Link && (
+          <a
+            href={Link}
+            className="text-primary font-semibold underline underline-offset-4 transition duration-300 hover:text-black self-center mt-4"
+          >
+            Learn More →
+          </a>
+        )}
 
         {/* Continue Reading Link */}
         {!detailView && (

@@ -54,7 +54,7 @@ class ProgramSerializer(serializers.ModelSerializer):
 class ResourceDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = ResourceDetail
-        fields = ['id', 'title', 'description', 'color', 'image', 'video']
+        fields = ['id', 'title', 'description', 'color', 'image', 'video', 'link']
 
 class ResourceSerializer(serializers.ModelSerializer):
     resourceDetails = ResourceDetailSerializer(many=True)

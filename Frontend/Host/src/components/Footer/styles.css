@@ -18,7 +18,7 @@
 }
 .hope-address > p {
   margin: 0 0 10px;
-  color: #949494;
+  color: white;
   font: 14px "Poppins", sans-serif;
   line-height: 1.5;
 }
@@ -28,11 +28,12 @@
 .follow > h3 {
   font: 16px "Poppins", sans-serif;
   margin: 0 0 22px;
+  color: #cc1631;
 }
 .aboutus > a,
 .help > a,
 .impact > a {
-  color: #949494;
+  color: white;
   font: 14px "Poppins", sans-serif;
   padding: 0;
   font-size: 14px;
