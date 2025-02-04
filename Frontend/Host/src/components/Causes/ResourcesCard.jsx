@@ -13,16 +13,16 @@ const ResourcesCard = ({
   extraFields = {},
 }) => {
   return (
-    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-[550px] min-h-[550px]">
+    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-full">
       {/* Image */}
       <img
         src={causesImage}
         alt="volunteer Image"
-        className="w-full h-[250px] object-cover hover:scale-105 duration-500"
+        className="w-full min-h-[250px] bg-cover object-cover hover:scale-105 duration-500"
       />
 
       {/* Title and Description */}
-      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full flex-grow">
+      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full">
         {detailView && <h1 className="text-primary text-base">Resources</h1>}
 
         <h1
@@ -32,8 +32,8 @@ const ResourcesCard = ({
         >
           {Title}
         </h1>
-        
-        <h4 className="text-secondary mb-3 flex-grow">{Description}</h4>
+
+        <h4 className="text-secondary mb-3">{Description}</h4>
 
         {/* Continue Reading Link */}
         {!detailView && (
