@@ -5,14 +5,15 @@ export default {
     extend: {
       fontFamily: {
         Lora: ["Lora"],
-        Lato: ['Lato'],
+        Lato: ["Lato"],
+        Nikea: ["Nikea"],
       },
       colors: {
         primary: "#cc1631",
         secondary: "#949494",
         background: "#F4F5F7",
-        customBlue: '#26358a',
-        customRed: '#cc1631',
+        customBlue: "#26358a",
+        customRed: "#cc1631",
         button: "#26358a",
       },
     },
