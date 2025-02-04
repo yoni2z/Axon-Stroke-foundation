@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  /* Remove underline from the Link */
+}
+
 .card-container {
-  width: 50%;
+  width: 25rem;
   height: 580px;
   /* Ensure all cards have the same height */
   margin-right: 35px;
@@ -48,7 +57,7 @@
 
 .card-container-texts>a,
 .card-container-texts>h3 {
-  font: 20px "Poppins", sans-serif;
+  font: 20px "Lora", sans-serif;
   font-weight: bold;
   color: black;
   line-height: 1;
@@ -59,14 +68,14 @@
 .card-container-texts>p {
   color: #949494;
   line-height: 1.4;
-  font: 14px "Poppins", sans-serif;
+  font: 14px "Montserrat", sans-serif;
   margin: 0 0 10px;
 }
 
 .card-container-texts>a:last-of-type {
   color: #949494;
   margin: 20px 0 0;
-  font: 16px "Poppins", sans-serif;
+  font: 16px "Monserrat", sans-serif;
   align-self: flex-start;
 }
 

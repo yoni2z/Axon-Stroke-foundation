@@ -3,7 +3,7 @@ import style from "./Gallery.module.css";
 import PhotoCard from "../../Components/Gallery/PhotoCard";
 import LightboxModal from "../../Components/Gallery/LightboxModal";
 import TitleBanner from "../../components/blog/TitleBanner";
-import VolenteerCard from "../../Components/volenteer-with-us/VolenteerCard";
+import VolenteerCard from "../../components/volenteer-with-us/VolenteerCard";
 import GalleryBg from "../../assets/gallery-title-bg.jpg";
 
 const Gallery = () => {
