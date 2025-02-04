@@ -111,6 +111,7 @@ class ResourceDetail(models.Model):
     color = models.CharField(max_length=7, default="#cc1631")
     image = models.ImageField(upload_to="resource_images/")
     video = models.FileField(upload_to="resource_videos/", blank=True, null=True)
+    link = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     def save(self, *args, **kwargs):
