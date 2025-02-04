@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Logo from "../../assets/Navbar/axon_logo.png";
-import AxonWhite from "../../assets/Navbar/axon_white.png";
+import AxonWhite from "../../assets/Navbar/axon_white1.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
@@ -11,6 +11,7 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
   const closeMenu = () => {
@@ -39,11 +40,24 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <div className={`navbar-container ${scrolled ? "scrolled" : ""}`}>
+    <div
+      className={`navbar-container ${scrolled ? "scrolled" : ""}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       {/* Logo Section */}
       <div className="navbar-logo">
         <a href="/" onClick={closeMenu}>
-          <img src={scrolled ? Logo : AxonWhite} alt="Hope Foundation" />
+          <img
+            src={scrolled || isHovered ? Logo : AxonWhite}
+            alt="Axon Foundation"
+            style={{
+              objectFit: "cover",
+              width: "220px",
+              height: "120px",
+              transform: scrolled || isHovered ? "scale(0.8)" : "scale(0.5)",
+            }}
+          />
         </a>
       </div>
       {/* Menu Icon */}
