@@ -35,20 +35,76 @@ export const Footer = () => {
         >
           Who We Are
         </Link>
-        <a href="">How We Work</a>
-        <a href="">Financial</a>
+        <Link
+          to="/about-us"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">How We Work</a>
+        </Link>
+        <Link
+          to="/about-us"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">Financial</a>
+        </Link>
       </div>
       <div className="help">
         <h3>YOUR HELP</h3>
-        <a href="">Leave a Legacy</a>
-        <a href="">Monthly Giving</a>
-        <a href="">One-Time Donation</a>
+        <Link
+          to="/getinvolved"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">Leave a Legacy</a>
+        </Link>
+        <Link
+          to="/donate"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">Monthly Giving</a>
+        </Link>
+        <Link
+          to="/donate"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">One-Time Donation</a>
+        </Link>
       </div>
       <div className="impact">
         <h3>OUR IMPACT</h3>
-        <a href="">Child Protection</a>
-        <a href="">Clean Water</a>
-        <a href="">Disaster Relief</a>
+        <Link
+          to="/whatwedo"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">Stroke Awareness</a>
+        </Link>
+        <Link
+          to="/whatwedo"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">Stroke Prevention</a>
+        </Link>
+        <Link
+          to="/whatwedo"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+        >
+          <a href="">Rehabilitation Support</a>
+        </Link>
       </div>
       <div className="follow">
         <h3>FOLLOW US</h3>
