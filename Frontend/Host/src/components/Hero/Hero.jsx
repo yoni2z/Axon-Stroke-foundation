@@ -9,8 +9,8 @@ const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const backgrounds = [
     { image: `url(${image1})`, className: "background-1" },
-    { image: `url(${image2})`, className: "background-2" },
-    { image: `url(${image3})`, className: "background-3" },
+    // { image: `url(${image2})`, className: "background-2" },
+    // { image: `url(${image3})`, className: "background-3" },
   ];
 
   useEffect(() => {
