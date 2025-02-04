@@ -12,9 +12,9 @@ const GetInvolved = () => {
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">
           <h1 className="text-5xl font-bold font-poppins mb-5 pb-5">
-            Ways to get <span className="text-primary">Involved</span>
+            WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
-          <p className="text-secondary max-w-[80%] mx-auto">
+          <p className="text-secondary max-w-[80%] mx-auto mb-6">
             At Axon Stroke Foundation, we believe that everyone has a role to
             play in improving stroke care and raising awareness. Whether you're
             an individual looking to contribute your time or resources, a
@@ -29,11 +29,11 @@ const GetInvolved = () => {
       <div>
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
-            <div className="mb-[77px] text-center">
+            <div className="text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
-                Volunteer with <span className="text-primary">Us</span>
+                VOLUNTEER WITH <span className="text-primary">US</span>
               </h1>
-              <p className="text-secondary max-w-[80%] mx-auto">
+              <p className="text-secondary max-w-[80%] mx-auto mb-6">
                 Your time and skills can make a significant impact on our
                 efforts. Volunteers help us run community workshops, assist in
                 events, provide administrative support, and contribute to our
@@ -46,12 +46,12 @@ const GetInvolved = () => {
         </div>
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
-          <div className="mb-[77px] text-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
-              Fundraise for{" "}
-              <span className="text-primary">Stroke Awareness and Care</span>
+              FUNDRAISE FOR{" "}
+              <span className="text-primary">STROKE AWARENESS AND CARE</span>
             </h1>
-            <p className="text-secondary max-w-[80%] mx-auto">
+            <p className="text-secondary max-w-[80%] mx-auto mb-6">
               Organize a fundraising event in your community or online to
               support our programs. You can host charity walks, auctions, and
               more. Every penny raised will go toward supporting stroke
@@ -66,12 +66,12 @@ const GetInvolved = () => {
 
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
-            <div className="mb-[77px] text-center">
+            <div className="text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
-                Donate to{" "}
-                <span className="text-primary">Support Stroke Programs</span>
+                DONATE TO{" "}
+                <span className="text-primary">SUPPORT STROKE PROGRAMS</span>
               </h1>
-              <p className="text-secondary max-w-[80%] mx-auto">
+              <p className="text-secondary max-w-[80%] mx-auto mb-6">
                 Donations are vital to sustaining our programs. Your generous
                 contribution can help provide free stroke therapy, fund stroke
                 education, and support our research initiatives. You can donate
@@ -86,11 +86,11 @@ const GetInvolved = () => {
         </div>
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
-          <div className="mb-[77px] text-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
-              Become a <span className="text-primary">Corporate Partner</span>
+              BECOME A <span className="text-primary">CORPORATE PARTNER</span>
             </h1>
-            <p className="text-secondary max-w-[80%] mx-auto">
+            <p className="text-secondary max-w-[80%] mx-auto mb-6">
               Corporations play a crucial role in making a difference. By
               partnering with Axon Stroke Foundation, businesses can sponsor
               events, provide in-kind donations, and collaborate on awareness
@@ -105,12 +105,12 @@ const GetInvolved = () => {
 
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
-            <div className="mb-[77px] text-center">
+            <div className="text-center">
               <h1 className="text-4xl font-bold font-poppins mb-5">
-                Advocate for{" "}
-                <span className="text-primary">Stroke Awareness</span>
+                ADVOCATE FOR{" "}
+                <span className="text-primary">STROKE AWARENESS</span>
               </h1>
-              <p className="text-secondary max-w-[80%] mx-auto">
+              <p className="text-secondary max-w-[80%] mx-auto mb-6">
                 Help spread the word about stroke prevention and care in your
                 community. Whether through social media, word of mouth, or local
                 community groups, advocacy plays a huge role in increasing
@@ -126,12 +126,12 @@ const GetInvolved = () => {
         </div>
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
-          <div className="mb-[77px] text-center">
+          <div className="text-center">
             <h1 className="text-4xl font-bold font-poppins mb-5">
-              Partner with Us for{" "}
-              <span className="text-primary">Research and Education</span>
+              PARTNER WITH US FOR{" "}
+              <span className="text-primary">RESEARCH AND EDUCATION</span>
             </h1>
-            <p className="text-secondary max-w-[80%] mx-auto">
+            <p className="text-secondary max-w-[80%] mx-auto mb-6">
               Research and education are key to improving stroke outcomes. If
               you represent an academic institution, research organization, or
               medical facility, we welcome collaborations that aim to advance

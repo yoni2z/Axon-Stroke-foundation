@@ -5,7 +5,9 @@ from .models import (
     Blog, Cause,
     Client,
     Volunteer,
-    BankAccount
+    BankAccount,
+    Program, Project,
+    Resource, ResourceDetail
 )
 
 # Register your models here.
@@ -15,6 +17,10 @@ admin.site.register(Blog)
 admin.site.register(Cause)
 admin.site.register(Client)
 admin.site.register(BankAccount)
+admin.site.register(Program)
+admin.site.register(Project)
+admin.site.register(Resource)
+admin.site.register(ResourceDetail)
 @admin.register(Volunteer)
 class VolunteerAdmin(admin.ModelAdmin):
     list_display = ("name", "role", "email", "phone_number", "facebook_url", "twitter_url", "instagram_url")

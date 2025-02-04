@@ -122,3 +122,56 @@ class BankAccount(models.Model):
     def __str__(self):
         return self.bank_name
 
+class Program(models.Model):
+    name = models.CharField(max_length=255)
+    photo = models.ImageField(upload_to="program_images/", blank=True, null=True)
+    description = models.TextField()
+    color = models.CharField(max_length=7, default="#cc1631")
+
+    def __str__(self):
+        return self.name
+
+class Project(models.Model):
+    program = models.ForeignKey(Program, on_delete=models.CASCADE, related_name="projects")
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    color = models.CharField(max_length=7, default="#cc1631")
+    image = models.ImageField(upload_to="project_images/")
+    video = models.FileField(upload_to="project_videos/", blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def save(self, *args, **kwargs):
+        # Set the color to the Program's color if it's still the default value
+        if self.color == "#cc1631":
+            self.color = self.program.color  # Get the color from the associated Program
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.title
+    
+class Resource(models.Model):
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+    image = models.ImageField(upload_to="resource/", null=True, blank=True)
+    color = models.CharField(max_length=7, default="#cc1631")
+
+    def __str__(self):
+        return self.name
+
+class ResourceDetail(models.Model):
+    resource = models.ForeignKey(Resource, on_delete=models.CASCADE, related_name="resourceDetails")
+    title = models.CharField(max_length=255)
+    description = models.TextField()
+    color = models.CharField(max_length=7, default="#cc1631")
+    image = models.ImageField(upload_to="resource_images/")
+    video = models.FileField(upload_to="resource_videos/", blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def save(self, *args, **kwargs):
+        # Set the color to the Program's color if it's still the default value
+        if self.color == "#cc1631":
+            self.color = self.resource.color  # Get the color from the associated Program
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.title

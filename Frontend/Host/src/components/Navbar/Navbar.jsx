@@ -59,7 +59,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link to="/about-us" onClick={closeMenu}>
-              ABOUT
+              WHO WE ARE
             </Link>
           </li>
           <li>
@@ -89,17 +89,21 @@ export const Navbar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gallery" className="dropdown-item" onClick={closeMenu}>
+                  <Link
+                    to="/gallery"
+                    className="dropdown-item"
+                    onClick={closeMenu}
+                  >
                     GALLERY
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/causes"
+                    to="/resources"
                     className="dropdown-item"
                     onClick={closeMenu}
                   >
-                    Resources
+                    RESOURCES
                   </Link>
                 </li>
                 {/* <li>
@@ -138,11 +142,6 @@ export const Navbar = () => {
               RESOURCES
             </Link>
           </li> */}
-          <li>
-            <Link to="/contacts" onClick={closeMenu}>
-              CONTACT
-            </Link>
-          </li>
           <li>
             <Link to="/getinvolved" onClick={closeMenu}>
               GET INVOLVED

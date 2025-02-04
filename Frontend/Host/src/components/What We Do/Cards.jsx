@@ -7,11 +7,11 @@ const Cards = ({ photo, title, description, id }) => {
       <img
         src={photo}
         alt="volunteer Image"
-        className="w-full bg-cover h-auto hover:scale-105 duration-500"
+        className="w-full bg-contain min-h-[250px] hover:scale-105 duration-500"
       />
 
       {/* Title and Description */}
-      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12">
+      <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full">
         <h1 className={"font-bold text-2xl hover:text-primary mb-6 mt-2"}>
           {title}
         </h1>
@@ -20,9 +20,12 @@ const Cards = ({ photo, title, description, id }) => {
         {/* Continue Reading Link */}
         <NavLink
           to={`/whatwedo/projects/${id}`}
-          className="text-button hover:text-black text-left mt-5 mb-3"
+          className="text-customRed hover:text-black text-left mt-auto mb-3"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
         >
-          Continue Reading
+          Read More
         </NavLink>
       </div>
     </div>

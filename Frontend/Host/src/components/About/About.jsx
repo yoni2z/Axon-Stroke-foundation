@@ -12,15 +12,15 @@ export const About = () => {
       <div className="about-us">
         <div className="about-us-text">
           <h2>
-            Story About <br className="mobile-hidden" />{" "}
+            About <br className="mobile-hidden" />{" "}
             <span className="span1">What We Do</span>
           </h2>
           <p>
-          The Axon Stroke Foundation is a non-profit organization focused on stroke awareness, therapeutic support, and advancing education and research in Ethiopia and across Africa.  <br />
-          We are committed to improving access to stroke care and recovery through education, research, and collaboration with local and global partners.{" "}
+            From the very beginning, Axon Stroke Foundation has been dedicated
             <br />
-            solutions and support, everything we do aims to help <br />
-            those who have limited resources.
+            to one mission: improving the lives of those affected by stroke{" "}
+            <br />
+            through awareness, prevention, and recovery support.
           </p>
           <Link
             to="/about-us"
@@ -40,8 +40,8 @@ export const About = () => {
             </span>
             <h5>Leave a Legacy</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
+              Create lasting impact, transform <br />
+              lives, inspire change.
             </p>
           </div>
           <div className="block2">
@@ -50,9 +50,8 @@ export const About = () => {
             </span>
             <h5>Become a Fundraiser</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
-              Itaque
+              Raise funds, empower communities, <br /> inspire collective
+              support.
             </p>
           </div>
         </div>
@@ -63,9 +62,7 @@ export const About = () => {
             </span>
             <h5>Make a Donation</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
-              Itaque
+              Support projects, create brighter <br /> futures, drive change.
             </p>
           </div>
           <div className="block4">
@@ -74,9 +71,7 @@ export const About = () => {
             </span>
             <h5>Become a Volunteer</h5>
             <p>
-              Lorem ipsum dolor sit amet <br />
-              consectetur adipisicing elit. <br />
-              Itaque
+              Lend skills, make <br /> difference, be positive force.
             </p>
           </div>
         </div>
