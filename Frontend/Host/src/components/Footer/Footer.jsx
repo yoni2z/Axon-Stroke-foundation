@@ -1,5 +1,5 @@
 import React from "react";
-import i1 from "../../assets/Footer/axonblack.png";
+import i1 from "../../assets/Footer/axonwhite.png";
 import "./styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,10 +17,11 @@ export const Footer = () => {
         <img src={i1} className="footer-axon" alt="Hope" />
         <div className="hope-address">
           <p>
-            212 Saint James Drive, <br />
-            Lancaster, Pennsylvania,
+            <strong>Netsanet Building, Fourth Floor</strong>
             <br />
-            17670
+            Opposite Century Mall <br />
+            Near the Train Pedestrian Crossway <br />
+            Addis Ababa, Ethiopia
           </p>
         </div>
       </div>
@@ -53,16 +54,16 @@ export const Footer = () => {
         <h3>FOLLOW US</h3>
         <div className="follow-social">
           <a href="">
-            <FontAwesomeIcon icon={faFacebook} color="#949494" />
+            <FontAwesomeIcon icon={faFacebook} color="white" />
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faTwitter} color="#949494" />
+            <FontAwesomeIcon icon={faTwitter} color="white" />
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faGooglePlus} color="#949494" />
+            <FontAwesomeIcon icon={faGooglePlus} color="white" />
           </a>
           <a href="">
-            <FontAwesomeIcon icon={faInstagram} color="#949494" />
+            <FontAwesomeIcon icon={faInstagram} color="white" />
           </a>
         </div>
       </div>
