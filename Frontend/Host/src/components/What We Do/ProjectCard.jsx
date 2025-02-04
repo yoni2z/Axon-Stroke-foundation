@@ -3,7 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const ProjectCard = ({ photo, title, description, id }) => {
   return (
-    <NavLink to={`/whatwedo/projects/details/${id}`}>
+    <NavLink
+      to={`/whatwedo/projects/details/${id}`}
+      onClick={() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+    >
       <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-full">
         <img
           src={photo}
