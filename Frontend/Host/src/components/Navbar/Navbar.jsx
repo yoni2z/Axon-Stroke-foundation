@@ -47,7 +47,7 @@ export const Navbar = () => {
       </div>
       {/* Menu Icon */}
       <div className="menu-icon" onClick={toggleMenu}>
-        {menuOpen ? <FaTimes /> : <GiHamburgerMenu color="white" />}
+        {menuOpen ? <FaTimes /> : <GiHamburgerMenu color="#cc1631" />}
       </div>
       {/* Navbar Links */}
       <div className={`navbar-links ${menuOpen ? "show" : ""}`}>

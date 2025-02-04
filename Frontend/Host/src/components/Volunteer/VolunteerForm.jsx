@@ -95,7 +95,7 @@ const VolunteerForm = () => {
         placeholder="Description"
         value={formData.self_description}
         onChange={handleChange}
-        className="text-gray-600 p-3 rounded-md shadow-sm h-20"
+        className="text-gray-600 p-3 rounded-md shadow-sm h-60"
       />
       <button
         type="submit"
