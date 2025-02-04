@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
 import Logo from "../../assets/Navbar/axon_logo.png";
+import AxonWhite from "../../assets/Navbar/axon_white.png";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
@@ -42,7 +43,7 @@ export const Navbar = () => {
       {/* Logo Section */}
       <div className="navbar-logo">
         <a href="/" onClick={closeMenu}>
-          <img src={Logo} alt="Hope Foundation" />
+          <img src={scrolled ? Logo : AxonWhite} alt="Hope Foundation" />
         </a>
       </div>
       {/* Menu Icon */}
