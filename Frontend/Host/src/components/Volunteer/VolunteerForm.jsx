@@ -61,7 +61,7 @@ const VolunteerForm = () => {
         placeholder="Name"
         value={formData.name}
         onChange={handleChange}
-        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+        className="text-gray-600 p-3 rounded-md shadow-sm"
         required
       />
       <input
@@ -70,7 +70,7 @@ const VolunteerForm = () => {
         placeholder="Role"
         value={formData.role}
         onChange={handleChange}
-        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+        className="text-gray-600 p-3 rounded-md shadow-sm"
         required
       />
       <input
@@ -79,7 +79,7 @@ const VolunteerForm = () => {
         placeholder="Email"
         value={formData.email}
         onChange={handleChange}
-        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+        className="text-gray-600 p-3 rounded-md shadow-sm"
       />
       <input
         type="tel"
@@ -87,7 +87,7 @@ const VolunteerForm = () => {
         placeholder="Phone Number"
         value={formData.phone_number}
         onChange={handleChange}
-        className="placeholder:text-gray-600 p-3 rounded-md shadow-sm"
+        className="text-gray-600 p-3 rounded-md shadow-sm"
         required
       />
       <textarea
