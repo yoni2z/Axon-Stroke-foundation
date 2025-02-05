@@ -111,12 +111,12 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[-20px] right-[10%] sm:w-[250px] rounded-md"
+            className="absolute w-[200px] h-auto top-[-90px] right-[50%] sm:w-[250px] rounded-md"
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[100px] left-[45%] sm:w-[250px] rounded-md"
+            className="absolute w-[200px] h-auto top-[100px] left-[60%] sm:w-[250px] rounded-md"
           />
         </div>
 
@@ -194,7 +194,7 @@ const GetInvolved = () => {
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
             <div className="text-start">
-              <h1 className="text-4xl font-bold font-Lora mb-5">
+              <h1 className="text-2xl font-bold font-Lora mb-5">
                 ADVOCATE FOR{" "}
                 <span className="text-primary">STROKE AWARENESS</span>
               </h1>
