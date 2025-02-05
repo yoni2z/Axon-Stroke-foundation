@@ -21,6 +21,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GetInvolved from "./Pages/GetInvolved";
 import ProjectDetails from "./Pages/ProjectDetails";
 import ScrollToTopButton from "./components/ScrollToTop/ScrollToTop";
+import VolunteerPage from "./Pages/VolunteerPage";
 function App() {
   return (
     <>
@@ -46,6 +47,7 @@ function App() {
             path="/whatwedo/projects/details/:id"
             element={<ProjectDetails />}
           />
+          <Route path="/volunteer" element={<VolunteerPage />} />
         </Routes>
         <Footer />
         <Trademark />
