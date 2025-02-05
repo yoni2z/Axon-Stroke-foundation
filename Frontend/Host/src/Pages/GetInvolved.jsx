@@ -11,7 +11,7 @@ const GetInvolved = () => {
 
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">
-          <h1 className="text-5xl font-bold font-poppins mb-5 pb-5">
+          <h1 className="text-5xl font-bold font-Lora mb-5 pb-5">
             WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
           <p className="text-secondary max-w-[80%] mx-auto mb-6">
