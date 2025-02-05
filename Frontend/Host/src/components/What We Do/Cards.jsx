@@ -9,7 +9,7 @@ const Cards = ({ photo, title, description, id }) => {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
     >
-      <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-full">
+      <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-Montserrat hover:shadow-2xl h-[85%]">
         <img
           src={photo}
           alt="volunteer Image"
