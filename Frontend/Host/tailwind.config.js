@@ -7,6 +7,7 @@ export default {
         Lora: ["Lora"],
         Lato: ["Lato"],
         Nikea: ["Nikea"],
+        Montserrat: ["Montserrat"],
       },
       colors: {
         primary: "#cc1631",

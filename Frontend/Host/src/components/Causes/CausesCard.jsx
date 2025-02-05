@@ -6,7 +6,7 @@ const CausesCard = ({
   extraFields = {},
 }) => {
   return (
-    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-poppins hover:shadow-2xl h-full">
+    <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-Montserrat hover:shadow-2xl h-full">
       <img
         src={causesImage}
         alt="volunteer Image"
