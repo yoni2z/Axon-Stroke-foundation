@@ -6,7 +6,8 @@ from .models import (
     Volunteer,
     BankAccount,
     Program, Project,
-    Resource, ResourceDetail
+    Resource, ResourceDetail,
+    BoardMember
 )
 
 class GallerySerializer(serializers.ModelSerializer):
@@ -62,3 +63,8 @@ class ResourceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Resource
         fields = ['id', 'name', 'image', 'color', 'description', 'resourceDetails']
+
+class BoardMemberSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BoardMember
+        fields = ['id', 'name', 'role', 'work', 'image']

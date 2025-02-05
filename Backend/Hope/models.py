@@ -122,3 +122,13 @@ class ResourceDetail(models.Model):
 
     def __str__(self):
         return self.title
+    
+class BoardMember(models.Model):
+    name = models.CharField(max_length=100)
+    role = models.CharField(max_length=100)
+    work = models.CharField(max_length=100, blank=True, null=True)
+    image = models.ImageField(upload_to="board_members/")
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
