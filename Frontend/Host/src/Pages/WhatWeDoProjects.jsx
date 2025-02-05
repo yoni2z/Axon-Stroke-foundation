@@ -33,7 +33,7 @@ const WhatWeDoProjects = () => {
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">
           <h3 className="text-4xl font-bold font-poppins mb-5">
-            <span className="text-customRed">
+            <span className="text-customRed font-Lora">
               {WhatWeDoData.name.toUpperCase()}
             </span>
           </h3>

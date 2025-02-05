@@ -13,7 +13,7 @@ const BlogsCard = ({
   extraFields = {},
 }) => {
   return (
-    <div className="flex flex-col bg-white shadow-md rounded-md w-full overflow-hidden font-poppins hover:shadow-2xl ">
+    <div className="flex flex-col bg-white shadow-md rounded-md w-full overflow-hidden font-Montserrat hover:shadow-2xl ">
       <img
         src={blogsImage}
         alt="volunteer Image"
@@ -23,7 +23,7 @@ const BlogsCard = ({
       <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12">
         <h1 className="text-primary text-base">Axon</h1>
         <h1
-          className={`font-bold text-2xl  ${
+          className={`font-bold text-2xl  font-Lora ${
             detailView ? "hover:text-black" : "hover:text-[#834098]"
           } mb-6 mt-2`}
         >
@@ -43,7 +43,8 @@ const BlogsCard = ({
                   Hits: 3080
                 </p>
                 <p className="text-secondary pr-3 flex items-center gap-2">
-                  Share: <FaFacebookF className="w-4 h-4 hover:text-[#834098]" />
+                  Share:{" "}
+                  <FaFacebookF className="w-4 h-4 hover:text-[#834098]" />
                   <FaXTwitter className="w-4 h-4 hover:text-[#834098]" />
                   <FaInstagram className="w-4 h-4 hover:text-[#834098]" />
                 </p>
