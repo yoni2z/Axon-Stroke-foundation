@@ -23,10 +23,10 @@ const WhatWeDo = () => {
 
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">
-          <h1 className="text-4xl font-bold font-poppins mb-5">
+          <h1 className="text-4xl font-bold font-poppins mb-5 font-Lora">
             OUR PROGRAMS & <span className="text-primary">PROJECTS</span>
           </h1>
-          <p className="text-secondary max-w-[80%] mx-auto">
+          <p className="text-secondary max-w-[80%] mx-auto font-Montserrat">
             At Axon Stroke Foundation, our work revolves around three core
             programs: Stroke Awareness, Free Stroke Therapy, and Stroke
             Education & Research. These programs form the foundation of our
