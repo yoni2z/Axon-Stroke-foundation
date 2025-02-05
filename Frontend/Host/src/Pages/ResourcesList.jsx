@@ -29,7 +29,9 @@ const ResourcesList = () => {
       .catch((error) => console.log("error fetching resources ", error));
   }, []);
 
-  const totalPages = Math.ceil(resourceList.resourceDetails.length / itemsPerPage);
+  const totalPages = Math.ceil(
+    resourceList.resourceDetails.length / itemsPerPage
+  );
 
   // Get the items for the current page
   const currentItems = resourceList.resourceDetails.slice(
@@ -54,7 +56,7 @@ const ResourcesList = () => {
       <div className="py-[95px] sm:mx-10 mx-3">
         <div className="mb-[77px] text-center">
           <h3 className="text-4xl font-bold font-poppins mb-5">
-            <span className="text-customRed">
+            <span className="text-customRed font-Lora">
               {resourceList.name.toUpperCase()}
             </span>
           </h3>
