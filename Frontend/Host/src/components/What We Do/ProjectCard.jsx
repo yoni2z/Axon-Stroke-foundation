@@ -16,7 +16,11 @@ const ProjectCard = ({ photo, title, description, id }) => {
           className="w-full bg-cover object-cover h-[250px] hover:scale-105 duration-500"
         />
         <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 flex-grow">
-          <h1 className={"font-bold text-2xl hover:text-primary mb-6 mt-2"}>
+          <h1
+            className={
+              "font-bold text-2xl hover:text-primary mb-6 mt-2 font-Lora"
+            }
+          >
             {title}
           </h1>
           <h4 className="text-secondary mb-8">{description}</h4>
