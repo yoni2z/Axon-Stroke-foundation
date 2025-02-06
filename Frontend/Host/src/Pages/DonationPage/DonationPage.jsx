@@ -24,21 +24,20 @@ const DonationPage = () => {
   }, []);
 
   return (
-    <div className="font-poppins bg-[#F3F5F7]">
+    <div className="font-Lora bg-[#F3F5F7]">
       <TitleBanner title="Donate" backgroundImage={CauseTitleBg} />
       <div className="min-h-screen bg-gray-100 flex flex-col justify-between">
         <div className="flex-grow flex justify-center items-center">
-          <div className="w-full max-w-lg bg-white rounded-lg shadow-md p-6">
-            <h1 className="text-3xl font-bold font-poppins mb-5">
-              Donate and Make a{" "}
-              <span className="text-[#cc1631]">Difference</span>
+          <div className="w-full max-w-2xl bg-white rounded-lg shadow-md p-6 text-center">
+            <h1 className="text-3xl font-bold font-Lora mb-5">
+              DONATE & MAKE A <span className="text-[#cc1631]">DIFFERENCE</span>
             </h1>
-            <p className="text-lg text-gray-600 mb-6 text-center max-w-md">
+            <p className="text-lg text-gray-600 mb-6 text-center max-w-xl mx-auto font-Montserrat">
               Your contribution helps us drive impactful change. Below are our
               bank details for donations.
             </p>
-            <h2 className="text-3xl font-bold font-poppins mb-5">
-              Bank Account <span className="text-[#cc1631]">Details</span>
+            <h2 className="text-3xl font-bold font-Lora mb-5">
+              BANK ACCOUNT <span className="text-[#cc1631]">DETAILS</span>
             </h2>
             <ul className="space-y-4">
               {bankAccounts.map((account, index) => (
@@ -46,11 +45,13 @@ const DonationPage = () => {
                   key={index}
                   className="p-4 border border-gray-200 rounded-lg hover:shadow-md hover:border-[#cc1631] transition"
                 >
-                  <p className="text-lg font-medium text-gray-800">
+                  <p className="text-lg font-medium text-gray-800 font-Montserrat">
                     {account.bank_name}
                   </p>
-                  <p className="text-gray-600">
-                    <span className="font-semibold">Account Number:</span>{" "}
+                  <p className="text-gray-600 font-Montserrat">
+                    <span className="font-semibold font-Montserrat">
+                      Account Number:
+                    </span>{" "}
                     {account.account_number}
                   </p>
                 </li>
