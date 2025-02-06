@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 .stats {
-  background: url("../../assets/Statistics/1.jpg");
+  background: url("../../assets/Statistics/2.jpg");
   width: 100%;
   height: auto;
   padding: 40px 0px;
@@ -21,6 +21,7 @@
 .stats-number {
   font: 60px 'Playfair Display', sans-serif;
   text-align: center;
+  font-weight: bold;
 }
 
 .stats-text {
@@ -28,6 +29,7 @@
   margin: 10px 0 0;
   text-align: center;
   color: white;
+  font-weight: bold;
 }
 @media only screen and (max-width: 767px) {
 }

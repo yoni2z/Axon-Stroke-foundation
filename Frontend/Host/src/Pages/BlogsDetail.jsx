@@ -30,18 +30,24 @@ const Blogs = () => {
   }
 
   const handlePrev = () => {
-    const prevId = parseInt(id) - 1;
-    if (prevId >= 1) {
-      navigate(`/blogs/${prevId}`);
+    const currentIndex = blogs.findIndex((blog) => blog.id === parseInt(id));
+
+    if (currentIndex > 0) {
+      const prevBlogId = blogs[currentIndex - 1].id; // Get the actual previous blog ID
+      navigate(`/blogs/${prevBlogId}`);
     }
   };
 
+
   const handleNext = () => {
-    const nextId = parseInt(id) + 1;
-    if (nextId <= Object.keys(blogs).length) {
-      navigate(`/blogs/${nextId}`);
+    const currentIndex = blogs.findIndex((blog) => blog.id === parseInt(id));
+
+    if (currentIndex !== -1 && currentIndex < blogs.length - 1) {
+      const nextBlogId = blogs[currentIndex + 1].id; // Get the actual next blog ID
+      navigate(`/blogs/${nextBlogId}`);
     }
   };
+
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
