@@ -5,6 +5,7 @@ const CausesCard = ({
   detailView = false,
   extraFields = {},
 }) => {
+
   return (
     <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-Montserrat hover:shadow-2xl h-full">
       <img

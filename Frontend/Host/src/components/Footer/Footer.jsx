@@ -41,7 +41,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">How We Work</a>
+          <a href="" style={{fontWeight: "normal"}}>How We Work</a>
         </Link>
         <Link
           to="/about-us"
@@ -49,7 +49,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">Financial</a>
+          <a href="" style={{fontWeight: "normal"}}>Financial</a>
         </Link>
       </div>
       <div className="help">
@@ -60,7 +60,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">Leave a Legacy</a>
+          <a href="" style={{fontWeight: "normal"}}>Leave a Legacy</a>
         </Link>
         <Link
           to="/donate"
@@ -68,7 +68,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">Monthly Giving</a>
+          <a href="" style={{fontWeight: "normal"}}>Monthly Giving</a>
         </Link>
         <Link
           to="/donate"
@@ -76,7 +76,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">One-Time Donation</a>
+          <a href="" style={{fontWeight: "normal"}}>One-Time Donation</a>
         </Link>
       </div>
       <div className="impact">
@@ -87,7 +87,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">Stroke Awareness</a>
+          <a href="" style={{fontWeight: "normal"}}>Stroke Awareness</a>
         </Link>
         <Link
           to="/whatwedo"
@@ -95,7 +95,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">Stroke Prevention</a>
+          <a href="" style={{fontWeight: "normal"}}>Stroke Prevention</a>
         </Link>
         <Link
           to="/whatwedo"
@@ -103,22 +103,22 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="">Rehabilitation Support</a>
+          <a href="" style={{fontWeight: "normal"}}>Rehabilitation Support</a>
         </Link>
       </div>
       <div className="follow">
         <h3>FOLLOW US</h3>
         <div className="follow-social">
-          <a href="">
+          <a href="" style={{fontWeight: "normal"}}>
             <FontAwesomeIcon icon={faFacebook} color="white" />
           </a>
-          <a href="">
+          <a href="" style={{fontWeight: "normal"}}>
             <FontAwesomeIcon icon={faTwitter} color="white" />
           </a>
-          <a href="">
+          <a href="" style={{fontWeight: "normal"}}>
             <FontAwesomeIcon icon={faGooglePlus} color="white" />
           </a>
-          <a href="">
+          <a href="" style={{fontWeight: "normal"}}>
             <FontAwesomeIcon icon={faInstagram} color="white" />
           </a>
         </div>
