@@ -13,6 +13,11 @@ const ResourcesCard = ({
   detailView = false,
   extraFields = {},
 }) => {
+
+  const truncateText = (text, limit) => {
+    return text.length > limit ? text.substring(0, limit) + "..." : text;
+  };
+
   return (
     <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-Montserrat hover:shadow-2xl h-full">
       {/* Image */}
@@ -34,7 +39,9 @@ const ResourcesCard = ({
           {Title}
         </h1>
 
-        <h4 className="text-secondary mb-3">{Description}</h4>
+        <h4 className="text-secondary mb-3">
+          {truncateText(Description, 150)}
+        </h4>
         {Link && (
           <a
             href={Link}

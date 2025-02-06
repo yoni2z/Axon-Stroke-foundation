@@ -2,6 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const ProjectCard = ({ photo, title, description, id }) => {
+
+  const truncateText = (text, limit) => {
+    return text.length > limit ? text.substring(0, limit) + "..." : text;
+  };
+
   return (
     <NavLink
       to={`/whatwedo/projects/details/${id}`}
@@ -23,7 +28,9 @@ const ProjectCard = ({ photo, title, description, id }) => {
           >
             {title}
           </h1>
-          <h4 className="text-secondary mb-8">{description}</h4>
+          <h4 className="text-secondary mb-8">
+            {truncateText(description, 150)}
+          </h4>
           <button className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black">
             Learn More
           </button>
