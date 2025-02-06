@@ -12,8 +12,8 @@ export const About = () => {
       <div className="about-us">
         <div className="about-us-text">
           <h2>
-            About <br className="mobile-hidden" />{" "}
-            <span className="span1">What We Do</span>
+            ABOUT <br className="mobile-hidden" />{" "}
+            <span className="span1">WHAT WE DO</span>
           </h2>
           <p className="montserrat-font">
             From the very beginning, Axon Stroke Foundation has been dedicated

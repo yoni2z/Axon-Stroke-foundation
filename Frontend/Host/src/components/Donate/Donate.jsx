@@ -11,9 +11,9 @@ export const Donate = () => {
       </div>
       <div className="donate-text">
         <h2>
-          An Important <br /> Event{" "}
+          AN IMPORTANT <br /> EVENT{" "}
           <span>
-            For <br /> Charity
+            FOR <br /> CHARITY
           </span>
         </h2>
         <p>

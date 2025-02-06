@@ -45,10 +45,10 @@ const Contacts = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Side: Contact Info */}
           <div className="p-8">
-            <h1 className="text-3xl font-bold font-poppins mb-5">
-              Contact <span className="text-[#cc1631]">Info</span>
+            <h1 className="text-3xl font-bold font-Lora mb-5">
+              CONTACT <span className="text-[#cc1631]">INFO</span>
             </h1>
-            <p className="text-gray-500 mb-6">
+            <p className="text-gray-500 mb-6 font-Montserrat">
               Feel free to reach out to us through the following contact details
               or leave your feedback in the form.
             </p>
@@ -56,33 +56,39 @@ const Contacts = () => {
               <div className="flex items-start">
                 <FaEnvelope className="text-[#cc1631] text-xl mt-1" />
                 <div className="ml-4">
-                  <span className="text-lg font-semibold text-gray-800">
+                  <span className="text-lg font-semibold font-Lora text-gray-800">
                     Email
                   </span>
-                  <p className="text-gray-500">info@axonstroke.org</p>
+                  <p className="text-gray-500 font-Montserrat">
+                    info@axonstroke.org
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <FaPhoneAlt className="text-[#cc1631] text-xl mt-1" />
                 <div className="ml-4">
-                  <span className="text-lg font-semibold text-gray-800">
+                  <span className="text-lg font-semibold font-Lora text-gray-800">
                     Phone
                   </span>
-                  <p className="text-gray-500">+251 974 78 88 88</p>
-                  <p className="text-gray-500">+251 940 15 56 06</p>
+                  <p className="text-gray-500 font-Montserrat">
+                    +251 974 78 88 88
+                  </p>
+                  <p className="text-gray-500 font-Montserrat">
+                    +251 940 15 56 06
+                  </p>
                 </div>
               </div>
               <div className="flex items-start">
                 <FaMapMarkerAlt className="text-[#cc1631] text-xl mt-1" />
                 <div className="ml-4">
-                  <span className="text-lg font-semibold text-gray-800">
+                  <span className="text-lg font-semibold font-Loar text-gray-800">
                     Address
                   </span>
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 font-Montserrat">
                     1st branch: Near American Medical center inside the Sunshine
                     Real-Estate Compound (Meri-Luki)
                   </p>
-                  <p className="text-gray-500">
+                  <p className="text-gray-500 font-Montserrat">
                     2nd branch: 500 meters up the road from Wossen Grocery to
                     Kara.
                   </p>
@@ -93,8 +99,8 @@ const Contacts = () => {
 
           {/* Right Side: Feedback Form */}
           <div className="p-8">
-            <h1 className="text-3xl font-bold font-poppins mb-5">
-              Send Us Your <span className="text-[#cc1631]">Feedback</span>
+            <h1 className="text-3xl font-bold font-Lora mb-5">
+              SEND US YOUR <span className="text-[#cc1631]">FEEDBACK</span>
             </h1>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -104,7 +110,7 @@ const Contacts = () => {
                   placeholder="Your Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631]"
+                  className="p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631] font-Montserrat"
                   required
                 />
                 <input
@@ -113,7 +119,7 @@ const Contacts = () => {
                   placeholder="Your Email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631]"
+                  className="p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631] font-Montserrat"
                   required
                 />
               </div>
@@ -123,7 +129,7 @@ const Contacts = () => {
                 placeholder="Subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631]"
+                className="w-full p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631] font-Montserrat"
                 required
               />
               <textarea
@@ -131,12 +137,12 @@ const Contacts = () => {
                 placeholder="Your Message"
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631] h-32"
+                className="w-full p-3 bg-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#cc1631] h-32 font-Montserrat"
                 required
               ></textarea>
               <button
                 type="submit"
-                className={`w-full py-3 rounded-lg transition duration-200 ${
+                className={`w-full py-3 rounded-lg transition duration-200 font-Montserrat ${
                   isSent
                     ? "bg-green-500 text-white cursor-default"
                     : "bg-[#cc1631] text-white hover:bg-black"
