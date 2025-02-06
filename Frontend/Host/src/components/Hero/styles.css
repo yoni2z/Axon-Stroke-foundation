@@ -45,7 +45,7 @@
   font-size: 1rem;
   font-weight: bold;
   padding: 12px 20px;
-  color: black;
+  color: #26358a;
   background-color: white;
   border-radius: 5px;
   text-align: center;
@@ -59,12 +59,12 @@
 
 .hero-button > a:nth-child(2) {
   background-color: #cc1631;
-  color: white;
+  color: #26358a;
 }
 
 .hero-button > a:nth-child(2):hover {
-  background-color: black;
-  color: white;
+  background-color: #26358a;
+  color: #cc1631;
 }
 
 /* Tablets (min-width: 480px) */

@@ -7,28 +7,28 @@ function SocialMediaLinks() {
           <a
             href="#"
             target="_blank"
-            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#834098]"
+            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#26358a]"
           >
             <FaFacebook className="" />
           </a>
           <a
             href="#"
             target="_blank"
-            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#834098]"
+            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#26358a]"
           >
             <FaTwitter className="" />
           </a>
           <a
             href="#"
             target="_blank"
-            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#834098]"
+            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#26358a]"
           >
             <FaInstagram className="" />
           </a>
           <a
             href="#"
             target="_blank"
-            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#834098]"
+            className="w-[20%] mr-[10%] mb-[10%] text-secondary hover:text-[#26358a]"
           >
             <FaLinkedin className="" />
           </a>

@@ -45,7 +45,7 @@ const Contacts = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Side: Contact Info */}
           <div className="p-8">
-            <h1 className="text-3xl font-bold font-PlayfairDisplay mb-5">
+            <h1 className="text-3xl text-[#26358a] font-PlayfairDisplay mb-5">
               CONTACT <span className="text-[#cc1631]">INFO</span>
             </h1>
             <p className="text-gray-500 mb-6 font-Montserrat">
@@ -56,7 +56,7 @@ const Contacts = () => {
               <div className="flex items-start">
                 <FaEnvelope className="text-[#cc1631] text-xl mt-1" />
                 <div className="ml-4">
-                  <span className="text-lg font-semibold font-PlayfairDisplay text-gray-800">
+                  <span className="text-lg font-PlayfairDisplay text-gray-800">
                     Email
                   </span>
                   <p className="text-gray-500 font-Montserrat">
@@ -67,7 +67,7 @@ const Contacts = () => {
               <div className="flex items-start">
                 <FaPhoneAlt className="text-[#cc1631] text-xl mt-1" />
                 <div className="ml-4">
-                  <span className="text-lg font-semibold font-PlayfairDisplay text-gray-800">
+                  <span className="text-lg font-PlayfairDisplay text-gray-800">
                     Phone
                   </span>
                   <p className="text-gray-500 font-Montserrat">
@@ -81,7 +81,7 @@ const Contacts = () => {
               <div className="flex items-start">
                 <FaMapMarkerAlt className="text-[#cc1631] text-xl mt-1" />
                 <div className="ml-4">
-                  <span className="text-lg font-semibold font-Loar text-gray-800">
+                  <span className="text-lg font-PlayfairDisplay text-gray-800">
                     Address
                   </span>
                   <p className="text-gray-500 font-Montserrat">
@@ -99,7 +99,7 @@ const Contacts = () => {
 
           {/* Right Side: Feedback Form */}
           <div className="p-8">
-            <h1 className="text-3xl font-bold font-PlayfairDisplay mb-5">
+            <h1 className="text-3xl text-[#26358a] font-PlayfairDisplay mb-5">
               SEND US YOUR <span className="text-[#cc1631]">FEEDBACK</span>
             </h1>
             <form className="space-y-6" onSubmit={handleSubmit}>
@@ -145,7 +145,7 @@ const Contacts = () => {
                 className={`w-full py-3 rounded-lg transition duration-200 font-Montserrat ${
                   isSent
                     ? "bg-green-500 text-white cursor-default"
-                    : "bg-[#cc1631] text-white hover:bg-black"
+                    : "bg-[#cc1631] text-white hover:bg-[#26358a]"
                 }`}
                 disabled={isLoading || isSent}
               >

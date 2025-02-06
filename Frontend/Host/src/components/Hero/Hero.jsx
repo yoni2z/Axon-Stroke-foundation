@@ -54,7 +54,7 @@ const Hero = () => {
           GIVE A HELPING HAND TO THOSE WHO NEED IT!
         </p>
         <div className="hero-button">
-          <Link to="/about-us" className="fade-in-button">
+          <Link to="/about-us" className="fade-in-start">
             Get Started
           </Link>
           <Link
@@ -62,7 +62,7 @@ const Hero = () => {
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            className="fade-in-button yellow-button"
+            className="fade-in-donate yellow-button"
           >
             Donate Now
           </Link>

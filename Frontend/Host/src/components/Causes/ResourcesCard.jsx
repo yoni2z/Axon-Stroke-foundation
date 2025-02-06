@@ -27,7 +27,7 @@ const ResourcesCard = ({
         {detailView && <h1 className="text-primary text-base">Resources</h1>}
 
         <h1
-          className={`font-bold text-2xl font-PlayfairDisplay ${
+          className={`font-bold text-2xl text-[#26358a] font-PlayfairDisplay ${
             detailView ? "hover:text-black" : "hover:text-primary"
           } mb-4 mt-2`}
         >
