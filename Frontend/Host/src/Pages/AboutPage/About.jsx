@@ -1,45 +1,53 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import style from "./About.module.css";
 import { Link } from "react-router-dom";
 import TitleBanner from "../../components/blog/TitleBanner";
 import Members from "../../components/Members/Members";
 import VolenteerCard from "../../components/volenteer-with-us/VolenteerCard";
 import Contacts from "../Contacts";
-import { useState } from "react";
 
 const About = () => {
-  const [membersList, setMembersList] = useState([
-    {
-      photo:
-        "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-      name: "Solomon Hailu",
-      discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-    },
-    {
-      photo:
-        "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-      name: "Solomon Hailu",
-      discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-    },
-    {
-      photo:
-        "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-      name: "Solomon Hailu",
-      discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-    },
-    {
-      photo:
-        "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-      name: "Solomon Hailu",
-      discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-    },
-    {
-      photo:
-        "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-      name: "Solomon Hailu",
-      discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-    },
-  ]);
+  const [membersList, setMembersList] = useState([]);
+
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/api/board-members")
+      .then((response) => response.json())
+      .then((data) => setMembersList(data))
+      .catch((error) => console.error("Error fetching member list", error));
+  }, []);
+
+  // const [membersList, setMembersList] = useState([
+  //   {
+  //     photo:
+  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
+  //     name: "Solomon Hailu",
+  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
+  //   },
+  //   {
+  //     photo:
+  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
+  //     name: "Solomon Hailu",
+  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
+  //   },
+  //   {
+  //     photo:
+  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
+  //     name: "Solomon Hailu",
+  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
+  //   },
+  //   {
+  //     photo:
+  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
+  //     name: "Solomon Hailu",
+  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
+  //   },
+  //   {
+  //     photo:
+  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
+  //     name: "Solomon Hailu",
+  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
+  //   },
+  // ]);
   return (
     <>
       <TitleBanner
@@ -167,9 +175,9 @@ const About = () => {
         {membersList.map((member, index) => (
           <Members
             key={index}
-            photo={member.photo}
+            photo={member.image}
             name={member.name}
-            discription={member.discription}
+            discription={member.role}
           />
         ))}
       </div>

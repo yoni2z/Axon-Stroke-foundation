@@ -7,7 +7,8 @@ from .models import (
     Volunteer,
     BankAccount,
     Program, Project,
-    Resource, ResourceDetail
+    Resource, ResourceDetail,
+    BoardMember
 )
 
 # Register your models here.
@@ -21,6 +22,7 @@ admin.site.register(Program)
 admin.site.register(Project)
 admin.site.register(Resource)
 admin.site.register(ResourceDetail)
+admin.site.register(BoardMember)
 @admin.register(Volunteer)
 class VolunteerAdmin(admin.ModelAdmin):
     list_display = ("name", "role", "email", "phone_number")
