@@ -6,12 +6,12 @@ import DummyImage from "../assets/GI_DummyImage.jpg";
 
 const GetInvolved = () => {
   return (
-    <div className="font-poppins">
+    <div className="font-Montserrat">
       <TitleBanner title="GET INVOLVED" backgroundImage={VolunteerBg} />
 
       <div className="">
         <div className="mb-[77px] text-center">
-          <h1 className="text-5xl font-bold font-Lora mb-5 pb-5 py-[95px]">
+          <h1 className="text-5xl font-PlayfairDisplay mb-5 pb-5 py-[95px]">
             WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
           <div className="bg-[#D9D9D966] opacity-40 py-20">
@@ -52,7 +52,7 @@ const GetInvolved = () => {
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-start">
             <div className="text-start">
-              <h1 className="text-2xl font-bold font-Lora mb-5">
+              <h1 className="text-2xl font-PlayfairDisplay mb-5">
                 VOLUNTEER WITH <span className="text-primary">US</span>
               </h1>
               <p className="text-secondary max-w-[80%] mx-auto mb-6 font-Montserrat">
@@ -69,7 +69,7 @@ const GetInvolved = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <button className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black">
+              <button className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat">
                 Become a Volunteer
               </button>
             </NavLink>
@@ -91,7 +91,7 @@ const GetInvolved = () => {
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
           <div className="text-start">
-            <h1 className="text-2xl font-bold font-Lora mb-5">
+            <h1 className="text-2xl font-PlayfairDisplay mb-5">
               FUNDRAISE FOR{" "}
               <span className="text-primary">STROKE AWARENESS AND CARE</span>
             </h1>
@@ -108,7 +108,7 @@ const GetInvolved = () => {
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="text-white text-center mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
+              className="text-white text-center mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
             >
               Start Your Fundraising Campaign{" "}
             </Link>
@@ -131,7 +131,7 @@ const GetInvolved = () => {
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
             <div className="text-start">
-              <h1 className="text-2xl font-bold font-Lora mb-5">
+              <h1 className="text-2xl font-PlayfairDisplay mb-5">
                 DONATE TO{" "}
                 <span className="text-primary">SUPPORT STROKE PROGRAMS</span>
               </h1>
@@ -147,7 +147,7 @@ const GetInvolved = () => {
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
-                className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
+                className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
               >
                 Donate Now{" "}
               </Link>
@@ -170,7 +170,7 @@ const GetInvolved = () => {
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
           <div className="text-start">
-            <h1 className="text-2xl font-bold font-Lora mb-5">
+            <h1 className="text-2xl font-PlayfairDisplay mb-5">
               BECOME A <span className="text-primary">CORPORATE PARTNER</span>
             </h1>
             <p className="text-secondary max-w-[80%] mx-auto mb-6 font-Montserrat">
@@ -182,7 +182,7 @@ const GetInvolved = () => {
             </p>
             <a
               href="*"
-              className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
+              className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
             >
               Learn More About Corporate Partnerships
             </a>
@@ -205,7 +205,7 @@ const GetInvolved = () => {
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center items-center">
             <div className="text-start">
-              <h1 className="text-2xl font-bold font-Lora mb-5">
+              <h1 className="text-2xl font-PlayfairDisplay mb-5">
                 ADVOCATE FOR{" "}
                 <span className="text-primary">STROKE AWARENESS</span>
               </h1>
@@ -219,7 +219,7 @@ const GetInvolved = () => {
               </p>
               <a
                 href="*"
-                className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
+                className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
               >
                 Join the Advocacy Network
               </a>
@@ -242,7 +242,7 @@ const GetInvolved = () => {
 
         <div className="flex flex-col mx-10 justify-center items-center py-[95px] bg-white">
           <div className="text-start">
-            <h1 className="text-2xl font-bold font-Lora mb-5">
+            <h1 className="text-2xl font-PlayfairDisplay mb-5">
               PARTNER WITH US FOR{" "}
               <span className="text-primary">RESEARCH AND EDUCATION</span>
             </h1>
@@ -256,7 +256,7 @@ const GetInvolved = () => {
             </p>
             <a
               href="*"
-              className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
+              className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
             >
               Partner with Us for Research and Education
             </a>
