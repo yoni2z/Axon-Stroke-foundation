@@ -16,38 +16,6 @@ const About = () => {
       .catch((error) => console.error("Error fetching member list", error));
   }, []);
 
-  // const [membersList, setMembersList] = useState([
-  //   {
-  //     photo:
-  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-  //     name: "Solomon Hailu",
-  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-  //   },
-  //   {
-  //     photo:
-  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-  //     name: "Solomon Hailu",
-  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-  //   },
-  //   {
-  //     photo:
-  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-  //     name: "Solomon Hailu",
-  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-  //   },
-  //   {
-  //     photo:
-  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-  //     name: "Solomon Hailu",
-  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-  //   },
-  //   {
-  //     photo:
-  //       "https://s3-alpha-sig.figma.com/img/69be/c30e/fc4bfba95fe5941ec731b6f5bb8f81db?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=K~UVrsvGkRzgPMXWRi8wHInpacavjP0NWolAa9jSqvcYdgyw5klcyXB5HdWDKF1Zv-MDt~GJs6Bx7bs2CBEdVI8nuRx4PCZfB3bWO-rI1R8XVKcEJM8R-cimekitFK3zQXniDs00UfgnXlSTFmQLaSXFNTZdOUeqUFm8pe4PlTP0qZ5HeYAVT7xDi3oSDakPnbPVkhao93IszKaGfnUquudEQyGTBB-1rh3jVf7r8YE9sLeQQMoAGO-EIqRBoF8HPwS0SdlKdf5PWmtVN22fuPub0giTz8pas7YIkxInyc1HXQhZAB22ykiDe8UAIPawjGThmTktUI-4H5WO-V6hkw__",
-  //     name: "Solomon Hailu",
-  //     discription: " acfargdc iudchiuc isuhdsiuhd iushdsuh",
-  //   },
-  // ]);
   return (
     <>
       <TitleBanner
@@ -62,8 +30,9 @@ const About = () => {
         <section className={style.whoarewe}>
           <h1>WHO ARE WE?</h1>
           <p>
-            <span className={style.a}>A</span>{" "}
-            <span className={style.highlight}>NON-PROFIT ORGANIZATION</span>
+            <span className={style.a}>A </span>{" "}
+            <span className={style.highlight}>NON</span>
+            <span className={style.a}>-PROFIT ORGANIZATION</span>
             <br />
             Axon Stroke Foundation is a non-profit organization focused on
             stroke awareness, therapeutic support, and advancing education and
