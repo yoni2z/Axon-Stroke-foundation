@@ -16,7 +16,6 @@ export const Home = () => {
     <>
        <Navbar />
        <Hero />
-       <Partner />
        <About />
        <Donate />
        <Videos />
