@@ -23,7 +23,7 @@ const BlogsCard = ({
       <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12">
         <h1 className="text-primary text-base">Axon</h1>
         <h1
-          className={`font-bold text-2xl  font-Lora ${
+          className={`font-bold text-2xl  font-PlayfairDisplay ${
             detailView ? "hover:text-black" : "hover:text-[#834098]"
           } mb-6 mt-2`}
         >

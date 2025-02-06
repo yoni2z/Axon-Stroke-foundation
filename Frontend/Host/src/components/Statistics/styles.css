@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
 .stats {
   background: url("../../assets/Statistics/1.jpg");
   width: 100%;
@@ -17,13 +19,12 @@
 }
 
 .stats-number {
-  font: 60px "Lora", sans-serif;
-  font-weight: bold;
+  font: 60px 'Playfair Display', sans-serif;
   text-align: center;
 }
 
 .stats-text {
-  font: 18px "Lora", sans-serif;
+  font: 18px 'Playfair Display', sans-serif;
   margin: 10px 0 0;
   text-align: center;
   color: white;
