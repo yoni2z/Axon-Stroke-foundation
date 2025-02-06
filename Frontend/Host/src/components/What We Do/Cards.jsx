@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Cards = ({ photo, title, description, id }) => {
+
   return (
     <NavLink
       to={`/whatwedo/projects/${id}`}

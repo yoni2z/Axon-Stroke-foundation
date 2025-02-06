@@ -126,6 +126,7 @@ a {
   text-decoration: none;
   font-weight: 450;
   background-color: transparent;
+  font-weight: bold;
 }
 
 .navbar-container a:hover {
@@ -178,7 +179,7 @@ a {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
