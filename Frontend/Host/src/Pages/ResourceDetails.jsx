@@ -29,7 +29,9 @@ const ResourceDetails = () => {
     fetch(`http://127.0.0.1:8000/api/resource-details/${id}`)
       .then((response) => response.json())
       .then((data) => setResourceDetails(data))
-      .catch((error) => console.log("error fetching the resource details", error));
+      .catch((error) =>
+        console.log("error fetching the resource details", error)
+      );
   }, [id]);
 
   if (!resourceDetails) {
