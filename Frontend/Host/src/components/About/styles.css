@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 .about {
   margin: 0;
@@ -18,7 +19,7 @@
   padding: 0px 15px;
 }
 .about-us-text > h2 {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 64px;
   margin: 20px 0 25px;
   line-height: 1;
@@ -89,7 +90,7 @@
 .block2 > h5,
 .block3 > h5,
 .block4 > h5 {
-  font: 18px 'Lora', sans-serif;
+  font: 18px 'Playfair Display', sans-serif;
   margin-bottom: 18px;
   margin-top: 15px;
   color: rgba(0, 0, 0, 1);

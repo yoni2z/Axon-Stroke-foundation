@@ -8,6 +8,7 @@ export default {
         Lato: ["Lato"],
         Nikea: ["Nikea"],
         Montserrat: ["Montserrat"],
+        PlayfairDisplay: ["Playfair Display"]
       },
       colors: {
         primary: "#cc1631",
