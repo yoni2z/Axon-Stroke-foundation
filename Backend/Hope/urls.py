@@ -11,7 +11,8 @@ from .views import (
     VolunteerViewSet,
     BankAccountViewSet,
     ProgramViewSet, ProjectViewSet,
-    ResourceViewSet, ResourceDetailViewSet
+    ResourceViewSet, ResourceDetailViewSet,
+    BoardMemberViewSet
 )
 
 router = DefaultRouter()
@@ -25,6 +26,7 @@ router.register(r'programs', ProgramViewSet, basename="programs")
 router.register(r'projects', ProjectViewSet, basename="projects")
 router.register(r'resources', ResourceViewSet, basename="resources")
 router.register(r'resource-details', ResourceDetailViewSet, basename="resource-details")
+router.register(r'board-members', BoardMemberViewSet, basename="board-members")
 
 urlpatterns = [
     path('api/', include(router.urls))
