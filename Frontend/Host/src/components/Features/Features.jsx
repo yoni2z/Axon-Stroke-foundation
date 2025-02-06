@@ -12,7 +12,7 @@ export const Features = () => {
       <div className="features-container">
         <div className="features-container-texts">
           <h2>
-            Featured <span className="feature-span">Causes</span>
+            FEATURED <span className="feature-span">CAUSES</span>
           </h2>
           <p>
             Join our featured cause to create lasting change and empower
