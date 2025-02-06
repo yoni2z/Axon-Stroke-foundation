@@ -56,7 +56,7 @@ const ResourcesList = () => {
       <div className="py-[95px] sm:mx-10 mx-3">
         <div className="mb-[77px] text-center">
           <h3 className="text-4xl font-bold font-poppins mb-5">
-            <span className="text-customRed font-Lora">
+            <span className="text-customRed font-PlayfairDisplay">
               {resourceList.name.toUpperCase()}
             </span>
           </h3>
