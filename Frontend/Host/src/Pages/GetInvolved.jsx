@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import TitleBanner from "../components/TitleBanner";
 import VolunteerBg from "../assets/volunteer-title-bg.jpg";
 import DummyImage from "../assets/GI_DummyImage.jpg";
@@ -63,7 +63,12 @@ const GetInvolved = () => {
                 a passion for helping others, your contribution will be valued.
               </p>
             </div>
-            <NavLink to="/volunteer">
+            <NavLink
+              to="/volunteer"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+            >
               <button className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black">
                 Become a Volunteer
               </button>
@@ -98,12 +103,15 @@ const GetInvolved = () => {
               therapy and care.
             </p>
 
-            <a
-              href="*"
+            <Link
+              to="/donate"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
               className="text-white text-center mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
             >
               Start Your Fundraising Campaign{" "}
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -134,12 +142,15 @@ const GetInvolved = () => {
                 a one-time gift or set up a recurring donation to make a lasting
                 impact.
               </p>
-              <a
-                href="*"
+              <Link
+                to="/donate"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
                 className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black"
               >
                 Donate Now{" "}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
