@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import TitleBanner from "../components/blog/TitleBanner";
 import BlogsCard from "../components/blog/BlogsCard";
@@ -40,23 +40,20 @@ const Blogs = () => {
   };
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
-      <TitleBanner
-        title="Blog"
-        backgroundImage={BlogsBg}
-      />
+      <TitleBanner title="Blog" backgroundImage={BlogsBg} />
       <div className="py-[95px] sm:mx-10 mx-3 grid grid-cols-3 gap-2">
-          <div className="col-span-3 sm:col-span-2">
+        <div className="col-span-3 sm:col-span-2">
           <div className="flex flex-col sm:grid sm:grid-cols-2 gap-8 mx-auto">
             {currentItems.map((blog, index) => (
-              <NavLink 
-                to={`/blogs/${blog.id}`} 
-                key={blog.id} 
-                className={`${index === 0 ? "col-span-2" : ""}`} 
+              <NavLink
+                to={`/blogs/${blog.id}`}
+                key={blog.id}
+                className={`${index === 0 ? "col-span-2" : ""}`}
               >
                 <BlogsCard
                   blogsImage={blog.image}
@@ -108,12 +105,12 @@ const Blogs = () => {
               </button>
             </div>
           </div>
-
-          <div className="col-span-3 sm:col-span-1 px-4">
-            <BlogRight />
-          </div>
-
         </div>
+
+        <div className="col-span-3 sm:col-span-1 px-4">
+          <BlogRight />
+        </div>
+      </div>
     </div>
   );
 };
