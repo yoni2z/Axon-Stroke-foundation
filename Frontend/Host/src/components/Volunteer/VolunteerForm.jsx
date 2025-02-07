@@ -21,7 +21,7 @@ const VolunteerForm = () => {
     setLoading(true); // Start loading
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/volunteers/", {
+      const response = await fetch("https://axonstroke.org/api/volunteers/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

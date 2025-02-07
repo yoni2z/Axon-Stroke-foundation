@@ -12,14 +12,14 @@ const Blogs = () => {
   const [blogData, setBlogData] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/blogs/")
+    fetch("https://axonstroke.org/api/blogs/")
       .then((response) => response.json())
       .then((data) => setBlogs(data))
       .catch((error) => console.log("error fetching blogs ", error));
   }, []);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/blogs/${id}`)
+    fetch(`https://axonstroke.org/api/blogs/${id}`)
       .then((response) => response.json())
       .then((data) => setBlogData(data))
       .catch((error) => console.log("error fetching the blog datas ", error));
@@ -38,7 +38,6 @@ const Blogs = () => {
     }
   };
 
-
   const handleNext = () => {
     const currentIndex = blogs.findIndex((blog) => blog.id === parseInt(id));
 
@@ -47,7 +46,6 @@ const Blogs = () => {
       navigate(`/blogs/${nextBlogId}`);
     }
   };
-
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
