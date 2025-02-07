@@ -10,6 +10,14 @@
   background-size:cover;
 }
 
+.video-container h1 {
+  font-size: 64px;
+  color: #26358a;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 4rem;
+}
+
 .span {
   margin: 10px 0 0 0;
   display: flex;

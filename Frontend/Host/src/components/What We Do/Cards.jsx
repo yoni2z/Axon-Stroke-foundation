@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Cards = ({ photo, title, description, id }) => {
+
   return (
     <NavLink
       to={`/whatwedo/projects/${id}`}
@@ -18,7 +19,7 @@ const Cards = ({ photo, title, description, id }) => {
         <div className="flex flex-col items-start text-left pt-6 pr-10 pb-6 pl-12 h-full">
           <h1
             className={
-              "font-bold text-2xl hover:text-primary mb-6 mt-2 font-PlayfairDisplay"
+              "font-bold text-2xl text-[#26358a] hover:text-primary mb-6 mt-2 font-PlayfairDisplay"
             }
           >
             {title}

@@ -23,7 +23,7 @@ const WhatWeDo = () => {
 
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">
-          <h1 className="text-4xl font-bold font-poppins mb-5 font-PlayfairDisplay">
+          <h1 className="text-4xl text-[#26358a] font-bold font-poppins mb-5 font-PlayfairDisplay">
             OUR PROGRAMS & <span className="text-primary">PROJECTS</span>
           </h1>
           <p className="text-secondary max-w-[80%] mx-auto font-Montserrat">

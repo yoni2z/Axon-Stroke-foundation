@@ -5,6 +5,7 @@ import TitleBanner from "../../components/blog/TitleBanner";
 import Members from "../../components/Members/Members";
 import VolenteerCard from "../../components/volenteer-with-us/VolenteerCard";
 import Contacts from "../Contacts";
+import { Partner } from "../../components/Partner/Partner";
 
 const About = () => {
   const [membersList, setMembersList] = useState([]);
@@ -28,7 +29,7 @@ const About = () => {
       <div className={style.container}>
         {/* WHO ARE WE? Section */}
         <section className={style.whoarewe}>
-          <h1>WHO ARE WE?</h1>
+          <h1>WHO WE ARE</h1>
           <p>
             <span className={style.a}>A </span>{" "}
             <span className={style.highlight}>NON</span>
@@ -53,22 +54,11 @@ const About = () => {
             <div className={style.text}>
               <h2>MISSION</h2>
               <p>
-                To promote stroke awareness, provide therapeutic support, and
-                advance research for better
-                <br /> prevention, treatment, and recovery in Ethiopia and
-                Africa.
+                To raise awareness about stroke, provide therapeutic support,
+                and advance education <br />
+                and research for better prevention, treatment, and recovery in
+                Ethiopia and Africa.
               </p>
-              <h3 className="mt-8 font-bold text-lg">
-                Core <span className="text-red-500">Missions</span>
-              </h3>
-              <ul>
-                <li>Raise awareness about stroke.</li>
-                <li>Provide therapeutic support.</li>
-                <li>Advance education and research for better prevention.</li>
-                <li>
-                  Enhance treatment and recovery efforts in Ethiopia and Africa.
-                </li>
-              </ul>
             </div>
           </div>
         </section>
@@ -79,37 +69,13 @@ const About = () => {
             <div className={style.text}>
               <h2>VISION</h2>
               <p>
-                A world where stroke prevention, treatment, and recovery are
-                available for all.
+                In a world where stroke prevention is a priority, everyone has
+                access to the education and healthcare needed <br /> to reduce
+                their risk and stay healthy. With advanced treatment and
+                comprehensive <br />
+                rehabilitation, stroke survivors receive the care they need to
+                recover and regain their independence.
               </p>
-              <h3 className="mt-8 font-bold text-lg">
-                Core <span className="text-red-500">Values</span>
-              </h3>
-              <ul>
-                <li>
-                  <span className="text-gray-500 font-bold">Compassion</span>:
-                  We make a meaningful impact with empathy and care for every
-                  individual.
-                </li>
-                <li>
-                  <span className="text-gray-500 font-bold">Empowerment</span>:
-                  We equip individuals with the knowledge and resources for
-                  health and recovery.
-                </li>
-                <li>
-                  <span className="text-gray-500 font-bold">Education</span>: We
-                  spread knowledge to prevent strokes and improve outcomes.
-                </li>
-                <li>
-                  <span className="text-gray-500 font-bold">Collaboration</span>
-                  : We work with partners to create sustainable change in stroke
-                  care.
-                </li>
-                <li>
-                  <span className="text-gray-500 font-bold">Integrity</span>: We
-                  maintain transparency and ethics in all our efforts.
-                </li>
-              </ul>
             </div>
           </div>
           <img
@@ -118,7 +84,60 @@ const About = () => {
             className={style.image}
           />
         </section>
-        <h2 className="text-40px mb-8 font-bold ml-10">OUR DOCTORS</h2>
+
+        <section className={style.mission}>
+          <img
+            src="https://s3-alpha-sig.figma.com/img/9695/4275/e3a1b9621ba0ad95620c88e134132af5?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VdQsiseu7uLTCkl7gkzK37UCrrbpBPmhNpQ62JV1mXVIzZzwasciOxXPgZlqqVoh8cxuoPTNSHYtE7CnVQw8arkjub7Rl5S-4GVWxMwPs4XNyKwvj1jV35xb~y30cDSro6k~VAegqDo-ebMeYfjKxP0nLAP4y4hWxGCR6ulsl0-Lkk-NfKVKjsyzqch0pUanHP4xLtdN-M5x5z5Cg~e07T3r9vjIVdjSwg8PIQVNE9ouDoSeURnYDHClz2kKJajNOfoIhoSSZtKBslBj~nkEHspgpGKAipsc-sFUywCQSuKw27Cfs9DkWLd1yA360W5AFSWx1l828dpybE2oUhKzCw__"
+            alt="Brain illustration"
+            className={style.image}
+          />
+          <div className={style.content}>
+            <div className={style.text}>
+              <h2 className="mt-8 font-PlayfairDisplay text-lg">
+                Core <span className="text-red-500">Values</span>
+              </h2>
+              <ul>
+                <li>
+                  <span className="text-gray-500 font-PlayfairDisplay">
+                    Compassion
+                  </span>
+                  : We make a meaningful impact with empathy and care for every
+                  individual.
+                </li>
+                <li>
+                  <span className="text-gray-500 font-PlayfairDisplay">
+                    Empowerment
+                  </span>
+                  : We equip individuals with the knowledge and resources for
+                  health and recovery.
+                </li>
+                <li>
+                  <span className="text-gray-500 font-PlayfairDisplay">
+                    Education
+                  </span>
+                  : We spread knowledge to prevent strokes and improve outcomes.
+                </li>
+                <li>
+                  <span className="text-gray-500 font-PlayfairDisplay">
+                    Collaboration
+                  </span>
+                  : We work with partners to create sustainable change in stroke
+                  care.
+                </li>
+                <li>
+                  <span className="text-gray-500 font-PlayfairDisplay">
+                    Integrity
+                  </span>
+                  : We maintain transparency and ethics in all our efforts.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <h2 className="text-4xl text-[#26358a] mb-8 font-PlayfairDisplay ml-10">
+          OUR DOCTORS
+        </h2>
         {/* Our Doctors Section */}
         <section className={style.ourdoctors}>
           <img
@@ -150,9 +169,12 @@ const About = () => {
           />
         ))}
       </div>
-      <div class="flex flex-col items-center justify-center bg-white">
-        <h1 class="text-4xl font-bold text-center">WANT TO KNOW MORE?</h1>
-        <p class="text-lg text-gray-600 text-center">
+      <Partner />
+      <div class="flex flex-col items-center justify-center bg-white my-20">
+        <h1 class="text-4xl font-PlayfairDisplay text-center">
+          WANT TO KNOW MORE?
+        </h1>
+        <p class="text-lg text-gray-600 text-center font-Montserrat">
           Subscribe to never miss out on any events.
         </p>
 
@@ -162,7 +184,7 @@ const About = () => {
             placeholder="Enter your email"
             class="flex-grow px-4 py-3 bg-gray-300  focus:outline-none "
           />
-          <button class="px-6 py-3 bg-gray-800 text-white font-semibold  hover:bg-gray-800">
+          <button class="px-6 py-3 bg-gray-800 text-white font-Montserrat  hover:bg-gray-800">
             Subscribe
           </button>
         </div>

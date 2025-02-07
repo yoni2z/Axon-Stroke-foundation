@@ -13,6 +13,11 @@ const ResourcesCard = ({
   detailView = false,
   extraFields = {},
 }) => {
+
+  const truncateText = (text, limit) => {
+    return text.length > limit ? text.substring(0, limit) + "..." : text;
+  };
+
   return (
     <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-Montserrat hover:shadow-2xl h-full">
       {/* Image */}
@@ -27,14 +32,16 @@ const ResourcesCard = ({
         {detailView && <h1 className="text-primary text-base">Resources</h1>}
 
         <h1
-          className={`font-bold text-2xl font-PlayfairDisplay ${
+          className={`font-bold text-2xl text-[#26358a] font-PlayfairDisplay ${
             detailView ? "hover:text-black" : "hover:text-primary"
           } mb-4 mt-2`}
         >
           {Title}
         </h1>
 
-        <h4 className="text-secondary text-blue-900 mb-3">{Description}</h4>
+        <h4 className="text-secondary mb-3">
+          {truncateText(Description, 150)}
+        </h4>
         {Link && (
           <a
             href={Link}
