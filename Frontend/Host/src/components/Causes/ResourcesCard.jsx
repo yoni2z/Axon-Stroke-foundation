@@ -34,7 +34,7 @@ const ResourcesCard = ({
           {Title}
         </h1>
 
-        <h4 className="text-secondary mb-3">{Description}</h4>
+        <h4 className="text-secondary text-blue-900 mb-3">{Description}</h4>
         {Link && (
           <a
             href={Link}
