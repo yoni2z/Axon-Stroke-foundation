@@ -13,7 +13,11 @@ const ProjectDetails = () => {
   const [project, setProject] = useState([]);
 
   useEffect(() => {
+<<<<<<< HEAD
     fetch(`https://axonstroke.org/api/projects/`)
+=======
+    fetch(`http://127.0.0.1:8000/api/projects/`)
+>>>>>>> 9afe5157ae9127c68d61959de2f73d4d793f451a
       .then((response) => response.json())
       .then((data) => setProjects(data))
       .catch((error) => console.log("error fetching programs ", error));

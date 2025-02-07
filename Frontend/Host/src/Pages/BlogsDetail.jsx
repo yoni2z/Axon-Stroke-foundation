@@ -38,6 +38,7 @@ const Blogs = () => {
     }
   };
 
+
   const handleNext = () => {
     const currentIndex = blogs.findIndex((blog) => blog.id === parseInt(id));
 
@@ -46,6 +47,7 @@ const Blogs = () => {
       navigate(`/blogs/${nextBlogId}`);
     }
   };
+
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
