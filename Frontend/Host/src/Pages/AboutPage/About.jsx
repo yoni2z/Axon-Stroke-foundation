@@ -11,7 +11,7 @@ const About = () => {
   const [membersList, setMembersList] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/board-members")
+    fetch("https://axonstroke.org/api/board-members")
       .then((response) => response.json())
       .then((data) => setMembersList(data))
       .catch((error) => console.error("Error fetching member list", error));

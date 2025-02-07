@@ -18,7 +18,7 @@ const WhatWeDoProjects = () => {
   });
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/programs/${id}`)
+    fetch(`https://axonstroke.org/api/programs/${id}`)
       .then((response) => response.json())
       .then((data) => setWhatWeDoData(data))
       .catch((error) => console.log("error fetching programs ", error));
