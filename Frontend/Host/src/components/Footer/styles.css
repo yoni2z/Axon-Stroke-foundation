@@ -43,6 +43,16 @@
   letter-spacing: -0.5px;
   line-height: 30px;
 }
+
+.impact > a :hover{
+  text-decoration: underline 2px solid #cc1631;
+}
+.help > a :hover{
+  text-decoration: underline 2px solid #cc1631;
+}
+.aboutus > a :hover{
+  text-decoration: underline 2px solid #cc1631;
+}
 .follow-social {
   display: flex;
 }

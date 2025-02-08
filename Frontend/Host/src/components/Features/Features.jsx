@@ -16,7 +16,7 @@ export const Features = () => {
           </h2>
           <p>
             Join our featured cause to create lasting change and empower
-            communities in need.
+            people in need.
           </p>
         </div>
         <div className="features-news">
