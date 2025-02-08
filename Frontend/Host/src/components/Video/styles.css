@@ -54,10 +54,16 @@
         width: 100vw;
         overflow: hidden;
      }
+     .video-container h1{
+      font-size: 40px;
+     }
 }
 /* Tablets */
 @media only screen and 
 (max-width: 767px) {
+  .video-container h1{
+    font-size: 48px;
+   }
      
 }
 /* Large Screen */
