@@ -15,7 +15,7 @@ const Resources = () => {
   const itemsPerPage = 3;
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/resources/")
+    fetch("https://axonstroke.org/api/resources/")
       .then((response) => response.json())
       .then((data) => setResources(data))
       .catch((error) => console.log("error fetching resources ", error));

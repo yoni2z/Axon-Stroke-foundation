@@ -52,10 +52,10 @@ export const Navbar = () => {
             src={scrolled || isHovered ? Logo : AxonWhite}
             alt="Axon Foundation"
             style={{
-              objectFit: "cover",
+              objectFit: "contain",
               width: "220px",
               height: "120px",
-              transform: scrolled || isHovered ? "scale(0.8)" : "scale(0.5)",
+              transform: scrolled || isHovered ? "scale(1.5)" : "scale(0.5)",
             }}
           />
         </a>

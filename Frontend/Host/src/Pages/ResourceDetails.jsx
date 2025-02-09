@@ -19,14 +19,14 @@ const ResourceDetails = () => {
   const [resourceDetails, setResourceDetails] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/resources/")
+    fetch("https://axonstroke.org/api/resources/")
       .then((response) => response.json())
       .then((data) => setResources(data))
       .catch((error) => console.log("error fetching resources ", error));
   }, []);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8000/api/resource-details/${id}`)
+    fetch(`https://axonstroke.org/api/resource-details/${id}`)
       .then((response) => response.json())
       .then((data) => setResourceDetails(data))
       .catch((error) =>
