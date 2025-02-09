@@ -4,7 +4,7 @@ import PhotoCard from "../../Components/Gallery/PhotoCard";
 import LightboxModal from "../../Components/Gallery/LightboxModal";
 import TitleBanner from "../../components/blog/TitleBanner";
 import VolenteerCard from "../../components/volenteer-with-us/VolenteerCard";
-import GalleryBg from "../../assets/gallery-title-bg.jpg";
+import GalleryBg from "../../assets/GI_DummyImage.jpg";
 
 const Gallery = () => {
   const [photos, setPhotos] = useState([]);
@@ -52,13 +52,12 @@ const Gallery = () => {
           <TitleBanner title={"Gallery"} backgroundImage={GalleryBg} />
         </div>
         <div className={style.Gallery_Text}>
-          <h1>
+          <h1 className="text-blue-900">
             WE HOPE TO MAKE THIS{" "}
             <span style={{ color: "#cc1631 " }}>WORLD HAPPIER</span>
           </h1>
           <p>
-            International giving can be complex. We've donated $321,000 to 20
-            countries charities in just the past five years.
+            
           </p>
         </div>
         <div className={style.Photo_area}>

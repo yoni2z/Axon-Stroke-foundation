@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 .features {
-  padding: 95px 0 70px;
-  width: 100vw;
+  padding: 95px 0px 70px;
 }
 .features-span {
   color: #cc1631;
@@ -13,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 95.6px;
+  margin: 0 0px;
   padding: 0 15px;
 }
 .features-container-texts {
@@ -37,11 +36,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 /* Phones */
 @media only screen and (max-width: 479px) {
   .features{
-    width: 100vw;
+    
   }
   .features-news {
     flex-direction: column;

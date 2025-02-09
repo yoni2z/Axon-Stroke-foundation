@@ -1,6 +1,7 @@
 import React from "react";
 import i1 from "../../assets/Footer/axonwhite.png";
 import "./styles.css";
+import Logo from "../../assets/Navbar/axon_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -49,7 +50,7 @@ export const Footer = () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
-          <a href="" style={{fontWeight: "normal"}}>Financial</a>
+          <a href="" style={{fontWeight: "normal"}}>Finance</a>
         </Link>
       </div>
       <div className="help">

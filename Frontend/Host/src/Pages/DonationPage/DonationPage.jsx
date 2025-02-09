@@ -45,7 +45,7 @@ const DonationPage = () => {
                   key={index}
                   className="p-4 border border-gray-200 rounded-lg hover:shadow-md hover:border-[#cc1631] transition"
                 >
-                  <p className="text-lg font-medium text-gray-800 font-Montserrat">
+                  <p className="text-lg text-blue-900 font-medium text-gray-800 font-Montserrat">
                     {account.bank_name}
                   </p>
                   <p className="text-gray-600 font-Montserrat">

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export const About = () => {
   return (
-    <div className="about">
+    <div className="about" >
       <div className="about-us">
         <div className="about-us-text">
           <h2>

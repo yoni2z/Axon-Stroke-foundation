@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "axios": "^1.7.9"
+    "axios": "^1.7.9",
+    "tailwind-scrollbar": "^4.0.0"
   }
 }

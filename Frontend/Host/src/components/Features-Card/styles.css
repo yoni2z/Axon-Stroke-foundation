@@ -11,7 +11,6 @@
   width: 25rem;
   height: 580px;
   /* Ensure all cards have the same height */
-  margin-right: 35px;
   border: 1px solid white;
   display: flex;
   flex-direction: column;
