@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import TitleBanner from "../components/blog/TitleBanner";
 import BlogsCard from "../components/blog/BlogsCard";
 import BlogsBg from "../assets/blogs-title-bg.jpeg";
+import VolunteerBg2 from "../assets/blog2.png";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -47,7 +49,7 @@ const Blogs = () => {
     <div className="font-poppins bg-[#F3F5F7]">
       <TitleBanner
         title="Blog"
-        backgroundImage={BlogsBg}
+        backgroundImage={VolunteerBg2}
       />
       <div className="py-[95px] sm:mx-10 mx-3 grid grid-cols-3 gap-2">
           <div className="col-span-3 sm:col-span-2">

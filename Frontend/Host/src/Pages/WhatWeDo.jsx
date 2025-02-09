@@ -19,7 +19,7 @@ const WhatWeDo = () => {
 
   return (
     <div className="font-poppins">
-      <TitleBanner title="WHAT WE DO" backgroundImage={VolunteerBg1} />
+      <TitleBanner title="WHAT WE DO" backgroundImage={VolunteerBg2} />
 
       <div className="py-[95px] mx-10">
         <div className="mb-[77px] text-center">

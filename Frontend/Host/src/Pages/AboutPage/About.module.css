@@ -171,6 +171,7 @@
     flex-shrink: 1;
 }
 
+
 @media (max-width: 768px) {
     .ourdoctors {
         flex-direction: column;
@@ -189,4 +190,33 @@
     .vision .image {
         opacity: 0.5;
     }
+}
+.scrollbar-custom {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+/* WebKit Browsers (Chrome, Safari) */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #d1d5db; /* gray-300 */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: #1e40af; /* blue-900 */
+  border-radius: 10px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: #1e3a8a; /* darker blue */
+}
+
+/* Firefox */
+.scrollbar-custom {
+  scrollbar-width: thin;
+  scrollbar-color:#1e40af white ;
 }

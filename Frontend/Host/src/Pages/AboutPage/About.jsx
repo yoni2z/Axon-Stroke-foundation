@@ -20,7 +20,7 @@ const About = () => {
   return (
     <>
       <TitleBanner
-        title="ABOUT AXON"
+        title="ABOUT &nbsp; US"
         backgroundImage={
           "https://s3-alpha-sig.figma.com/img/5c70/bf26/430db1c27406e4fe493ce581c6303976?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GsYqbs5DllCBdVvD2INFL5bxSjtrhrFnr7xP6mZ1AF08-MypnjSKyPqBs22hMBYys47ua397WarR~1mNW3~gYulYop2SzCfBDBr37XFdZMrMzhPEwpzFNUfldUlvjJ8i5QCzUe1ZjLz9LWwDnDeXHf1fRkwHNgINoN3I6Z3NIWfH39~0OQZbVvIO2oO5YxRa-4KO9b2iF16R~IN6D2YaG-imfl4eRWPh9xyH5jPPne6WoMBpOHb78GZSnhxzoShWug3O6hxH4sKBNdq8jenstjVBAGne1KliRdOAoHF8712IT5lB~I7Gqg6iHnzFKNyXKl4IppB2vBpLGgVe9VmT-g__"
         }
@@ -159,7 +159,7 @@ const About = () => {
           </p>
         </section>
       </div>
-      <div className="flex gap-8 flex-wrap justify-center mt-20 mb-40">
+      <div className={`flex gap-40 p-10 mt-20 mb-40 ${style["scrollbar-custom"]}`} >
         {membersList.map((member, index) => (
           <Members
             key={index}
