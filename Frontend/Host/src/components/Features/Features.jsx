@@ -15,34 +15,34 @@ export const Features = () => {
             FEATURED <span className="feature-span">CAUSES</span>
           </h2>
           <p>
-            Join our featured cause to create lasting change and empower
-            people in need.
+            Join our featured cause to create lasting change and empower people
+            in need.
           </p>
         </div>
         <div className="features-news">
           <FeaturesCard
             image={i1}
-            title={"Explore New Opportunities Today"}
+            title={"Rehabilitation Centers and Support Groups"}
             description={
-              "Discover innovative ways to make a difference and create positive change in the world"
+              "Access a directory of stroke rehabilitation centers, clinics, and support groups across Ethiopia and Africa. These centers offer specialized therapy services to aid in recovery, from physical therapy to cognitive rehabilitation."
             }
-            link={"/getinvolved"}
+            link={"/resource-details/1"}
           />
           <FeaturesCard
             image={i2}
-            title={"Find Your Path to Giving"}
+            title={"Stroke Recovery Monitoring Tools"}
             description={
-              "Choose from various ways to contribute and support causes close to your heart."
+              "Download free tools and worksheets that help stroke survivors and caregivers monitor progress during rehabilitation. These tools are designed to track physical, emotional, and cognitive recovery milestones."
             }
-            link={"/donate"}
+            link={"/resource-details/3"}
           />
           <FeaturesCard
             image={i3}
-            title={"Make a Difference, Your Way"}
+            title={"Stroke Care and Rehabilitation Guidelines"}
             description={
-              "From volunteering to donations, find personalized ways to impact lives meaningfully."
+              "A resource for healthcare professionals that outlines the latest clinical guidelines for stroke care, including emergency response protocols, rehabilitation best practices, and post-stroke management."
             }
-            link={"/getinvolved"}
+            link={"/resource-details/4"}
           />
         </div>
       </div>

@@ -40,7 +40,7 @@ const ResourcesCard = ({
         </h1>
 
         <h4 className="text-secondary mb-3">
-          {truncateText(Description, 150)}
+          {Description}
         </h4>
         {Link && (
           <a

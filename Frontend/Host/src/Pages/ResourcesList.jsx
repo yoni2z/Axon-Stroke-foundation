@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { NavLink, resolvePath, useParams, useNavigate } from "react-router-dom";
 import TitleBanner from "../components/TitleBanner";
+import CausesCard from "../components/Causes/CausesCard";
 import ResourcesCard from "../components/Causes/ResourcesCard";
 import CauseTitleBg from "../assets/cause-title-bg.jpg";
+import VolunteerBg2 from "../assets/blog2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLongArrowRight,
@@ -51,7 +53,7 @@ const ResourcesList = () => {
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
-      <TitleBanner title="RESOURCES" backgroundImage={CauseTitleBg} />
+      <TitleBanner title="RESOURCES" backgroundImage={VolunteerBg2} />
 
       <div className="py-[95px] sm:mx-10 mx-3">
         <div className="mb-[77px] text-center">
@@ -71,7 +73,7 @@ const ResourcesList = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <ResourcesCard
+              <CausesCard
                 causesImage={list.image}
                 Title={list.title}
                 Description={list.description}

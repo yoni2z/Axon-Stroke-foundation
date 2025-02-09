@@ -129,6 +129,7 @@ span {
     .donate-text>a {
         width: 100%;
         margin-top: 20px;
+        margin-left: 0;
     }
 
     .donations {

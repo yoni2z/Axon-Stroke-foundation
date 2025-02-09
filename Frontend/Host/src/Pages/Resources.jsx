@@ -3,6 +3,7 @@ import { NavLink, resolvePath } from "react-router-dom";
 import TitleBanner from "../components/TitleBanner";
 import CausesCard from "../components/Causes/CausesCard";
 import CauseTitleBg from "../assets/cause-title-bg.jpg";
+import VolunteerBg2 from "../assets/blog2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLongArrowRight,
@@ -41,7 +42,7 @@ const Resources = () => {
 
   return (
     <div className="font-poppins bg-[#F3F5F7]">
-      <TitleBanner title="RESOURCES" backgroundImage={CauseTitleBg} />
+      <TitleBanner title="RESOURCES" backgroundImage={VolunteerBg2} />
       <div className="py-[95px] sm:mx-10 mx-3">
         <div className="flex flex-col sm:grid sm:grid-cols-3 gap-8 mx-auto">
           {currentItems.map((resource) => (
