@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TitleBanner from "../../components/TitleBanner";
 import CauseTitleBg from "../../assets/cause-title-bg.jpg";
+import VolunteerBg2 from "../../assets/blog2.png";
 
 const DonationPage = () => {
   const [bankAccounts, setBankAccounts] = useState([]);
@@ -25,7 +26,7 @@ const DonationPage = () => {
 
   return (
     <div className="font-PlayfairDisplay bg-[#F3F5F7]">
-      <TitleBanner title="Donate" backgroundImage={CauseTitleBg} />
+      <TitleBanner title="Donate" backgroundImage={VolunteerBg2} />
       <div className="min-h-screen bg-gray-100 flex flex-col justify-between">
         <div className="flex-grow flex justify-center items-center">
           <div className="w-full max-w-2xl bg-white rounded-lg shadow-md p-6 text-center">

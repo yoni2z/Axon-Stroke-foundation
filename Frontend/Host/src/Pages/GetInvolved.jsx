@@ -3,11 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import TitleBanner from "../components/TitleBanner";
 import VolunteerBg from "../assets/volunteer-title-bg.jpg";
 import DummyImage from "../assets/GI_DummyImage.jpg";
+import VolunteerBg2 from "../assets/blog2.png";
 
 const GetInvolved = () => {
   return (
     <div className="font-Montserrat">
-      <TitleBanner title="GET INVOLVED" backgroundImage={VolunteerBg} />
+      <TitleBanner title="GET INVOLVED" backgroundImage={VolunteerBg2} />
 
       <div className="">
         <div className="mb-[77px] text-center">
