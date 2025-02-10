@@ -40,18 +40,18 @@ const GetInvolved = () => {
         <img
           src={DummyImage}
           alt="Get Involved Image"
-          className="absolute w-[200px] h-auto top-[-90px] right-[10%] sm:w-[250px] rounded-md"
+          className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
         />
         <img
           src={DummyImage}
           alt="Get Involved Image"
-          className="absolute w-[200px] h-auto top-[100px] left-[60%] sm:w-[250px] rounded-md"
+          className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[60%] transform -translate-x-1/2 rounded-md"
         />
       </div>
 
       <div>
         <div className="py-[95px] bg-background">
-          <div className="flex flex-col mx-10 justify-center items-start">
+          <div className="flex flex-col mx-10 justify-center sm:items-start items-center">
             <div className="text-start">
               <h1 className="text-2xl text-[#26358a] font-PlayfairDisplay mb-5">
                 VOLUNTEER WITH <span className="text-primary">US</span>
@@ -70,7 +70,7 @@ const GetInvolved = () => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
             >
-              <button className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat">
+              <button className="flex flex-col text-white text-center sm:text-left  mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat mx-auto w-fit">
                 Become a Volunteer
               </button>
             </NavLink>
@@ -81,12 +81,12 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[-90px] right-[50%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[100px] left-[45%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[60%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -109,7 +109,7 @@ const GetInvolved = () => {
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className="text-white text-center mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
+              className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
             >
               Start Your Fundraising Campaign{" "}
             </Link>
@@ -120,17 +120,17 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[-90px] right-[50%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[100px] left-[60%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[60%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
         <div className="py-[95px] bg-background">
-          <div className="flex flex-col mx-10 justify-center items-center">
+          <div className="flex flex-col mx-10 justify-center sm:items-start items-center">
             <div className="text-start">
               <h1 className="text-2xl text-[#26358a] font-PlayfairDisplay mb-5">
                 DONATE TO{" "}
@@ -148,7 +148,7 @@ const GetInvolved = () => {
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }}
-                className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
+                className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
               >
                 Donate Now{" "}
               </Link>
@@ -160,12 +160,12 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[-20px] right-[10%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[100px] left-[45%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[45%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -181,12 +181,15 @@ const GetInvolved = () => {
               campaigns. Together, we can amplify our message and reach more
               people in need.
             </p>
-            <a
-              href="*"
-              className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
+            <Link
+              to="/volunteer"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
             >
               Learn More About Corporate Partnerships
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -194,12 +197,12 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[-20px] right-[10%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[100px] left-[45%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[45%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -218,12 +221,15 @@ const GetInvolved = () => {
                 network and help us create change at the local, national, and
                 international levels.
               </p>
-              <a
-                href="*"
-                className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
+              <Link
+                to="/volunteer"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+                className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
               >
                 Join the Advocacy Network
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -232,12 +238,12 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[-20px] right-[10%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[200px] h-auto top-[100px] left-[45%] sm:w-[250px] rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[45%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -255,12 +261,15 @@ const GetInvolved = () => {
               providers. Together, we can push the boundaries of what’s possible
               in stroke care.
             </p>
-            <a
-              href="*"
-              className="text-white text-left mt-auto mb-3 px-4 py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat"
+            <Link
+              to="/volunteer"
+              onClick={() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
             >
               Partner with Us for Research and Education
-            </a>
+            </Link>
           </div>
         </div>
       </div>
