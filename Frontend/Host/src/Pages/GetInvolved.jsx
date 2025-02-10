@@ -18,9 +18,9 @@ const GetInvolved = () => {
           <h1 className="text-5xl text-[#26358a] font-PlayfairDisplay mb-5 pb-5 py-[95px]">
             WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
-          <div className="bg-[#D9D9D966] opacity-40 py-20">
+          <div className="bg-[#D9D9D966] py-20">
             <div className="sm:grid sm:grid-cols-4 w-fit h-auto mx-auto place-items-center gap-x-16">
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center mb-auto">
                 <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-lg">
                   <img
                     src={BecomeaVolunteer}
@@ -29,28 +29,30 @@ const GetInvolved = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                  <h3 className="text-customBlue my-3 text-lg font-PlayfairDisplay font-semibold">
                     Leave a Legacy
                   </h3>
-                  <p>Create lasting impact, transform lives, inspire change.</p>
+                  <p className="text-sm">
+                    Create lasting impact, transform lives, inspire change.
+                  </p>
                 </div>
               </div>
 
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center mb-auto">
                 <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm">
                   <img src={MakeaDonation} alt="Make a Donation Icon" />
                 </div>
                 <div>
-                  <h3 className="text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                  <h3 className="text-customBlue my-3 text-lg font-PlayfairDisplay font-semibold">
                     Make a Donation
                   </h3>
-                  <p>
+                  <p className="text-sm">
                     Support projects, create brighter futures, drive change.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center mb-auto">
                 <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm">
                   <img
                     src={LeaveaLegacy}
@@ -59,25 +61,27 @@ const GetInvolved = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                  <h3 className="text-customBlue my-3 text-lg font-PlayfairDisplay font-semibold">
                     Become a Fundraiser
                   </h3>
-                  <p>
+                  <p className="text-sm">
                     Raise funds, empower communities, inspire collective
                     support.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col justify-center items-center">
+              <div className="flex flex-col justify-center items-center mb-auto">
                 <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm">
                   <img src={Fundraiser} alt="Make a Fundraiser" />
                 </div>
                 <div>
-                  <h3 className="!text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                  <h3 className="text-customBlue my-3 text-lg font-PlayfairDisplay font-semibold">
                     Become a Volunteer
                   </h3>
-                  <p>Lend skills, make difference, be positive force.</p>
+                  <p className="text-sm">
+                    Lend skills, make difference, be positive force.
+                  </p>
                 </div>
               </div>
             </div>
