@@ -13,7 +13,7 @@ const VolunteerPage = () => {
         <div className=" py-[95px] bg-background ">
           <div className="flex flex-col mx-10 items-center justify-center">
             <div className="mb-[77px] text-center">
-              <h1 className="text-4xl font-bold font-PlayfairDisplay mb-5">
+              <h1 className="text-4xl text-[#26358a] font-PlayfairDisplay mb-5">
                 BECOME A <span className="text-primary">VOLUNTEER</span>
               </h1>
               <p className="text-secondary max-w-[80%] mx-auto font-Montserrat">
