@@ -4,7 +4,10 @@ import TitleBanner from "../components/TitleBanner";
 import VolunteerBg from "../assets/volunteer-title-bg.jpg";
 import DummyImage from "../assets/GI_DummyImage.jpg";
 import VolunteerBg2 from "../assets/blog2.png";
-
+import BecomeaVolunteer from "../assets/GetInvolved/becomeavolunteer.svg";
+import LeaveaLegacy from "../assets/GetInvolved/Leavea.svg";
+import MakeaDonation from "../assets/GetInvolved/makeadonation.svg";
+import Fundraiser from "../assets/GetInvolved/Fundraiser.svg";
 const GetInvolved = () => {
   return (
     <div className="font-Montserrat">
@@ -16,12 +19,67 @@ const GetInvolved = () => {
             WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
           <div className="bg-[#D9D9D966] opacity-40 py-20">
-            <div className="sm:grid sm:grid-cols-5 w-fit h-auto mx-auto place-items-center gap-x-16">
-              <div className="w-28 h-28 bg-[#D8D9D9] rounded-full shadow-lg"></div>
-              <div className="w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm"></div>
-              <div className="w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm"></div>
-              <div className="w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm"></div>
-              <div className="w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm"></div>
+            <div className="sm:grid sm:grid-cols-4 w-fit h-auto mx-auto place-items-center gap-x-16">
+              <div className="flex flex-col justify-center items-center">
+                <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-lg">
+                  <img
+                    src={BecomeaVolunteer}
+                    alt="Become a Volunteer Icon"
+                    className="filter brightness-0"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                    Leave a Legacy
+                  </h3>
+                  <p>Create lasting impact, transform lives, inspire change.</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center items-center">
+                <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm">
+                  <img src={MakeaDonation} alt="Make a Donation Icon" />
+                </div>
+                <div>
+                  <h3 className="text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                    Make a Donation
+                  </h3>
+                  <p>
+                    Support projects, create brighter futures, drive change.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center items-center">
+                <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm">
+                  <img
+                    src={LeaveaLegacy}
+                    alt="Leave a Legacy Icon"
+                    className="text-black"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                    Become a Fundraiser
+                  </h3>
+                  <p>
+                    Raise funds, empower communities, inspire collective
+                    support.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex flex-col justify-center items-center">
+                <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-sm">
+                  <img src={Fundraiser} alt="Make a Fundraiser" />
+                </div>
+                <div>
+                  <h3 className="!text-black my-3 text-lg font-PlayfairDisplay font-semibold">
+                    Become a Volunteer
+                  </h3>
+                  <p>Lend skills, make difference, be positive force.</p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -131,8 +189,8 @@ const GetInvolved = () => {
 
         <div className="py-[95px] bg-background">
           <div className="flex flex-col mx-10 justify-center sm:items-start items-center">
-            <div className="text-start">
-              <h1 className="text-2xl text-[#26358a] font-PlayfairDisplay mb-5">
+            <div className="sm:text-start text-center">
+              <h1 className="text-2xl text-start text-[#26358a] font-PlayfairDisplay mb-5">
                 DONATE TO{" "}
                 <span className="text-primary">SUPPORT STROKE PROGRAMS</span>
               </h1>
@@ -143,15 +201,17 @@ const GetInvolved = () => {
                 a one-time gift or set up a recurring donation to make a lasting
                 impact.
               </p>
-              <Link
-                to="/donate"
-                onClick={() => {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
-              >
-                Donate Now{" "}
-              </Link>
+              <div className="flex justify-center sm:justify-start">
+                <Link
+                  to="/donate"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
+                >
+                  Donate Now{" "}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -221,15 +281,17 @@ const GetInvolved = () => {
                 network and help us create change at the local, national, and
                 international levels.
               </p>
-              <Link
-                to="/volunteer"
-                onClick={() => {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-                className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
-              >
-                Join the Advocacy Network
-              </Link>
+              <div className="flex justify-center sm:justify-start">
+                <Link
+                  to="/volunteer"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                  className="flex flex-col text-white text-center sm:text-left mt-auto mb-3 px-8 py-4 sm:px-4 sm:py-2 rounded-md mr-2 bg-button hover:bg-black font-Montserrat w-fit"
+                >
+                  Join the Advocacy Network
+                </Link>
+              </div>
             </div>
           </div>
         </div>
