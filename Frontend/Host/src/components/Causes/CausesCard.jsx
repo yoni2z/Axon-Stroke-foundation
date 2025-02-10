@@ -6,10 +6,6 @@ const CausesCard = ({
   extraFields = {},
 }) => {
 
-  const truncateText = (text, limit) => {
-    return text.length > limit ? text.substring(0, limit) + "..." : text;
-  };
-
   return (
     <div className="flex flex-col bg-white items-center shadow-md rounded-md w-fit overflow-hidden font-Montserrat hover:shadow-2xl h-full">
       <img
@@ -28,7 +24,7 @@ const CausesCard = ({
           {Title}
         </h1>
         <h4 className="text-secondary mb-3 mt-auto">
-          {truncateText(Description, 150)}
+          {Description}
         </h4>
         {/* Continue Reading Link */}
         {!detailView && (

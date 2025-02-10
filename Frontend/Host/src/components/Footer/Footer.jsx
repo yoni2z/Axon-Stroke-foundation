@@ -15,7 +15,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="hope">
-        <img src={i1} className="footer-axon" alt="Hope" />
+        <img src={i1} className="footer-axon" alt="Axon Foundation" />
         <div className="hope-address">
           <p>
             <strong>Netsanet Building, Fourth Floor</strong>
