@@ -99,7 +99,7 @@ const GetInvolved = () => {
         </div>
       </div>
 
-      <div className="bg-customBlue h-[250px] w-full relative">
+      <div className="bg-customBlue sm:h-[250px] h-[141px] w-full relative">
         <div
           className="absolute inset-0"
           style={{
@@ -150,7 +150,7 @@ const GetInvolved = () => {
           </div>
         </div>
 
-        <div className="bg-customBlue h-[250px] w-full relative">
+        <div className="bg-customBlue sm:h-[250px] h-[141px] w-full relative">
           <div
             className="absolute inset-0"
             style={{
@@ -198,7 +198,7 @@ const GetInvolved = () => {
           </div>
         </div>
 
-        <div className="bg-customBlue h-[250px] w-full relative">
+        <div className="bg-customBlue sm:h-[250px] h-[141px] w-full relative">
           <div
             className="absolute inset-0"
             style={{
@@ -249,7 +249,7 @@ const GetInvolved = () => {
           </div>
         </div>
 
-        <div className="bg-customBlue h-[250px] w-full relative">
+        <div className="bg-customBlue sm:h-[250px] h-[141px] w-full relative">
           <div
             className="absolute inset-0"
             style={{
@@ -295,7 +295,7 @@ const GetInvolved = () => {
           </div>
         </div>
 
-        <div className="bg-customBlue h-[250px] w-full relative">
+        <div className="bg-customBlue sm:h-[250px] h-[141px] w-full relative">
           <div
             className="absolute inset-0"
             style={{
@@ -347,7 +347,7 @@ const GetInvolved = () => {
           </div>
         </div>
 
-        <div className="bg-customBlue h-[250px] w-full relative">
+        <div className="bg-customBlue sm:h-[250px] h-[141px] w-full relative">
           <div
             className="absolute inset-0"
             style={{
