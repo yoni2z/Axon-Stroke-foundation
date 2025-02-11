@@ -10,7 +10,7 @@ const Gallery = () => {
   const [photos, setPhotos] = useState([]);
   const [visiblePhotos, setVisiblePhotos] = useState([]); // Photos currently visible
   const [startIndex, setStartIndex] = useState(0); // Track the current index
-  const limit = 5; // Number of photos to show at a time
+  const limit = 9; // Number of photos to show at a time
 
   useEffect(() => {
     fetch("https://axonstroke.org/api/gallery/")
