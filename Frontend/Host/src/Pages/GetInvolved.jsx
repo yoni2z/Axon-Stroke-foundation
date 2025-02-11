@@ -8,6 +8,7 @@ import BecomeaVolunteer from "../assets/GetInvolved/becomeavolunteer.svg";
 import LeaveaLegacy from "../assets/GetInvolved/Leavea.svg";
 import MakeaDonation from "../assets/GetInvolved/makeadonation.svg";
 import Fundraiser from "../assets/GetInvolved/Fundraiser.svg";
+import Watermark from "../assets/GetInvolved/WatermarkLogo.png";
 const GetInvolved = () => {
   return (
     <div className="font-Montserrat">
@@ -18,7 +19,7 @@ const GetInvolved = () => {
           <h1 className="text-5xl text-[#26358a] font-PlayfairDisplay mb-5 pb-5 py-[95px]">
             WAYS TO GET <span className="text-primary">INVOLVED</span>
           </h1>
-          <div className="bg-[#D9D9D966] py-20">
+          <div className="bg-[#D9D9D966] py-20 px-20">
             <div className="sm:grid sm:grid-cols-4 w-fit h-auto mx-auto place-items-center gap-x-16">
               <div className="flex flex-col justify-center items-center mb-auto">
                 <div className="flex justify-center items-center w-28 h-28 bg-[#D8D9D9] rounded-full shadow-lg">
@@ -99,15 +100,25 @@ const GetInvolved = () => {
       </div>
 
       <div className="bg-customBlue h-[250px] w-full relative">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${Watermark})`,
+            backgroundSize: "885px auto",
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+          }}
+        />
         <img
           src={DummyImage}
           alt="Get Involved Image"
           className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
         />
+
         <img
           src={DummyImage}
           alt="Get Involved Image"
-          className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[60%] transform -translate-x-1/2 rounded-md"
+          className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[70%] transform -translate-x-1/2 rounded-md"
         />
       </div>
 
@@ -140,15 +151,24 @@ const GetInvolved = () => {
         </div>
 
         <div className="bg-customBlue h-[250px] w-full relative">
-          <img
-            src={DummyImage}
-            alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${Watermark})`,
+              backgroundSize: "885px auto",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+            }}
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[60%] transform -translate-x-1/2 rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[70%] rounded-md"
+          />
+          <img
+            src={DummyImage}
+            alt="Get Involved Image"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[30%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -179,6 +199,15 @@ const GetInvolved = () => {
         </div>
 
         <div className="bg-customBlue h-[250px] w-full relative">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${Watermark})`,
+              backgroundSize: "885px auto",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+            }}
+          />
           <img
             src={DummyImage}
             alt="Get Involved Image"
@@ -187,7 +216,7 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[60%] transform -translate-x-1/2 rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] md:top-[100px] left-[50%] sm:left-[55%] md:left-[70%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -221,15 +250,24 @@ const GetInvolved = () => {
         </div>
 
         <div className="bg-customBlue h-[250px] w-full relative">
-          <img
-            src={DummyImage}
-            alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${Watermark})`,
+              backgroundSize: "885px auto",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+            }}
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[45%] transform -translate-x-1/2 rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[70%] rounded-md"
+          />
+          <img
+            src={DummyImage}
+            alt="Get Involved Image"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[30%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -258,6 +296,15 @@ const GetInvolved = () => {
         </div>
 
         <div className="bg-customBlue h-[250px] w-full relative">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${Watermark})`,
+              backgroundSize: "885px auto",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+            }}
+          />
           <img
             src={DummyImage}
             alt="Get Involved Image"
@@ -266,7 +313,7 @@ const GetInvolved = () => {
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[45%] transform -translate-x-1/2 rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[70%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
@@ -301,15 +348,24 @@ const GetInvolved = () => {
         </div>
 
         <div className="bg-customBlue h-[250px] w-full relative">
-          <img
-            src={DummyImage}
-            alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[10%] rounded-md"
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `url(${Watermark})`,
+              backgroundSize: "885px auto",
+              backgroundRepeat: "repeat-x",
+              backgroundPosition: "center",
+            }}
           />
           <img
             src={DummyImage}
             alt="Get Involved Image"
-            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[45%] transform -translate-x-1/2 rounded-md"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[-60px] md:top-[-90px] right-[5%] sm:right-[70%] rounded-md"
+          />
+          <img
+            src={DummyImage}
+            alt="Get Involved Image"
+            className="absolute w-[150px] sm:w-[200px] md:w-[250px] h-auto top-[80px] sm:top-[100px] left-[50%] sm:left-[30%] transform -translate-x-1/2 rounded-md"
           />
         </div>
 
