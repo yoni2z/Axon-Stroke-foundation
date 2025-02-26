@@ -7,6 +7,8 @@ import VolenteerCard from "../../components/volenteer-with-us/VolenteerCard";
 import Contacts from "../Contacts";
 import { Partner } from "../../components/Partner/Partner";
 import VolunteerBg2 from "../../assets/blog2.png";
+import Brain from "../../assets/brain.png";
+import Doctors from "../../assets/doctors.jpg";
 
 const About = () => {
   const [membersList, setMembersList] = useState([]);
@@ -41,11 +43,7 @@ const About = () => {
 
         {/* Mission Section */}
         <section className={style.mission}>
-          <img
-            src="https://s3-alpha-sig.figma.com/img/9695/4275/e3a1b9621ba0ad95620c88e134132af5?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VdQsiseu7uLTCkl7gkzK37UCrrbpBPmhNpQ62JV1mXVIzZzwasciOxXPgZlqqVoh8cxuoPTNSHYtE7CnVQw8arkjub7Rl5S-4GVWxMwPs4XNyKwvj1jV35xb~y30cDSro6k~VAegqDo-ebMeYfjKxP0nLAP4y4hWxGCR6ulsl0-Lkk-NfKVKjsyzqch0pUanHP4xLtdN-M5x5z5Cg~e07T3r9vjIVdjSwg8PIQVNE9ouDoSeURnYDHClz2kKJajNOfoIhoSSZtKBslBj~nkEHspgpGKAipsc-sFUywCQSuKw27Cfs9DkWLd1yA360W5AFSWx1l828dpybE2oUhKzCw__"
-            alt="Brain illustration"
-            className={style.image}
-          />
+          <img src={Brain} alt="Brain illustration" className={style.image} />
           <div className={style.content}>
             <div className={style.text}>
               <h2>MISSION</h2>
@@ -74,19 +72,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <img
-            src="https://s3-alpha-sig.figma.com/img/9695/4275/e3a1b9621ba0ad95620c88e134132af5?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VdQsiseu7uLTCkl7gkzK37UCrrbpBPmhNpQ62JV1mXVIzZzwasciOxXPgZlqqVoh8cxuoPTNSHYtE7CnVQw8arkjub7Rl5S-4GVWxMwPs4XNyKwvj1jV35xb~y30cDSro6k~VAegqDo-ebMeYfjKxP0nLAP4y4hWxGCR6ulsl0-Lkk-NfKVKjsyzqch0pUanHP4xLtdN-M5x5z5Cg~e07T3r9vjIVdjSwg8PIQVNE9ouDoSeURnYDHClz2kKJajNOfoIhoSSZtKBslBj~nkEHspgpGKAipsc-sFUywCQSuKw27Cfs9DkWLd1yA360W5AFSWx1l828dpybE2oUhKzCw__"
-            alt="Brain illustration"
-            className={style.image}
-          />
+          <img src={Brain} alt="Brain illustration" className={style.image} />
         </section>
 
         <section className={style.mission}>
-          <img
-            src="https://s3-alpha-sig.figma.com/img/9695/4275/e3a1b9621ba0ad95620c88e134132af5?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VdQsiseu7uLTCkl7gkzK37UCrrbpBPmhNpQ62JV1mXVIzZzwasciOxXPgZlqqVoh8cxuoPTNSHYtE7CnVQw8arkjub7Rl5S-4GVWxMwPs4XNyKwvj1jV35xb~y30cDSro6k~VAegqDo-ebMeYfjKxP0nLAP4y4hWxGCR6ulsl0-Lkk-NfKVKjsyzqch0pUanHP4xLtdN-M5x5z5Cg~e07T3r9vjIVdjSwg8PIQVNE9ouDoSeURnYDHClz2kKJajNOfoIhoSSZtKBslBj~nkEHspgpGKAipsc-sFUywCQSuKw27Cfs9DkWLd1yA360W5AFSWx1l828dpybE2oUhKzCw__"
-            alt="Brain illustration"
-            className={style.image}
-          />
+          <img src={Brain} alt="Brain illustration" className={style.image} />
           <div className={style.content}>
             <div className={style.text}>
               <h2 className="mt-8 font-PlayfairDisplay text-lg">
@@ -137,7 +127,7 @@ const About = () => {
         {/* Our Doctors Section */}
         <section className={style.ourdoctors}>
           <img
-            src="https://s3-alpha-sig.figma.com/img/23e6/602b/780604fed7b7888c3847e142e1c7e501?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=XQ8G-MFVOqsyGWz0GjnpWIIGAIROH2PCOlDQOkSU4gkEHrwJRGyRMybu7lrIjKHh4kxzSXi1Udj8CV0o1g0EKw1l9kREMIkXgWCgCQ3NsESlJdNOLQNTHbWi4gdkY4H2saGcT1-vcuWYmjalB2pTQE4bqlxBeLbIhoxpdwRg9x3TyWvnNEcEomA5fYHkY2QtKfDg8W1bzj~7KaswlYu984ROlp0F7hPeoViNWqSxlQxu0T3l04TcH9zoEAWYvTPASwJiArLcVYdy0RbKd40Kg2XCppWQphdPIz306kCc6oGKFvx43Q26GfF6TciFfH~L6prMlY-K35Szvn-tIes6SA__"
+            src={Doctors}
             alt="Group of doctors"
             className={style.image}
           />
